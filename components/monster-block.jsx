@@ -2,6 +2,8 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import '../styles/components/monster-block.scss';
 
+import AbilityScoreCalculator from '../services/ability-score-calculator';
+
 const MonsterBlockPropTypes = {
     ac: PropTypes.number.isRequired,
     actions: PropTypes.arrayOf(PropTypes.shape({
@@ -169,6 +171,14 @@ const MonsterBlock = ({
                     <td>{stats.int}</td>
                     <td>{stats.wis}</td>
                     <td>{stats.cha}</td>
+                </tr>
+                <tr>
+                    <td>{AbilityScoreCalculator.getModifier(stats.str)}</td>
+                    <td>{AbilityScoreCalculator.getModifier(stats.dex)}</td>
+                    <td>{AbilityScoreCalculator.getModifier(stats.con)}</td>
+                    <td>{AbilityScoreCalculator.getModifier(stats.int)}</td>
+                    <td>{AbilityScoreCalculator.getModifier(stats.wis)}</td>
+                    <td>{AbilityScoreCalculator.getModifier(stats.cha)}</td>
                 </tr>
             </table>
             <hr/>
