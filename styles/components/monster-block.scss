@@ -1,21 +1,8 @@
 @import '../base/typography.scss';
 
 .monster-block {
-    font-size: $body-font-size;
-    font-family: $body-font-family;
-    color: $body-font-color;
-    line-height: $line-height;
     padding: 20px;
     border: 1px solid #999999;
-
-    h1 {
-        font-size: $h1-font-size;
-    }
-
-    h2 {
-        font-size: $h2-font-size;
-        border-bottom: solid 1px #999999;
-    }
 
     ul, ol {
         margin-left: -20px;

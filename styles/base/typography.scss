@@ -11,3 +11,19 @@ $body-font-size: 16px;
 $sub-font-size: 12px;
 
 $line-height: 1.5;
+
+html, body {
+    font-size: $body-font-size;
+    font-family: $body-font-family;
+    color: $body-font-color;
+    line-height: $line-height;
+}
+
+h1 {
+    font-size: $h1-font-size;
+}
+
+h2 {
+    font-size: $h2-font-size;
+    border-bottom: solid 1px #999999;
+}

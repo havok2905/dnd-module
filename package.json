@@ -30,6 +30,7 @@
     "webpack-dev-server": "^3.2.0"
   },
   "dependencies": {
+    "d20": "^1.4.1",
     "react": "^16.8.3",
     "react-dom": "^16.8.3"
   }

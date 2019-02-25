@@ -1,0 +1,11 @@
+@import '../base/typography.scss';
+
+.roll-table {
+    border: 1px solid #999;
+
+    &__row {
+        &--highlighted {
+            color: red;
+        }
+    }
+}
