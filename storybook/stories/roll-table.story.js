@@ -6,6 +6,7 @@ storiesOf('RollTable', module)
   .add('RollTable', () => {
     return (
       <RollTable
+        title='Test Roll Table'
         items={[
             {
                 rollRange:[1,10],

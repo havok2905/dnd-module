@@ -49,10 +49,11 @@ class RollTable extends Component {
 
     render(){
         return (
-            <Fragment>
+            <section className='roll-table'>
+                <h1>{this.props.title}</h1>
                 <button onClick={this.roll.bind(this)}>Roll</button>
                 <p>Roll: {this.state.roll}</p>
-                <table className='roll-table'>
+                <table>
                     <thead>
                         <tr>
                             <th scope='col'>Roll</th>
@@ -63,7 +64,7 @@ class RollTable extends Component {
                         {this.rollTableRows()}
                     </tbody>
                 </table>
-            </Fragment>
+            </section>
         );
     }
 }
@@ -74,7 +75,8 @@ RollTable.propTypes = {
             rollRange: PropTypes.arrayOf(PropTypes.number).isRequired,
             description: PropTypes.string.isRequired
         })
-    ).isRequired
+    ).isRequired,
+    title: PropTypes.string.isRequired
 };
 
 export default RollTable;

@@ -1,7 +1,8 @@
 @import '../base/typography.scss';
 
 .roll-table {
-    border: 1px solid #999;
+    padding: 20px;
+    border: 1px solid #999999;
 
     &__row {
         &--highlighted {

@@ -33,6 +33,7 @@ describe('RollTable', ()=> {
     beforeEach(()=> {
         rollTable = shallow(
             <RollTable
+                title='Test Roll Table'
                 items={[
                     {
                         rollRange:[1],
