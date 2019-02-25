@@ -6,8 +6,14 @@ import RollTable from '../../src/components/roll-table';
 
 storiesOf('Page', module)
   .add('Page', () => {
+    const styles = {
+        boxShadow: '0px 0px 20px 0px #999',
+        padding: '20px',
+        margin: '20px'
+    };
+    
     return (
-        <article>
+        <article style={styles}>
             <h1>Module Name</h1>
             <h2>Chapter 1</h2>
             <p>

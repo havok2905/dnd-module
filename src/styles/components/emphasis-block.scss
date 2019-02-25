@@ -2,5 +2,9 @@
 @import '../utils/bordered-container.scss';
 
 .emphasis-block {
-    @include bordered-container();
+    padding: 20px;
+    margin: 20px 0px;
+    font-weight: bold;
+    background-color: #40b3ed;
+    color: white;
 }
