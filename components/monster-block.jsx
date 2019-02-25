@@ -83,7 +83,7 @@ const MonsterBlock = ({
     type
 })=> {
 
-    const renderAttributesSubsection = (label, items)=> {
+    const renderAttributesSubsection = (label, qaTarget, items)=> {
         if(!items || items.length <= 0) {
             return;
         }
@@ -92,13 +92,13 @@ const MonsterBlock = ({
             <Fragment>
                 <p><strong>{label}</strong></p>
                 <ul>
-                    {items.map(item => <li>{item}</li>)}
+                    {items.map(item => <li data-qa-target={qaTarget}>{item}</li>)}
                 </ul>
             </Fragment>
         );
     };
 
-    const renderFeaturesActionsSpellsSubsection = (label, items)=> {
+    const renderFeaturesActionsSpellsSubsection = (label, qaTarget, items)=> {
         if(!items || items.length <= 0) {
             return;
         }
@@ -106,7 +106,7 @@ const MonsterBlock = ({
         return (
             <Fragment>
                 <h2>{label}</h2>
-                <dl>
+                <dl data-qa-target={qaTarget}>
                     {
                         items.map((item) => {
                             return (
@@ -130,7 +130,7 @@ const MonsterBlock = ({
         return (
             <Fragment>
                 <h2>Description</h2>
-                <p>{description}</p>
+                <p data-qaTarget='description'>{description}</p>
             </Fragment>
         )
     }
@@ -138,20 +138,20 @@ const MonsterBlock = ({
     return (
         <section className='monster-block'>
             <h1>{title}</h1>
-            <p>{size} {type}, {alignment}</p>
+            <p data-qa-target='sub-title'>{size} {type}, {alignment}</p>
             <hr/>
             <dl>
                 <div>
                     <dt>Armor Class</dt>
-                    <dd>{ac}</dd>
+                    <dd data-qa-target='ac'>{ac}</dd>
                 </div>
                 <div>
                     <dt>Hit Points</dt>
-                    <dd>{hp}</dd>
+                    <dd data-qa-target='hp'>{hp}</dd>
                 </div>
                 <div>
                     <dt>Speed</dt>
-                    <dd>{speed}</dd>
+                    <dd data-qa-target='speed'>{speed}</dd>
                 </div>
             </dl>
             <hr/>
@@ -182,19 +182,19 @@ const MonsterBlock = ({
                 </tr>
             </table>
             <hr/>
-            {renderAttributesSubsection('SavingThrows', savingThrows)}
-            {renderAttributesSubsection('Skills', skills)}
-            {renderAttributesSubsection('Condition Immunities', conditionImmunities)}
-            {renderAttributesSubsection('Damage Immunities', damageImmunities)}
-            {renderAttributesSubsection('Damage Resistances', damageResistances)}
-            {renderAttributesSubsection('Damage Weaknesses', damageWeaknesses)}
-            {renderAttributesSubsection('Languages', languages)}
-            {renderAttributesSubsection('Senses', senses)}
-            <p><strong>Challenge</strong> {challenge}</p>
+            {renderAttributesSubsection('Saving Throws', 'saving-throws', savingThrows)}
+            {renderAttributesSubsection('Skills', 'skills', skills)}
+            {renderAttributesSubsection('Condition Immunities', 'condition-immunities', conditionImmunities)}
+            {renderAttributesSubsection('Damage Immunities', 'damage-immunities', damageImmunities)}
+            {renderAttributesSubsection('Damage Resistances', 'damage-resistances', damageResistances)}
+            {renderAttributesSubsection('Damage Weaknesses', 'damage-weaknesses', damageWeaknesses)}
+            {renderAttributesSubsection('Languages', 'languages', languages)}
+            {renderAttributesSubsection('Senses', 'senses', senses)}
+            <p data-qa-target='challenge'><strong>Challenge</strong> {challenge}</p>
             {renderDescription()}
-            {renderFeaturesActionsSpellsSubsection('Features', features)}
-            {renderFeaturesActionsSpellsSubsection('Reactions', reactions)}
-            {renderFeaturesActionsSpellsSubsection('Actions', actions)}
+            {renderFeaturesActionsSpellsSubsection('Features', 'features', features)}
+            {renderFeaturesActionsSpellsSubsection('Reactions', 'reactions', reactions)}
+            {renderFeaturesActionsSpellsSubsection('Actions', 'actions', actions)}
         </section>
     );
 };
