@@ -4,6 +4,8 @@ function loadStories() {
     require('./stories/emphasis-block.story.js');
     require('./stories/monster-block.story.js');
     require('./stories/roll-table.story.js');
+
+    require('./stories/page.story.js');
 }
 
 configure(loadStories, module);
