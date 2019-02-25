@@ -1,6 +1,6 @@
 @import '../base/typography.scss';
+@import '../utils/bordered-container.scss';
 
 .emphasis-block {
-    padding: 20px;
-    border: 1px solid #999999;
+    @include bordered-container();
 }

@@ -1,8 +1,8 @@
 @import '../base/typography.scss';
+@import '../utils/bordered-container.scss';
 
 .monster-block {
-    padding: 20px;
-    border: 1px solid #999999;
+    @include bordered-container();
 
     ul, ol {
         margin-left: -20px;
