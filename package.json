@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint ./**/*.js",
     "test": "jest -c jest.config.js --coverage",
     "unit-test-coverage": "jest -c jest-unit.config.js --coverage",
     "enzyme-test-coverage": "jest -c jest-enzyme.config.js --coverage",
@@ -18,6 +19,9 @@
     "css-loader": "^2.1.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.9.1",
+    "eslint": "^5.14.1",
+    "eslint-plugin-jest": "^22.3.0",
+    "eslint-plugin-react": "^7.12.4",
     "jest": "^24.1.0",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
