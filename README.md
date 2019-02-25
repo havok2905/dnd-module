@@ -17,4 +17,5 @@ A library of React components for the purpose of building dnd modules
 - *npm test* Runs all tests with aggregate test coverage
 - *npm run unit-test-coverage* Runs all unit tests with coverage
 - *npm run enzyme-test-coverage* Runs all enzyme tests with coverage
+- *npm run lint* Will run eslint on the project
 - *npm run storybook* Builds the storybook project and runs on localhost
