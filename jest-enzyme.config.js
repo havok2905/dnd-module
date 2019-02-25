@@ -4,9 +4,9 @@ module.exports = {
         '**/tests/enzyme/**/*.test.js'
     ],
     collectCoverageFrom: [
-        './services/**/*.js',
-        './components/**/*.js',
-        './components/**/*.jsx'
+        './src/services/**/*.js',
+        './src/components/**/*.js',
+        './src/components/**/*.jsx'
     ],
     moduleNameMapper: {
         '^.+\\.(css|less|scss)$': 'babel-jest'

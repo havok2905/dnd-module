@@ -4,6 +4,6 @@ module.exports = {
         '**/tests/unit/**/*.test.js'
     ],
     collectCoverageFrom: [
-        './services/**/*.js'
+        './src/services/**/*.js'
     ],
 };
