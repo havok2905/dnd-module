@@ -2,8 +2,8 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import MonsterBlock from '../../components/monster-block';
 
-storiesOf('Test', module)
-  .add('with text', () => {
+storiesOf('Monster Block', module)
+  .add('Monster Block', () => {
     return (
       <MonsterBlock
         ac={10}
