@@ -1,4 +1,4 @@
-import AbilityScoreCalculator from '../../services/ability-score-calculator';
+import AbilityScoreCalculator from '../../../services/ability-score-calculator';
 
 describe('AbilityScoreCalculator', ()=> {
     describe('getModifier', ()=> {

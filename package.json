@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest -c jest.config.js --coverage",
+    "unit-test-coverage": "jest -c jest-unit.config.js --coverage",
     "storybook": "start-storybook -p 9001 -c storybook"
   },
   "author": "",
