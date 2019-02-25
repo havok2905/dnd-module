@@ -1,5 +1,7 @@
 # DND Module
 
+A library of React components for the purpose of building dnd modules
+
 ## Dependencies
 
 - node >= 8.12.0
