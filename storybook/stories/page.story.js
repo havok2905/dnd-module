@@ -54,12 +54,12 @@ storiesOf('Page', module)
                 size='Medium'
                 speed='30 ft.'
                 stats={{
-                str: 10,
-                dex: 10,
-                con: 10,
-                int: 10,
-                wis: 10,
-                cha: 10
+                    str: 10,
+                    dex: 10,
+                    con: 10,
+                    int: 10,
+                    wis: 10,
+                    cha: 10
                 }}
                 title='Test Monster'
                 type='Humanoid'
