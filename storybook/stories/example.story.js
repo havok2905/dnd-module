@@ -6,11 +6,45 @@ import RollTable from '../../src/components/roll-table';
 import CollapsableContainer from '../../src/components/collapsable-container';
 import Container from '../../src/components/container';
 import Page from '../../src/components/page';
+import TableOfContents from '../../src/components/table-of-contents';
 
 storiesOf('Example', module)
     .add('Example', () => {   
         return (
             <Page>
+                <TableOfContents
+                    contentsList={
+                        [
+                            {
+                                title: 'Chapter 1',
+                                link: '#',
+                                children: [
+                                    {
+                                        title: 'Roll Table',
+                                        link: '#',
+                                        children: []
+                                    },
+                                    {
+                                        title: 'Test Monster',
+                                        link: '#',
+                                        children: []
+                                    }
+                                ]
+                            },
+                            {
+                                title: 'Chapter 2',
+                                link: '#',
+                                children: [
+                                    {
+                                        title: 'Emphasis Block',
+                                        link: '#',
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                />
                 <h1>Module Name</h1>
                 <h2>Chapter 1</h2>
                 <p>
