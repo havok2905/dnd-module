@@ -50,7 +50,6 @@ class RollTable extends Component {
     render(){
         return (
             <section className='roll-table'>
-                <h1>{this.props.title}</h1>
                 <button onClick={this.roll.bind(this)}>Roll</button>
                 <p>Roll: {this.state.roll}</p>
                 <table>
@@ -75,8 +74,7 @@ RollTable.propTypes = {
             rollRange: PropTypes.arrayOf(PropTypes.number).isRequired,
             description: PropTypes.string.isRequired
         })
-    ).isRequired,
-    title: PropTypes.string.isRequired
+    ).isRequired
 };
 
 export default RollTable;

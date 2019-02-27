@@ -1,9 +1,6 @@
 @import '../base/typography.scss';
-@import '../utils/bordered-container.scss';
 
 .roll-table {
-    @include bordered-container();
-
     &__row {
         &--highlighted {
             color: red;
