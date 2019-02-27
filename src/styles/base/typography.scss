@@ -1,7 +1,8 @@
-$body-font-family: 'Playfair Display', serif;
-$header-font-family: 'Open Sans', serif;
+@import './colors.scss';
 
-$body-font-color: #333;
+$font-family: 'Open Sans', serif;
+
+$body-font-color: $black;
 
 $h1-font-size: 49px;
 $h2-font-size: 39px;
@@ -15,18 +16,35 @@ $line-height: 1.5;
 
 html, body {
     font-size: $body-font-size;
-    font-family: $body-font-family;
+    font-family: $font-family;
     color: $body-font-color;
     line-height: $line-height;
+    background-color: $grey-light;
 }
 
 h1 {
     font-size: $h1-font-size;
-    font-family: $header-font-family;
+    font-family: $font-family;
+    color: $black;
 }
 
 h2 {
     font-size: $h2-font-size;
-    font-family: $header-font-family;
-    border-bottom: solid 1px #ddd;
+    font-family: $font-family;
+    color: $black;
+    border-bottom: solid 1px $grey-light;
+}
+
+a {
+    text-decoration: none;
+    color: $primary-medium;
+
+    &:hover {
+        color: $primary-dark;
+    }
+}
+
+// TODO: Move this and replace with better styling rules
+img {
+    width: 100%;
 }

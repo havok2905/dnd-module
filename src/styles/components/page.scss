@@ -1,7 +1,11 @@
 @import '../base/typography.scss';
+@import '../base/colors.scss';
 
 .page {
-    box-shadow: 0px 0px 20px 0px #999;
+    background-color: $white;
+    box-shadow: 0px 0px 10px 0px $black;
+    border-radius: 10px;
     padding: 20px;
-    margin: 20px;
+    margin: 20px auto;
+    max-width: 1060px;
 }

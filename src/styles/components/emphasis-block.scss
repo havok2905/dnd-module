@@ -1,11 +1,10 @@
 @import '../base/typography.scss';
-@import '../utils/bordered-container.scss';
+@import '../base/colors.scss';
 
 .emphasis-block {
     padding: 20px;
     margin: 20px 0px;
     border-radius: 10px;
-    font-weight: bold;
-    background-color: #40b3ed;
-    color: white;
+    background-color: $accent-medium;
+    color: $white;
 }

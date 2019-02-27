@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import '../styles/components/bordered-container.scss';
+import '../styles/components/button.scss';
 
 class CollapsableContainer extends Component {
     static propTypes = {
@@ -21,7 +22,8 @@ class CollapsableContainer extends Component {
     render() {
         return (
             <div className='bordered-container'>
-                <button data-qa-target='collapsable-container-button'
+                <button className='button'
+                        data-qa-target='collapsable-container-button'
                         onClick={this.toggleDisplay.bind(this)}>
                     Toggle
                 </button>

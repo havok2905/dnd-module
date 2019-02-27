@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import '../styles/components/monster-block.scss';
+import '../styles/components/table.scss';
 
 import AbilityScoreCalculator from '../services/ability-score-calculator';
 
@@ -152,7 +153,7 @@ const MonsterBlock = ({
                 </div>
             </dl>
             <hr/>
-            <table>
+            <table className='table table--center'>
                 <tr>
                     <th scope='col'>STR</th>
                     <th scope='col'>DEX</th>
