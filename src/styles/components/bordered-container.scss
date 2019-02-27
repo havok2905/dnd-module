@@ -1,6 +1,6 @@
 @import '../base/typography.scss';
 @import '../utils/bordered-container.scss';
 
-.collapsable-container {
+.bordered-container {
     @include bordered-container();
 }
