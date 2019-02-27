@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import '../styles/components/monster-block.scss';
 
 import AbilityScoreCalculator from '../services/ability-score-calculator';
-import CollapsableContainer from './collapsable-container';
 
 const MonsterBlockPropTypes = {
     ac: PropTypes.number.isRequired,
