@@ -5,7 +5,8 @@ import '../styles/components/button.scss';
 
 class CollapsableContainer extends Component {
     static propTypes = {
-        title: PropTypes.string
+        title: PropTypes.string.isRequired,
+        idSlug: PropTypes.string,
     };
     
     constructor(props) {
@@ -27,7 +28,10 @@ class CollapsableContainer extends Component {
                         onClick={this.toggleDisplay.bind(this)}>
                     Toggle
                 </button>
-                <h1 data-qa-target='collapsable-container-title'>{this.props.title}</h1>
+                <h1 id={this.props.idSlug}
+                    data-qa-target='collapsable-container-title'>
+                    {this.props.title}
+                </h1>
                 <div data-qa-target='collapsable-container-children'>
                     {this.state.display ? this.props.children : null}
                 </div>

@@ -4,18 +4,20 @@ import '../styles/components/bordered-container.scss';
 
 const Container = ({
     title,
+    idSlug,
     children
 })=> {    
     return (
         <div className='bordered-container'>
-            <h1>{title}</h1> 
+            <h1 id={idSlug}>{title}</h1> 
             {children}
         </div>
     );
 };
 
 Container.propTypes = {
-    title: PropTypes.string
+    title: PropTypes.string.isRequired,
+    idSlug: PropTypes.string
 };
 
 export default Container;

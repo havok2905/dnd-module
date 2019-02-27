@@ -1,14 +1,22 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../styles/components/emphasis-block.scss';
 
 const EmphasisBlock = ({
-    children
+    children,
+    idSlug
 })=> {
     return (
-        <section className='emphasis-block'>
+        <section
+            id={idSlug}
+            className='emphasis-block'>
             {children}
         </section>
     );
+};
+
+EmphasisBlock.propTypes = {
+    idSlug: PropTypes.string
 };
 
 export default EmphasisBlock;
