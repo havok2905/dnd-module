@@ -7,6 +7,7 @@ function loadStories() {
     require('./stories/monster-block.story.js');
     require('./stories/page.story.js');
     require('./stories/roll-table.story.js');
+    require('./stories/table-of-contents.story.js');
 
     require('./stories/example.story.js');
 }
