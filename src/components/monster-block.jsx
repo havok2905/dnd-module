@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import '../styles/components/monster-block.scss';
 
 import AbilityScoreCalculator from '../services/ability-score-calculator';
+import CollapsableContainer from './collapsable-container';
 
 const MonsterBlockPropTypes = {
     ac: PropTypes.number.isRequired,
@@ -40,7 +41,6 @@ const MonsterBlockPropTypes = {
         wis: PropTypes.number.isRequired,
         cha: PropTypes.number.isRequired,
     }).isRequired,
-    title: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,
 };
 
@@ -79,7 +79,6 @@ const MonsterBlock = ({
     skills,
     speed,
     stats,
-    title,
     type
 })=> {
 
@@ -137,7 +136,6 @@ const MonsterBlock = ({
 
     return (
         <section className='monster-block'>
-            <h1>{title}</h1>
             <p data-qa-target='sub-title'>{size} {type}, {alignment}</p>
             <hr/>
             <dl>

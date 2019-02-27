@@ -11,10 +11,6 @@ class MonsterBlockPageObject {
         this.component = component;
     }
 
-    getTitle() {
-        return this.component.find('h1').text().trim();
-    }
-
     getSubTitle() {
         return this.component.find('[data-qa-target="sub-title"]').text().trim();
     }
@@ -122,8 +118,7 @@ describe('MonsterBlock', ()=> {
     
     test('MonsterBlock renders with default props', () => {
         const pageObject = new MonsterBlockPageObject(monsterBlock);
-        
-        expect(pageObject.getTitle()).toEqual('Title');
+
         expect(pageObject.getSubTitle()).toEqual('Medium Humanoid, Chaotic Good');
         
         expect(pageObject.getAc()).toEqual('10');

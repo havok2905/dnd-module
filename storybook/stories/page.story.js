@@ -4,6 +4,7 @@ import EmphasisBlock from '../../src/components/emphasis-block';
 import MonsterBlock from '../../src/components/monster-block';
 import RollTable from '../../src/components/roll-table';
 import '../../src/styles/components/page.scss';
+import CollapsableContainer from '../../src/components/collapsable-container';
 
 storiesOf('Page', module)
   .add('Page', () => {   
@@ -31,39 +32,40 @@ storiesOf('Page', module)
                     }
                 ]}
             />
-            <MonsterBlock
-                ac={10}
-                actions={[
-                {
-                    title: 'Test Attack',
-                    description: 'It does a thing. See? It does a thing!!!'
-                }
-                ]}
-                alignment='Chaotic Good'
-                challenge='1'
-                description="I'm a test creature"
-                features={[
-                {
-                    title: 'Test Feature',
-                    description: 'It does a thing. See? It does a thing!!!'
-                }
-                ]}
-                hp={100}
-                languages={['Common']}
-                senses={['Passive Perception 10']}
-                size='Medium'
-                speed='30 ft.'
-                stats={{
-                    str: 10,
-                    dex: 10,
-                    con: 10,
-                    int: 10,
-                    wis: 10,
-                    cha: 10
-                }}
-                title='Test Monster'
-                type='Humanoid'
-            />
+            <CollapsableContainer title='Test Monster'>
+                <MonsterBlock
+                    ac={10}
+                    actions={[
+                    {
+                        title: 'Test Attack',
+                        description: 'It does a thing. See? It does a thing!!!'
+                    }
+                    ]}
+                    alignment='Chaotic Good'
+                    challenge='1'
+                    description="I'm a test creature"
+                    features={[
+                    {
+                        title: 'Test Feature',
+                        description: 'It does a thing. See? It does a thing!!!'
+                    }
+                    ]}
+                    hp={100}
+                    languages={['Common']}
+                    senses={['Passive Perception 10']}
+                    size='Medium'
+                    speed='30 ft.'
+                    stats={{
+                        str: 10,
+                        dex: 10,
+                        con: 10,
+                        int: 10,
+                        wis: 10,
+                        cha: 10
+                    }}
+                    type='Humanoid'
+                />
+            </CollapsableContainer>
             <h2>Chapter 2</h2>
             <EmphasisBlock>
                 <p>

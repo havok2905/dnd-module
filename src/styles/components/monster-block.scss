@@ -1,9 +1,6 @@
 @import '../base/typography.scss';
-@import '../utils/bordered-container.scss';
 
 .monster-block {
-    @include bordered-container();
-
     ul, ol {
         margin-left: -20px;
     }
