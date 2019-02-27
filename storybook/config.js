@@ -5,9 +5,10 @@ function loadStories() {
     require('./stories/container.story.js');
     require('./stories/emphasis-block.story.js');
     require('./stories/monster-block.story.js');
+    require('./stories/page.story.js');
     require('./stories/roll-table.story.js');
 
-    require('./stories/page.story.js');
+    require('./stories/example.story.js');
 }
 
 configure(loadStories, module);
