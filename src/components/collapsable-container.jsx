@@ -23,15 +23,15 @@ class CollapsableContainer extends Component {
     render() {
         return (
             <div className='bordered-container'>
+                <h1 id={this.props.idSlug}
+                    data-qa-target='collapsable-container-title'>
+                    {this.props.title}
+                </h1>
                 <button className='button'
                         data-qa-target='collapsable-container-button'
                         onClick={this.toggleDisplay.bind(this)}>
                     Toggle
                 </button>
-                <h1 id={this.props.idSlug}
-                    data-qa-target='collapsable-container-title'>
-                    {this.props.title}
-                </h1>
                 <div data-qa-target='collapsable-container-children'>
                     {this.state.display ? this.props.children : null}
                 </div>

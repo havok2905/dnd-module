@@ -1,0 +1,9 @@
+.columns {
+    display: flex;
+
+    > * {
+        width: 50%;
+        box-sizing: border-box;
+        padding: 0 20px;
+    }
+}
