@@ -82,4 +82,4 @@ RollTable.propTypes = {
     ).isRequired
 };
 
-export default RollTable;
+export { RollTable };

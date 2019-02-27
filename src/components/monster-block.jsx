@@ -201,4 +201,4 @@ MonsterBlock.propTypes = MonsterBlockPropTypes;
 
 MonsterBlock.defaultProps = MonsterBlockDefaultProps;
 
-export default MonsterBlock;
+export { MonsterBlock };

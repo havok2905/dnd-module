@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import Container from '../../src/components/container';
+import { Container } from '../../src/components/container';
 
 storiesOf('Container', module)
   .add('Container', () => {

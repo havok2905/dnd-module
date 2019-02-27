@@ -32,4 +32,4 @@ TableOfContents.propTypes = {
     }))
 };
 
-export default TableOfContents;
+export { TableOfContents };

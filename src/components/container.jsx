@@ -20,4 +20,4 @@ Container.propTypes = {
     idSlug: PropTypes.string
 };
 
-export default Container;
+export { Container };

@@ -1,8 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import '../styles/components/page.scss';
 
-const Container = ({
+const Page = ({
     children
 })=> {    
     return (
@@ -12,4 +11,4 @@ const Container = ({
     );
 };
 
-export default Container;
+export { Page };

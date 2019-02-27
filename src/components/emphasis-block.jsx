@@ -19,4 +19,4 @@ EmphasisBlock.propTypes = {
     idSlug: PropTypes.string
 };
 
-export default EmphasisBlock;
+export { EmphasisBlock };

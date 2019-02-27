@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import EmphasisBlock from '../../src/components/emphasis-block';
+import { EmphasisBlock } from '../../src/components/emphasis-block';
 
 storiesOf('EmphasisBlock', module)
   .add('EmphasisBlock', () => {

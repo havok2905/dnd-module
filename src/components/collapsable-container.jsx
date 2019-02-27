@@ -40,4 +40,4 @@ class CollapsableContainer extends Component {
     }
 }
 
-export default CollapsableContainer;
+export { CollapsableContainer };

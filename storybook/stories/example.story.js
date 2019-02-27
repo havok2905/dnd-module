@@ -1,13 +1,13 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import EmphasisBlock from '../../src/components/emphasis-block';
-import MonsterBlock from '../../src/components/monster-block';
-import RollTable from '../../src/components/roll-table';
-import CollapsableContainer from '../../src/components/collapsable-container';
-import Container from '../../src/components/container';
-import Page from '../../src/components/page';
-import TableOfContents from '../../src/components/table-of-contents';
-import Columns from '../../src/components/columns';
+import { EmphasisBlock } from '../../src/components/emphasis-block';
+import { MonsterBlock } from '../../src/components/monster-block';
+import { RollTable } from '../../src/components/roll-table';
+import { CollapsableContainer } from '../../src/components/collapsable-container';
+import { Container } from '../../src/components/container';
+import { Page } from '../../src/components/page';
+import { TableOfContents } from '../../src/components/table-of-contents';
+import { Columns } from '../../src/components/columns';
 
 storiesOf('Example', module)
     .add('Example', () => {   

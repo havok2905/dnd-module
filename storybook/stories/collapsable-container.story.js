@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import CollapsableContainer from '../../src/components/collapsable-container';
+import { CollapsableContainer } from '../../src/components/collapsable-container';
 
 storiesOf('CollapsableContainer', module)
   .add('CollapsableContainer', () => {

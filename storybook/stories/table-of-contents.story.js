@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import TableOfContents from '../../src/components/table-of-contents';
+import { TableOfContents } from '../../src/components/table-of-contents';
 
 storiesOf('TableOfContents', module)
   .add('TableOfContents', () => {

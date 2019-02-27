@@ -11,4 +11,4 @@ const Columns = ({
     );
 };
 
-export default Columns;
+export { Columns };

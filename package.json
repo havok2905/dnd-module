@@ -2,8 +2,9 @@
   "name": "dnd-module",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/bundle.js",
   "scripts": {
+    "build": "webpack --mode=production",
     "lint": "eslint ./**/*.js",
     "test": "jest -c jest.config.js --coverage",
     "unit-test-coverage": "jest -c jest-unit.config.js --coverage",
@@ -14,6 +15,8 @@
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
     "@storybook/react": "^4.1.13",
     "babel-loader": "^8.0.5",
     "css-loader": "^2.1.0",
@@ -27,6 +30,7 @@
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.2.0"
   },
   "dependencies": {
