@@ -5,6 +5,7 @@ function loadStories() {
     require('./stories/columns.story.js');
     require('./stories/container.story.js');
     require('./stories/emphasis-block.story.js');
+    require('./stories/footer.story.js');
     require('./stories/monster-block.story.js');
     require('./stories/page.story.js');
     require('./stories/roll-table.story.js');

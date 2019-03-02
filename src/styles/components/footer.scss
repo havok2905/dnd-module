@@ -1,0 +1,17 @@
+@import '../base/typography.scss';
+@import '../base/colors.scss';
+
+.footer {
+    position: fixed;
+    z-index: 200;
+
+bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: darken($primary-muted, 10);
+    box-shadow: 0px 0px 10px 0px $black;
+    border-top: solid 1px $primary-muted;
+    color: $white;
+    margin: 0;
+    padding: 31px;
+}
