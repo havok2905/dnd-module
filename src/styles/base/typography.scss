@@ -4,35 +4,57 @@ $font-family: 'Open Sans', serif;
 
 $body-font-color: $black;
 
-$h1-font-size: 40px;
-$h2-font-size: 34px;
-$h3-font-size: 28px;
-$h4-font-size: 22px;
-$h5-font-size: 18px;
-$body-font-size: 12px;
-$sub-font-size: 10px;
+$h1-font-size: 31px;
+$h1-font-line-height: 47px;
 
-$line-height: 1.5;
+$h2-font-size: 25px;
+$h2-font-line-height: 39px;
+
+$h3-font-size: 19px;
+$h3-font-line-height: 30px;
+
+$h4-font-size: 15px;
+$h4-font-line-height: 25px;
+
+$body-font-size: 12px;
+$body-font-line-height: 20px;
+
+$sub-font-size: 9px;
+$sub-font-line-height: 16px;
 
 html, body {
     font-size: $body-font-size;
     font-family: $font-family;
     color: $body-font-color;
-    line-height: $line-height;
+    line-height: $body-font-line-height;
     background-color: $primary-muted;
 }
 
 h1 {
     font-size: $h1-font-size;
     font-family: $font-family;
+    line-height: $h1-font-line-height;
     color: $primary-muted;
 }
 
 h2 {
     font-size: $h2-font-size;
     font-family: $font-family;
+    line-height: $h2-font-line-height;
     color: $primary-muted;;
     border-bottom: solid 1px $grey-light;
+}
+
+h3 {
+    font-size: $h3-font-size;
+    font-family: $font-family;
+    line-height: $h3-font-line-height;
+}
+
+h4 {
+    font-size: $h4-font-size;
+    font-family: $font-family;
+    line-height: $h4-font-line-height;
 }
 
 a {
