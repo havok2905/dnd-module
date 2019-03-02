@@ -8,6 +8,7 @@ function loadStories() {
     require('./stories/footer.story.js');
     require('./stories/monster-block.story.js');
     require('./stories/page.story.js');
+    require('./stories/roll-form.story.js');
     require('./stories/roll-table.story.js');
     require('./stories/table-of-contents.story.js');
 
