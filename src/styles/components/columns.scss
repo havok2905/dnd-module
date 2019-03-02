@@ -6,4 +6,12 @@
         box-sizing: border-box;
         padding: 0 20px;
     }
+
+    @media only screen and (max-width: 700px)  {
+        display: block;
+
+        > * {
+            width: 100%;
+        }
+    }
 }

@@ -4,13 +4,13 @@ $font-family: 'Open Sans', serif;
 
 $body-font-color: $black;
 
-$h1-font-size: 49px;
-$h2-font-size: 39px;
-$h3-font-size: 31px;
-$h4-font-size: 25px;
-$h5-font-size: 20px;
-$body-font-size: 16px;
-$sub-font-size: 12px;
+$h1-font-size: 40px;
+$h2-font-size: 34px;
+$h3-font-size: 28px;
+$h4-font-size: 22px;
+$h5-font-size: 18px;
+$body-font-size: 12px;
+$sub-font-size: 10px;
 
 $line-height: 1.5;
 
@@ -19,19 +19,19 @@ html, body {
     font-family: $font-family;
     color: $body-font-color;
     line-height: $line-height;
-    background-color: $grey-light;
+    background-color: $primary-muted;
 }
 
 h1 {
     font-size: $h1-font-size;
     font-family: $font-family;
-    color: $black;
+    color: $primary-muted;
 }
 
 h2 {
     font-size: $h2-font-size;
     font-family: $font-family;
-    color: $black;
+    color: $primary-muted;;
     border-bottom: solid 1px $grey-light;
 }
 
@@ -42,6 +42,10 @@ a {
     &:hover {
         color: $primary-dark;
     }
+}
+
+td, th {
+    font-size: $body-font-size;
 }
 
 // TODO: Move this and replace with better styling rules
