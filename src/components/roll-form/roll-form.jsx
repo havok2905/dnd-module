@@ -23,7 +23,7 @@ class RollForm extends Component {
             <form onSubmit={this.roll.bind(this)}>
                 <input ref={this.rollInputRef} type='text' placeholder='1d20+0'/>
                 <button type='submit'>Roll</button>
-                <span>Roll: {this.state.roll}</span>
+                <p>Roll: <span>{this.state.roll}</span></p>
             </form>
         );
     }
