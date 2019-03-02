@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import DiceRoller from '../../services/dice-roller';
 
+import './roll-form.scss';
+
 class RollForm extends Component {
     constructor(props) {
         super(props);
@@ -20,7 +22,7 @@ class RollForm extends Component {
 
     render() {
         return (
-            <form onSubmit={this.roll.bind(this)}>
+            <form className='roll-form' onSubmit={this.roll.bind(this)}>
                 <input ref={this.rollInputRef} type='text' placeholder='1d20+0'/>
                 <button type='submit'>Roll</button>
                 <p>Roll: <span>{this.state.roll}</span></p>

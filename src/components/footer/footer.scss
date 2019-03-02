@@ -4,8 +4,7 @@
 .footer {
     position: fixed;
     z-index: 200;
-
-bottom: 0;
+    bottom: 0;
     width: 100%;
     box-sizing: border-box;
     background-color: darken($primary-muted, 10);
@@ -14,4 +13,11 @@ bottom: 0;
     color: $white;
     margin: 0;
     padding: 31px;
+
+    .roll-form,
+    [data-qa-target="scroll-to-top-button"] {
+        display: inline-block;
+        margin-right: 20px;
+        vertical-align: -webkit-baseline-middle;
+    }
 }

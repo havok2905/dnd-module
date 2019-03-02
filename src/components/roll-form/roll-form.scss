@@ -1,0 +1,24 @@
+@import '../../styles/base/colors.scss';
+
+.roll-form {
+    input {
+        height: 31px;
+        border: none;
+        padding: 0 0 0 12px;
+        outline: none;
+    }
+
+    button {
+        height: 31px;
+        border: none;
+        padding: 0 12px;
+        background-color: $primary-medium;
+        color: $white;
+        outline: none;
+        cursor: pointer;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+}
