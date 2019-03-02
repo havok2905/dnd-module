@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { MonsterBlock } from '../../src/components/monster-block';
+import { MonsterBlock } from '../../src/components/monster-block/monster-block';
 
 storiesOf('Monster Block', module)
   .add('Monster Block', () => {

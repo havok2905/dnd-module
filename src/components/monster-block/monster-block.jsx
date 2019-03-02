@@ -1,9 +1,8 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import '../styles/components/monster-block.scss';
-import '../styles/components/table.scss';
+import './monster-block.scss';
 
-import AbilityScoreCalculator from '../services/ability-score-calculator';
+import AbilityScoreCalculator from '../../services/ability-score-calculator';
 
 const MonsterBlockPropTypes = {
     ac: PropTypes.number.isRequired,

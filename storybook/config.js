@@ -1,6 +1,7 @@
 import { configure } from '@storybook/react';
 
 function loadStories() {
+    require('./stories/button.story.js');
     require('./stories/collapsable-container.story.js');
     require('./stories/columns.story.js');
     require('./stories/container.story.js');

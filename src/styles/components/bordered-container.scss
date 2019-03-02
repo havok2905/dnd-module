@@ -1,6 +1,0 @@
-@import '../base/typography.scss';
-@import '../utils/bordered-container.scss';
-
-.bordered-container {
-    @include bordered-container();
-}

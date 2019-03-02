@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../styles/components/bordered-container.scss';
+import './bordered-container.scss';
 
 const Container = ({
     title,

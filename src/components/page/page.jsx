@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/components/page.scss';
+import './page.scss';
 
 const Page = ({
     children

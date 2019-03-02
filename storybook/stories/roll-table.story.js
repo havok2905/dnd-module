@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { RollTable } from '../../src/components/roll-table';
+import { RollTable } from '../../src/components/roll-table/roll-table';
 
 storiesOf('RollTable', module)
   .add('RollTable', () => {

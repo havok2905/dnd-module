@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import DiceRoller from '../services/dice-roller';
+import DiceRoller from '../../services/dice-roller';
 
 class RollForm extends Component {
     constructor(props) {

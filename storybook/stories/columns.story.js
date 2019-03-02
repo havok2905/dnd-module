@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Columns } from '../../src/components/columns';
+import { Columns } from '../../src/components/containers/columns';
 
 storiesOf('Columns', module)
   .add('Columns', () => {

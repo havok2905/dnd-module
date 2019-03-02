@@ -1,6 +1,8 @@
 import React from 'react';
-import { RollForm } from './roll-form';
-import '../styles/components/footer.scss';
+import { RollForm } from '../roll-form/roll-form.jsx';
+import { Button } from '../button/button.jsx';
+
+import './footer.scss';
 
 const Footer = ()=> {
     const scrollToTop = ()=> {
@@ -13,9 +15,10 @@ const Footer = ()=> {
 
     return (
         <footer className='footer'>
-            <button onClick={scrollToTop} className='button'>
-                Back To Top
-            </button>
+            <Button onClick={scrollToTop}
+                    qaTarget='scroll-to-top-button'
+                    text='Back to Top'
+                    type='Button'/>
             <RollForm/>
         </footer>
     );

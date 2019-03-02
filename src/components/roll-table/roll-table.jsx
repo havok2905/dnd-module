@@ -1,9 +1,10 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import DiceRoller from '../services/dice-roller';
-import '../styles/components/roll-table.scss';
-import '../styles/components/button.scss';
-import '../styles/components/table.scss';
+import DiceRoller from '../../services/dice-roller';
+import { Button } from '../button/button.jsx';
+
+import './roll-table.scss';
+import '../../styles/base/table.scss';
 
 class RollTable extends Component {
     
@@ -52,10 +53,10 @@ class RollTable extends Component {
     render(){
         return (
             <section className='roll-table'>
-                <button className='button'
-                        onClick={this.roll.bind(this)}>
-                        Roll
-                </button>
+                <Button onClick={this.roll.bind(this)}
+                        qaTarget='roll-table-button'
+                        text='Roll'
+                        type='button'/>
                 <p>Roll: {this.state.roll}</p>
                 <table className='table'>
                     <thead>

@@ -1,7 +1,7 @@
 import React from 'react';
-import Enzyme, {shallow} from 'enzyme';
+import Enzyme, { mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import { RollTable } from '../../../src/components/roll-table';
+import { RollTable } from '../../../src/components/roll-table/roll-table';
 
 Enzyme.configure({adapter: new Adapter()});
 
@@ -31,7 +31,7 @@ let rollTable = null;
 
 describe('RollTable', ()=> {
     beforeEach(()=> {
-        rollTable = shallow(
+        rollTable = mount(
             <RollTable
                 title='Test Roll Table'
                 items={[

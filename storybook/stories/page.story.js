@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Page } from '../../src/components/page';
+import { Page } from '../../src/components/page/page';
 
 storiesOf('Page', module)
     .add('Page', () => {   

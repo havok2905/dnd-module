@@ -1,7 +1,7 @@
 import React from 'react';
-import Enzyme, {shallow} from 'enzyme';
+import Enzyme, { mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import { CollapsableContainer } from '../../../src/components/collapsable-container';
+import { CollapsableContainer } from '../../../src/components/containers/collapsable-container';
 
 Enzyme.configure({adapter: new Adapter()});
 
@@ -27,7 +27,7 @@ let collapsableContainer = null;
 
 describe('CollapsableContainer', ()=> {
     beforeEach(()=> {
-        collapsableContainer = shallow(
+        collapsableContainer = mount(
             <CollapsableContainer title='Test Container'>
                 <p>Foo</p>
             </CollapsableContainer>
