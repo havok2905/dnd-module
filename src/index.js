@@ -4,6 +4,7 @@ import { Columns } from './components/containers/columns.jsx';
 import { Container } from './components/containers/container.jsx';
 import { EmphasisBlock } from './components/emphasis-block/emphasis-block.jsx';
 import { Footer } from './components/footer/footer.jsx';
+import { ItemBlock } from './components/item-block/item-block.jsx';
 import { MonsterBlock } from './components/monster-block/monster-block.jsx';
 import { Page } from './components/page/page.jsx';
 import { QuickRef } from './components/quick-ref/quick-ref.jsx';
@@ -18,6 +19,7 @@ export {
     Container,
     EmphasisBlock,
     Footer,
+    ItemBlock,
     MonsterBlock,
     Page,
     QuickRef,
