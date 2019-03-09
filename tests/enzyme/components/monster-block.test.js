@@ -86,6 +86,10 @@ class MonsterBlockPageObject {
     getSenses() {
         return this.component.find('[data-qa-target="senses"]');
     }
+
+    getImage() {
+        return this.component.find('[data-qa-target="monster-image"]');
+    }
 }
 
 const defaultProps = {
@@ -111,6 +115,8 @@ describe('MonsterBlock', ()=> {
     test('MonsterBlock renders with default props', () => {
         const monsterBlock = shallow(<MonsterBlock {...defaultProps}/>);
         const pageObject = new MonsterBlockPageObject(monsterBlock);
+
+        expect(pageObject.getImage()).toHaveLength(0);
 
         expect(pageObject.getSubTitle()).toEqual('Medium Humanoid, Chaotic Good');
         
@@ -306,5 +312,17 @@ describe('MonsterBlock', ()=> {
         const pageObject = new MonsterBlockPageObject(monsterBlock);
         
         expect(pageObject.getSenses()).toHaveLength(1);
+    });
+
+    test('MonsterBlock renders image', () => {
+        const props = {
+            ...defaultProps, 
+            image: 'image'
+        };
+
+        const monsterBlock = shallow(<MonsterBlock {...props}/>);
+        const pageObject = new MonsterBlockPageObject(monsterBlock);
+        
+        expect(pageObject.getImage()).toHaveLength(1);
     });
 });

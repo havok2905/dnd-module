@@ -22,6 +22,7 @@ const MonsterBlockPropTypes = {
         description: PropTypes.string.isRequired
     })),
     hp: PropTypes.number.isRequired,
+    image: PropTypes.string,
     languages: PropTypes.arrayOf(PropTypes.string),
     reactions: PropTypes.arrayOf(PropTypes.shape({
         title: PropTypes.string.isRequired,
@@ -70,6 +71,7 @@ const MonsterBlock = ({
     description,
     features,
     hp,
+    image,
     languages,
     reactions,
     savingThrows,
@@ -131,10 +133,19 @@ const MonsterBlock = ({
                 <p data-qa-target='description'>{description}</p>
             </Fragment>
         )
-    }
+    };
+
+    const renderImage = ()=> {
+        if(!image) {
+            return;
+        }
+
+        return <img data-qa-target='monster-image' src={image} alt='monster image'/>
+    };
 
     return (
         <section className='monster-block'>
+            {renderImage()}
             <p data-qa-target='sub-title'>{size} {type}, {alignment}</p>
             <hr/>
             <dl>

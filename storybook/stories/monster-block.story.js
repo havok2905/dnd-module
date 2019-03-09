@@ -23,6 +23,7 @@ storiesOf('Monster Block', module)
           }
         ]}
         hp={100}
+        image='https://placekitten.com/900/300'
         languages={['Common']}
         senses={['Passive Perception 10']}
         size='Medium'
