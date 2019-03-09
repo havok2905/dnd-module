@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import {
     movement,
     action,
@@ -8,10 +8,12 @@ import {
     environmentalEffects
 } from './rules';
 
+import './quick-ref.scss';
+
 const QuickRef = ()=> {
     const generateList = (items)=> {
         return (
-            <ul>
+            <dl>
                 {items.map((item)=> {
                     return (
                         <div>
@@ -20,12 +22,12 @@ const QuickRef = ()=> {
                         </div>
                     )
                 })}
-            </ul>
+            </dl>
         );
     };
 
     return (
-        <Fragment>
+        <section className='quick-ref'>
             <h1>Quick Reference</h1>
             <h2>Movement</h2>
             <p>limited by movement speed</p>
@@ -47,7 +49,7 @@ const QuickRef = ()=> {
             {generateList(condition)}
             <h2>Environmental Effects</h2>
             {generateList(environmentalEffects)}
-        </Fragment>
+        </section>
     );
 };
 
