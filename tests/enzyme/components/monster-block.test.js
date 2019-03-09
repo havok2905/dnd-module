@@ -88,35 +88,28 @@ class MonsterBlockPageObject {
     }
 }
 
-let monsterBlock = null;
+const defaultProps = {
+    ac: 10,
+    alignment: 'Chaotic Good',
+    challenge: '1',
+    hp: 100,
+    size: 'Medium',
+    speed: '30 ft.',
+    stats:{
+        str: 10,
+        dex: 10,
+        con: 10,
+        int: 10,
+        wis: 10,
+        cha: 10
+    },
+    title: 'Title',
+    type: 'Humanoid'
+};
 
 describe('MonsterBlock', ()=> {
-    beforeEach(()=> {
-        monsterBlock = shallow(
-            <MonsterBlock
-                ac={10}
-                alignment='Chaotic Good'
-                challenge='1'
-                description='description'
-                hp={100}
-                size='Medium'
-                speed='30 ft.'
-                stats={{
-                    str: 10,
-                    dex: 10,
-                    con: 10,
-                    int: 10,
-                    wis: 10,
-                    cha: 10
-                }}
-                title='Title'
-                type='Humanoid'
-            />
-        );
-    });
-
-    
     test('MonsterBlock renders with default props', () => {
+        const monsterBlock = shallow(<MonsterBlock {...defaultProps}/>);
         const pageObject = new MonsterBlockPageObject(monsterBlock);
 
         expect(pageObject.getSubTitle()).toEqual('Medium Humanoid, Chaotic Good');
@@ -140,19 +133,178 @@ describe('MonsterBlock', ()=> {
         expect(pageObject.getAbilityMod(4)).toEqual('0');
         expect(pageObject.getAbilityMod(5)).toEqual('0');
         
-        expect(pageObject.getFeatures()).toEqual({});
-        expect(pageObject.getActions()).toEqual({});
-        expect(pageObject.getReactions()).toEqual({});
+        expect(pageObject.getFeatures()).toHaveLength(0);
+        expect(pageObject.getActions()).toHaveLength(0);
+        expect(pageObject.getReactions()).toHaveLength(0);
         
-        expect(pageObject.getDescription()).toEqual({});
+        expect(pageObject.getDescription()).toHaveLength(0);
 
-        expect(pageObject.getSavingThrows()).toEqual({});
-        expect(pageObject.getSkills()).toEqual({});
-        expect(pageObject.getConditionImmunities()).toEqual({});
-        expect(pageObject.getDamageImmunities()).toEqual({});
-        expect(pageObject.getDamageResistances()).toEqual({});
-        expect(pageObject.getDamageWeaknesses()).toEqual({});
-        expect(pageObject.getLanguages()).toEqual({});
-        expect(pageObject.getSenses()).toEqual({});
+        expect(pageObject.getSavingThrows()).toHaveLength(0);
+        expect(pageObject.getSkills()).toHaveLength(0);
+        expect(pageObject.getConditionImmunities()).toHaveLength(0);
+        expect(pageObject.getDamageImmunities()).toHaveLength(0);
+        expect(pageObject.getDamageResistances()).toHaveLength(0);
+        expect(pageObject.getDamageWeaknesses()).toHaveLength(0);
+        expect(pageObject.getLanguages()).toHaveLength(0);
+        expect(pageObject.getSenses()).toHaveLength(0);
+    });
+
+    test('MonsterBlock renders features', () => {
+        const props = {
+            ...defaultProps, 
+            features: [
+                {
+                    title: 'title',
+                    description: 'description'
+                }
+            ]
+        };
+
+        const monsterBlock = shallow(<MonsterBlock {...props}/>);
+        const pageObject = new MonsterBlockPageObject(monsterBlock);
+        
+        expect(pageObject.getFeatures()).toHaveLength(1);
+    });
+
+    test('MonsterBlock renders actions', () => {
+        const props = {
+            ...defaultProps, 
+            actions: [
+                {
+                    title: 'title',
+                    description: 'description'
+                }
+            ]
+        };
+
+        const monsterBlock = shallow(<MonsterBlock {...props}/>);
+        const pageObject = new MonsterBlockPageObject(monsterBlock);
+        
+        expect(pageObject.getActions()).toHaveLength(1);
+    });
+
+    test('MonsterBlock renders reactions', () => {
+        const props = {
+            ...defaultProps, 
+            reactions: [
+                {
+                    title: 'title',
+                    description: 'description'
+                }
+            ]
+        };
+
+        const monsterBlock = shallow(<MonsterBlock {...props}/>);
+        const pageObject = new MonsterBlockPageObject(monsterBlock);
+        
+        expect(pageObject.getReactions()).toHaveLength(1);
+    });
+
+    test('MonsterBlock renders description', () => {
+        const props = {
+            ...defaultProps, 
+            description: 'description'
+        };
+
+        const monsterBlock = shallow(<MonsterBlock {...props}/>);
+        const pageObject = new MonsterBlockPageObject(monsterBlock);
+        
+        expect(pageObject.getDescription()).toHaveLength(1);
+    });
+
+    test('MonsterBlock renders saving throws', () => {
+        const props = {
+            ...defaultProps, 
+            savingThrows: ['savingThrows']
+        };
+
+        const monsterBlock = shallow(<MonsterBlock {...props}/>);
+        const pageObject = new MonsterBlockPageObject(monsterBlock);
+        
+        expect(pageObject.getSavingThrows()).toHaveLength(1);
+    });
+
+    test('MonsterBlock renders skills', () => {
+        const props = {
+            ...defaultProps, 
+            skills: ['skills']
+        };
+
+        const monsterBlock = shallow(<MonsterBlock {...props}/>);
+        const pageObject = new MonsterBlockPageObject(monsterBlock);
+        
+        expect(pageObject.getSkills()).toHaveLength(1);
+    });
+
+    test('MonsterBlock renders condition immunities', () => {
+        const props = {
+            ...defaultProps, 
+            conditionImmunities: ['immunities']
+        };
+
+        const monsterBlock = shallow(<MonsterBlock {...props}/>);
+        const pageObject = new MonsterBlockPageObject(monsterBlock);
+        
+        expect(pageObject.getConditionImmunities()).toHaveLength(1);
+    });
+
+    test('MonsterBlock renders damage immunities', () => {
+        const props = {
+            ...defaultProps, 
+            damageImmunities: ['immunities']
+        };
+
+        const monsterBlock = shallow(<MonsterBlock {...props}/>);
+        const pageObject = new MonsterBlockPageObject(monsterBlock);
+        
+        expect(pageObject.getDamageImmunities()).toHaveLength(1);
+    });
+
+    test('MonsterBlock renders damage resistance', () => {
+        const props = {
+            ...defaultProps, 
+            damageResistances: ['resistances']
+        };
+
+        const monsterBlock = shallow(<MonsterBlock {...props}/>);
+        const pageObject = new MonsterBlockPageObject(monsterBlock);
+        
+        expect(pageObject.getDamageResistances()).toHaveLength(1);
+    });
+
+    test('MonsterBlock renders damage weakness', () => {
+        const props = {
+            ...defaultProps, 
+            damageWeaknesses: ['weaknesses']
+        };
+
+        const monsterBlock = shallow(<MonsterBlock {...props}/>);
+        const pageObject = new MonsterBlockPageObject(monsterBlock);
+        
+        expect(pageObject.getDamageWeaknesses()).toHaveLength(1);
+    });
+
+    test('MonsterBlock renders languages', () => {
+        const props = {
+            ...defaultProps, 
+            languages: ['language']
+        };
+
+        const monsterBlock = shallow(<MonsterBlock {...props}/>);
+        const pageObject = new MonsterBlockPageObject(monsterBlock);
+        
+        expect(pageObject.getLanguages()).toHaveLength(1);
+    });
+
+    test('MonsterBlock renders senses', () => {
+        const props = {
+            ...defaultProps, 
+            senses: ['sense']
+        };
+
+        const monsterBlock = shallow(<MonsterBlock {...props}/>);
+        const pageObject = new MonsterBlockPageObject(monsterBlock);
+        
+        expect(pageObject.getSenses()).toHaveLength(1);
     });
 });

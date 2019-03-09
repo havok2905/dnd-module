@@ -128,7 +128,7 @@ const MonsterBlock = ({
         return (
             <Fragment>
                 <h2>Description</h2>
-                <p data-qaTarget='description'>{description}</p>
+                <p data-qa-target='description'>{description}</p>
             </Fragment>
         )
     }
