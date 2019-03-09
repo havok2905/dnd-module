@@ -30,6 +30,7 @@ A library of React components for the purpose of building dnd modules
 
 ## Release
 
+- Run a dist build
 - Set a new versioned, tagged branch, using semantic versioning standards. https://semver.org/
 - Make a PR into master
 - Publish master to NPM
