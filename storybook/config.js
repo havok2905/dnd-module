@@ -10,6 +10,7 @@ function loadStories() {
     require('./stories/item-block.story.js');
     require('./stories/monster-block.story.js');
     require('./stories/page.story.js');
+    require('./stories/pan-zoom.story.js');
     require('./stories/quick-ref.story.js');
     require('./stories/roll-form.story.js');
     require('./stories/roll-table.story.js');
