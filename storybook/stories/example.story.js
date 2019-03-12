@@ -129,7 +129,11 @@ storiesOf('Example', module)
                         </Columns>
                     </EmphasisBlock>
                 </Page>
-                <Footer/>
+                <Footer {...{
+                    quickRefButton: true,
+                    rollForm: true,
+                    scrollButton: true
+                }}/>
             </React.Fragment>
         );
     });

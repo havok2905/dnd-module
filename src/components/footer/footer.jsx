@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
+import PropTypes from 'prop-types';
 import { RollForm } from '../roll-form/roll-form.jsx';
 import { Button } from '../button/button.jsx';
 import { QuickRef } from '../quick-ref/quick-ref.jsx';
@@ -7,6 +8,18 @@ import Modal from 'react-modal';
 import './footer.scss';
 
 class Footer extends Component {
+    static propTypes = {
+        quickRefButton: PropTypes.bool,
+        rollForm: PropTypes.bool,
+        scrollButton: PropTypes.bool
+    };
+
+    static defaultProps = {
+        quickRefButton: false,
+        rollForm: false,
+        scrollButton: false
+    };
+
     constructor(props) {
         super(props);
         this.state = {
@@ -30,18 +43,29 @@ class Footer extends Component {
         this.setState({modalIsOpen: false});
     }
 
-    render() {
+    getScrollToTopButton() {
+        if(!this.props.scrollButton) {
+            return;
+        }
+
+        return <Button onClick={this.scrollToTop.bind(this)}
+                       qaTarget='scroll-to-top-button'
+                       text='Back to Top'
+                       type='Button'/>;
+    }
+
+    getQuickRefButton() {
+        if(!this.props.quickRefButton) {
+            return;
+        }
+
         return (
-            <footer className='footer'>
-                <Button onClick={this.scrollToTop.bind(this)}
-                        qaTarget='scroll-to-top-button'
-                        text='Back to Top'
-                        type='Button'/>
-                <Button onClick={this.toggleModal.bind(this)}
-                        qaTarget='quick-ref-button'
-                        text='Toggle Quick Ref'
-                        type='Button'/>
-                <RollForm/>
+            <Fragment>
+                <Button 
+                    onClick={this.toggleModal.bind(this)}
+                    qaTarget='quick-ref-button'
+                    text='Toggle Quick Ref'
+                    type='Button'/>
                 <Modal
                     isOpen={this.state.modalIsOpen}
                     onRequestClose={this.closeModal.bind(this)}
@@ -49,6 +73,24 @@ class Footer extends Component {
                     style={{overlay:{ zIndex: 9000}}}>
                     <QuickRef/>
                 </Modal>
+            </Fragment>
+        );
+    }
+
+    getRollForm() {
+        if(!this.props.rollForm) {
+            return;
+        }
+
+        return <RollForm/>;
+    }
+
+    render() {
+        return (
+            <footer className='footer'>
+                {this.getScrollToTopButton()}
+                {this.getQuickRefButton()}
+                {this.getRollForm()}
             </footer>
         );
     }
