@@ -2,19 +2,30 @@
 
 .roll-form {
     input {
+        padding: 0 0 0 12px;
         height: 31px;
         border: none;
-        padding: 0 0 0 12px;
         outline: none;
     }
 
-    button {
-        height: 31px;
-        border: none;
+    &__submit-button {
         padding: 0 12px;
+        margin: 0 12px 0 0;
+        height: 31px;
+    }
+
+    &__dice-button {
+        margin: 5px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    button {
         background-color: $primary-medium;
         color: $white;
         outline: none;
+        border: none;
         cursor: pointer;
     }
 
