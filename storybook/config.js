@@ -5,6 +5,7 @@ function loadStories() {
     require('./stories/collapsable-container.story.js');
     require('./stories/columns.story.js');
     require('./stories/container.story.js');
+    require('./stories/dice-button.story.js');
     require('./stories/emphasis-block.story.js');
     require('./stories/footer.story.js');
     require('./stories/item-block.story.js');
