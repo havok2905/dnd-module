@@ -16,7 +16,8 @@
 
 
     .roll-form,
-    [data-qa-target="scroll-to-top-button"] {
+    [data-qa-target="scroll-to-top-button"],
+    [data-qa-target="quick-ref-button"] {
         display: inline-block;
         margin-right: 20px;
         margin-bottom: 0;
