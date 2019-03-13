@@ -1,3 +1,5 @@
+/* global d20 */
+
 import 'd20';
 
 const DiceRoller = {

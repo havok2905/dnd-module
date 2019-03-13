@@ -145,7 +145,7 @@ const reaction = [
 const condition = [
     {
         title: 'Blinded',
-        description: "You can't see"
+        description: 'You can\'t see'
     },
     {
         title: 'Exhaustion',
@@ -153,7 +153,7 @@ const condition = [
     },
     {
         title: 'Incapacitated',
-        description: "You can't take actions or reactions"
+        description: 'You can\'t take actions or reactions'
     },
     {
         title: 'Petrified',
@@ -173,7 +173,7 @@ const condition = [
     },
     {
         title: 'Invisible',
-        description: "You can't be seen"
+        description: 'You can\'t be seen'
     },
     {
         title: 'Poisoned',
@@ -185,7 +185,7 @@ const condition = [
     },
     {
         title: 'Deafened',
-        description: "You can't hear"
+        description: 'You can\'t hear'
     },
     {
         title: 'Grappled',
