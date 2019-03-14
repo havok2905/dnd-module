@@ -7,7 +7,7 @@ import { Footer } from './components/footer/footer.jsx';
 import { ItemBlock } from './components/item-block/item-block.jsx';
 import { MonsterBlock } from './components/monster-block/monster-block.jsx';
 import { Page } from './components/page/page.jsx';
-import { PanZoom } from './components/pan-zoom/pan-zoom';
+import { PanZoom } from './components/pan-zoom/pan-zoom.jsx';
 import { QuickRef } from './components/quick-ref/quick-ref.jsx';
 import { RollForm } from './components/roll-form/roll-form.jsx';
 import { RollTable } from './components/roll-table/roll-table.jsx';
