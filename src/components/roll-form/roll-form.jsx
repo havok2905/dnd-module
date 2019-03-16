@@ -16,8 +16,12 @@ class RollForm extends Component {
 
     roll(e) {
         e.preventDefault();
+        
         const str = this.rollInputRef.current.value;
         const roll = DiceRoller.raw(str);
+
+        this.rollInputRef.current.value = '';
+
         this.setState({ roll }); 
     }
 
@@ -32,13 +36,13 @@ class RollForm extends Component {
                 <p>Roll: <span>{this.state.roll}</span></p>
                 <input ref={this.rollInputRef} type='text' placeholder='1d20+0'/>
                 <button className='roll-form__submit-button' type='submit'>Roll</button>
-                <button className='roll-form__dice-button' onClick={this.rollDice.bind(this, 4)}>4</button>
-                <button className='roll-form__dice-button' onClick={this.rollDice.bind(this, 6)}>6</button>
-                <button className='roll-form__dice-button' onClick={this.rollDice.bind(this, 8)}>8</button>
-                <button className='roll-form__dice-button' onClick={this.rollDice.bind(this, 10)}>10</button>
-                <button className='roll-form__dice-button' onClick={this.rollDice.bind(this, 12)}>12</button>
-                <button className='roll-form__dice-button' onClick={this.rollDice.bind(this, 20)}>20</button>
-                <button className='roll-form__dice-button' onClick={this.rollDice.bind(this, 100)}>100</button>
+                <button className='roll-form__dice-button' type='button' onClick={this.rollDice.bind(this, 4)}>4</button>
+                <button className='roll-form__dice-button' type='button' onClick={this.rollDice.bind(this, 6)}>6</button>
+                <button className='roll-form__dice-button' type='button' onClick={this.rollDice.bind(this, 8)}>8</button>
+                <button className='roll-form__dice-button' type='button' onClick={this.rollDice.bind(this, 10)}>10</button>
+                <button className='roll-form__dice-button' type='button' onClick={this.rollDice.bind(this, 12)}>12</button>
+                <button className='roll-form__dice-button' type='button' onClick={this.rollDice.bind(this, 20)}>20</button>
+                <button className='roll-form__dice-button' type='button' onClick={this.rollDice.bind(this, 100)}>100</button>
             </form>
         );
     }

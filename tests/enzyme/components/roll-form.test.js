@@ -21,6 +21,10 @@ class RollFormPageObject {
     getForm() {
         return this.component.find('form');
     }
+
+    getQuickDiceButtons() {
+        return this.component.find('.roll-form__dice-button');
+    }
 }
 
 let rollForm = null;
@@ -37,11 +41,17 @@ describe('RollTable', ()=> {
         pageObject.getForm().simulate('submit');
 
         const roll =  parseInt(pageObject.getRoll());
-
-        console.log(roll);
-
         const isInRange = roll >= 6 && roll <= 25;
 
         expect(isInRange).toBe(true);        
+    });
+
+    test('RollForm will clear input after submission', ()=> {
+        const pageObject = new RollFormPageObject(rollForm);
+
+        pageObject.getInput().instance().value = '1d20+5';
+        pageObject.getForm().simulate('submit');
+
+        expect(pageObject.getInput().instance().value).toEqual('');
     });
 });
