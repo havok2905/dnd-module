@@ -92,7 +92,7 @@ const MonsterBlock = ({
             <Fragment>
                 <p><strong>{label}</strong></p>
                 <ul>
-                    {items.map(item => <li data-qa-target={qaTarget}>{item}</li>)}
+                    {items.map((item, index) => <li key={index} data-qa-target={qaTarget}>{item}</li>)}
                 </ul>
             </Fragment>
         );
@@ -108,9 +108,9 @@ const MonsterBlock = ({
                 <h2>{label}</h2>
                 <dl data-qa-target={qaTarget}>
                     {
-                        items.map((item) => {
+                        items.map((item, index) => {
                             return (
-                                <div>
+                                <div key={index}>
                                     <dt>{item.title}</dt>
                                     <dd>{item.description}</dd>
                                 </div>

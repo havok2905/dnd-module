@@ -14,9 +14,9 @@ const QuickRef = ()=> {
     const generateList = (items)=> {
         return (
             <dl>
-                {items.map((item)=> {
+                {items.map((item, index)=> {
                     return (
-                        <div>
+                        <div key={index}>
                             <dt>{item.title}</dt>
                             <dd>{item.description}</dd>
                         </div>

@@ -7,9 +7,9 @@ const TableOfContents = ({
     return (
         <ol className='table-of-contents-list'>
             {
-                contentsList.map((content)=> {
+                contentsList.map((content, index)=> {
                     return (
-                        <li>
+                        <li key={index}>
                             <a href={content.link}>{content.title}</a>
                             { 
                                 content.children && 
