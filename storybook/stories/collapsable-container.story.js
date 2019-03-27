@@ -1,8 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import { CollapsableContainer } from '../../src/components/containers/collapsable-container';
 
 storiesOf('CollapsableContainer', module)
+  .addDecorator(withInfo)
   .add('CollapsableContainer', () => {
     return (
       <CollapsableContainer title='Lorem Ipsum'>

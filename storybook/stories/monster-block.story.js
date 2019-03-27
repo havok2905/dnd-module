@@ -1,8 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import { MonsterBlock } from '../../src/components/monster-block/monster-block';
 
 storiesOf('Monster Block', module)
+  .addDecorator(withInfo)
   .add('Monster Block', () => {
     return (
       <MonsterBlock

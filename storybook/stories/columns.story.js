@@ -1,8 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import { Columns } from '../../src/components/containers/columns';
 
 storiesOf('Columns', module)
+  .addDecorator(withInfo)
   .add('Columns', () => {
     return (
       <Columns>

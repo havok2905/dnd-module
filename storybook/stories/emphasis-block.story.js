@@ -1,8 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import { EmphasisBlock } from '../../src/components/emphasis-block/emphasis-block';
 
 storiesOf('EmphasisBlock', module)
+  .addDecorator(withInfo)  
   .add('EmphasisBlock', () => {
     return (
       <EmphasisBlock>

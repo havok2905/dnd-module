@@ -1,8 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import { RollTable } from '../../src/components/roll-table/roll-table';
 
 storiesOf('RollTable', module)
+  .addDecorator(withInfo)
   .add('RollTable', () => {
     return (
       <RollTable

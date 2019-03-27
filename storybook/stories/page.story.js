@@ -1,8 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import { Page } from '../../src/components/page/page';
 
 storiesOf('Page', module)
+    .addDecorator(withInfo)
     .add('Page', () => {   
         return (
             <Page>
