@@ -23,4 +23,8 @@
         margin-bottom: 0;
         vertical-align: -webkit-baseline-middle;
     }
+
+    @media only screen and (max-width: 500px) {
+        display: none;
+    }
 }
