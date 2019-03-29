@@ -2,7 +2,6 @@ import React, { Component, Fragment } from 'react';
 import DiceRoller from '../../services/dice-roller';
 
 import './roll-form.scss';
-import './dice-button.scss';
 
 class RollForm extends Component {
     constructor(props) {
