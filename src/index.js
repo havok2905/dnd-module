@@ -11,6 +11,7 @@ import { PanZoom } from './components/pan-zoom/pan-zoom.jsx';
 import { QuickRef } from './components/quick-ref/quick-ref.jsx';
 import { RollForm } from './components/roll-form/roll-form.jsx';
 import { RollTable } from './components/roll-table/roll-table.jsx';
+import { ScrollToMe } from './components/scroll-to-me/scroll-to-me.jsx';
 import { TableOfContents } from './components/table-of-contents/table-of-contents.jsx';
 
 export {
@@ -27,5 +28,6 @@ export {
     QuickRef,
     RollForm,
     RollTable,
+    ScrollToMe,
     TableOfContents
 };
