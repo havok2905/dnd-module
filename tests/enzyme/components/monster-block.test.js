@@ -90,6 +90,10 @@ class MonsterBlockPageObject {
     getImage() {
         return this.component.find('[data-qa-target="monster-image"]');
     }
+
+    getInventory() {
+        return this.component.find('[data-qa-target="inventory"]');
+    }
 }
 
 const defaultProps = {
@@ -153,6 +157,7 @@ describe('MonsterBlock', ()=> {
         expect(pageObject.getDamageWeaknesses()).toHaveLength(0);
         expect(pageObject.getLanguages()).toHaveLength(0);
         expect(pageObject.getSenses()).toHaveLength(0);
+        expect(pageObject.getInventory()).toHaveLength(0);
     });
 
     test('MonsterBlock renders features', () => {
@@ -312,6 +317,18 @@ describe('MonsterBlock', ()=> {
         const pageObject = new MonsterBlockPageObject(monsterBlock);
         
         expect(pageObject.getSenses()).toHaveLength(1);
+    });
+
+    test('MonsterBlock renders inventory', () => {
+        const props = {
+            ...defaultProps, 
+            inventory: ['item']
+        };
+
+        const monsterBlock = shallow(<MonsterBlock {...props}/>);
+        const pageObject = new MonsterBlockPageObject(monsterBlock);
+        
+        expect(pageObject.getInventory()).toHaveLength(1);
     });
 
     test('MonsterBlock renders image', () => {

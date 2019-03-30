@@ -23,6 +23,7 @@ const MonsterBlockPropTypes = {
     })),
     hp: PropTypes.number.isRequired,
     image: PropTypes.string,
+    inventory: PropTypes.arrayOf(PropTypes.string),
     languages: PropTypes.arrayOf(PropTypes.string),
     reactions: PropTypes.arrayOf(PropTypes.shape({
         title: PropTypes.string.isRequired,
@@ -51,6 +52,7 @@ const MonsterBlockDefaultProps = {
     damageResistances: [],
     damageWeaknesses: [],
     features: [],
+    inventory: [],
     reactions: [],
     savingThrows: [],
     senses: [],
@@ -72,6 +74,7 @@ const MonsterBlock = ({
     features,
     hp,
     image,
+    inventory,
     languages,
     reactions,
     savingThrows,
@@ -200,6 +203,7 @@ const MonsterBlock = ({
             {renderAttributesSubsection('Senses', 'senses', senses)}
             <p data-qa-target='challenge'><strong>Challenge</strong> {challenge}</p>
             {renderDescription()}
+            {renderAttributesSubsection('Inventory', 'inventory', inventory)}
             {renderFeaturesActionsSpellsSubsection('Features', 'features', features)}
             {renderFeaturesActionsSpellsSubsection('Reactions', 'reactions', reactions)}
             {renderFeaturesActionsSpellsSubsection('Actions', 'actions', actions)}
