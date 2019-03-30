@@ -24,7 +24,10 @@ const TableOfContents = ({
                             { 
                                 content.children && 
                                 content.children.length > 0 && 
-                                <TableOfContents contentsList={content.children}/>
+                                <TableOfContents 
+                                    contentsList={content.children} 
+                                    hashReferencesSupported={hashReferencesSupported}
+                                />
                             }
                         </li>
                     )
