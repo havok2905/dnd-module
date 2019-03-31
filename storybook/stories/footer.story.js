@@ -1,34 +1,40 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
-import { Footer } from '../../src/components/footer/footer';
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import { withInfo } from "@storybook/addon-info";
+import { Footer } from "../../src/components/footer/footer";
 
-storiesOf('Footer', module)
-    .addDecorator(withInfo)    
-    .add('Footer All', () => {
+storiesOf("Footer", module)
+    .addDecorator(withInfo)
+    .add("Footer All", () => {
         return (
-            <Footer {...{
-                quickRefButton: true,
-                rollForm: true,
-                scrollButton: true
-            }}/>
+            <Footer
+                {...{
+                    quickRefButton: true,
+                    rollForm: true,
+                    scrollButton: true
+                }}
+            />
         );
     })
-    .add('Footer Some', () => {
+    .add("Footer Some", () => {
         return (
-            <Footer {...{
-                quickRefButton: true,
-                rollForm: false,
-                scrollButton: true
-            }}/>
+            <Footer
+                {...{
+                    quickRefButton: true,
+                    rollForm: false,
+                    scrollButton: true
+                }}
+            />
         );
     })
-    .add('Footer None', () => {
+    .add("Footer None", () => {
         return (
-            <Footer {...{
-                quickRefButton: false,
-                rollForm: false,
-                scrollButton: false
-            }}/>
+            <Footer
+                {...{
+                    quickRefButton: false,
+                    rollForm: false,
+                    scrollButton: false
+                }}
+            />
         );
     });

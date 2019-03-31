@@ -1,35 +1,31 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
-import { ItemBlock } from '../../src/components/item-block/item-block';
-import { Page } from '../../src/components/page/page';
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import { withInfo } from "@storybook/addon-info";
+import { ItemBlock } from "../../src/components/item-block/item-block";
+import { Page } from "../../src/components/page/page";
 
-storiesOf('ItemBlock', module)
-    .addDecorator(withInfo)  
-    .add('ItemBlock without image', () => {
+storiesOf("ItemBlock", module)
+    .addDecorator(withInfo)
+    .add("ItemBlock without image", () => {
         return (
             <Page>
-                <ItemBlock 
-                    name='name' 
-                    rarity='rarity' 
-                    type='type'
-                >
+                <ItemBlock name="name" rarity="rarity" type="type">
                     <p>Child text description</p>
                 </ItemBlock>
-            </Page>   
-        )
+            </Page>
+        );
     })
-    .add('ItemBlock with image', () => {
+    .add("ItemBlock with image", () => {
         return (
             <Page>
                 <ItemBlock
-                    image='https://placekitten.com/900/300'
-                    name='name' 
-                    rarity='rarity' 
-                    type='type'
+                    image="https://placekitten.com/900/300"
+                    name="name"
+                    rarity="rarity"
+                    type="type"
                 >
                     <p>Child text description</p>
                 </ItemBlock>
             </Page>
-        )
+        );
     });
