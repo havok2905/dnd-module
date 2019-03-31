@@ -10,7 +10,8 @@
         "unit-test-coverage": "jest -c jest-unit.config.js --coverage",
         "enzyme-test-coverage": "jest -c jest-enzyme.config.js --coverage",
         "storybook": "start-storybook -p 9001 -c storybook",
-        "deploy-storybook": "storybook-to-ghpages",
+        "build-storybook": "build-storybook -c storybook -o ./.out",
+        "deploy-storybook": "storybook-to-ghpages --out=.out --existing-output-dir=.out",
         "stylelint": "stylelint \"./src/**/*.scss\" --syntax scss"
     },
     "author": "",
@@ -20,7 +21,7 @@
         "@babel/preset-env": "^7.3.4",
         "@babel/preset-react": "^7.0.0",
         "@storybook/addon-info": "^5.0.5",
-        "@storybook/react": "^4.1.13",
+        "@nstorybook/react": "^4.1.13",
         "@storybook/storybook-deployer": "^2.8.1",
         "babel-loader": "^8.0.5",
         "css-loader": "^2.1.0",
