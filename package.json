@@ -5,7 +5,7 @@
     "main": "dist/bundle.js",
     "scripts": {
         "build": "webpack --mode=production",
-        "eslintlint": "eslint ./src/**/*.js",
+        "eslint": "eslint ./src/**/*.js",
         "test": "jest -c jest.config.js --coverage",
         "unit-test-coverage": "jest -c jest-unit.config.js --coverage",
         "enzyme-test-coverage": "jest -c jest-enzyme.config.js --coverage",
