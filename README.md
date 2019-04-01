@@ -18,19 +18,15 @@ https://havok2905.github.io/dnd-module
 
 ## Commands
 
+-   _npm run build_ Compiles the current library into a distributable package
+-   _npm run eslint_ Will run eslint on the project
 -   _npm test_ Runs all tests with aggregate test coverage
 -   _npm run unit-test-coverage_ Runs all unit tests with coverage
 -   _npm run enzyme-test-coverage_ Runs all enzyme tests with coverage
--   _npm run lint_ Will run eslint on the project
 -   _npm run storybook_ Builds the storybook project and runs on localhost
-
-## New Feature Development
-
--   Create a new branch from master as such feature/<branch-name>
--   Ensure all tests pass and are above 80%
--   Ensure all linters pass
--   Resolve all merge conflicts
--   Create a PR to master
+-   _npm run build-storybook_ Builds the storybook and outputs it to a .out dir
+-   _npm run deploy-storybook_ Deploys the result of _build-storybook_ to gh-pages
+-   _npm run stylelint_ Runs stylelint
 
 ## Release
 
