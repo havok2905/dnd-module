@@ -1,6 +1,7 @@
 import DEMON_HOUND from "./constants/demon-hound";
 import DEMON_LIZARD from "./constants/demon-lizard";
 import DEMON_OWLBEAR from "./constants/demon-owl-bear";
+import EMBER_BAT from "./constants/ember-bat";
 import GIANT_GHOSTLY_ARCTIC_CROCODILE from "./constants/giant-ghostly-arctic-crocodile";
 import QUEEN_SAND_BOA from "./constants/queen-sand-boa";
 import SAND_BOA_MONSTROSITY from "./constants/sand-boa-monstrosity";
@@ -11,6 +12,7 @@ export {
     DEMON_HOUND,
     DEMON_LIZARD,
     DEMON_OWLBEAR,
+    EMBER_BAT,
     GIANT_GHOSTLY_ARCTIC_CROCODILE,
     QUEEN_SAND_BOA,
     SAND_BOA_MONSTROSITY,
