@@ -18,7 +18,7 @@ export default {
         {
             title: "Glow",
             description:
-                "This creature emits a 20 foot radius warm light around itself at all times."
+                "This creature can emit a 20 foot radius warm light around itself."
         }
     ],
     hp: 12,
