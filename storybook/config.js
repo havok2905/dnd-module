@@ -7,6 +7,7 @@ function loadStories() {
     require("./stories/container.story.js");
     require("./stories/emphasis-block.story.js");
     require("./stories/footer.story.js");
+    require("./stories/hero.story.js");
     require("./stories/item-block.story.js");
     require("./stories/monster-block.story.js");
     require("./stories/page.story.js");

@@ -4,6 +4,7 @@ import { Columns } from "./containers/columns.jsx";
 import { Container } from "./containers/container.jsx";
 import { EmphasisBlock } from "./emphasis-block/emphasis-block.jsx";
 import { Footer } from "./footer/footer.jsx";
+import { Hero } from "./hero/hero.jsx";
 import { ItemBlock } from "./item-block/item-block.jsx";
 import { MonsterBlock } from "./monster-block/monster-block.jsx";
 import { Page } from "./page/page.jsx";
@@ -22,6 +23,7 @@ export {
     Container,
     EmphasisBlock,
     Footer,
+    Hero,
     ItemBlock,
     MonsterBlock,
     Page,
