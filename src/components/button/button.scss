@@ -1,5 +1,5 @@
-@import '../../styles/base/colors.scss';
-@import '../../styles/base/typography.scss';
+@import "../../styles/base/colors.scss";
+@import "../../styles/base/typography.scss";
 
 .button {
     background-color: $primary-medium;
@@ -10,6 +10,7 @@
     border-radius: 5px;
     outline: none;
     cursor: pointer;
+    transition: background-color 0.3s;
 
     &:hover {
         background-color: $primary-dark;

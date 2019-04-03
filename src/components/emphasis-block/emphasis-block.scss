@@ -1,10 +1,17 @@
-@import '../../styles/base/colors.scss';
-@import '../../styles/base/typography.scss';
+@import "../../styles/base/colors.scss";
+@import "../../styles/base/typography.scss";
 
 .emphasis-block {
-    padding: 20px;
     margin: 20px 0px;
     border-radius: 5px;
-    background-color: $accent-medium;
     color: $black;
+    text-align: center;
+
+    &__border {
+        width: 50%;
+    }
+
+    &__content {
+        text-align: left;
+    }
 }

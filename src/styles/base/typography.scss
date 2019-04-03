@@ -1,50 +1,50 @@
-@import './colors.scss';
+@import "./colors.scss";
 
-$font-family: 'Open Sans', serif;
+$font-family: "Open Sans", serif;
 
 $body-font-color: $black;
 
-$h1-font-size: 31px;
-$h1-font-line-height: 47px;
+$h1-font-size: 68px;
+$h1-font-line-height: 1.2;
 
-$h2-font-size: 25px;
-$h2-font-line-height: 39px;
+$h2-font-size: 42px;
+$h2-font-line-height: 1.5;
 
-$h3-font-size: 19px;
-$h3-font-line-height: 30px;
+$h3-font-size: 26px;
+$h3-font-line-height: 1.5;
 
-$h4-font-size: 15px;
-$h4-font-line-height: 25px;
+$h4-font-size: 16px;
+$h4-font-line-height: 1.5;
 
 $body-font-size: 12px;
-$body-font-line-height: 20px;
+$body-font-line-height: 2;
 
 $sub-font-size: 9px;
-$sub-font-line-height: 16px;
+$sub-font-line-height: 2;
 
-html, body {
-    margin: 0 0 100px 0;
+html,
+body {
+    margin: 0 0 150px 0;
     padding: 0;
     font-size: $body-font-size;
     font-family: $font-family;
     color: $body-font-color;
     line-height: $body-font-line-height;
-    background-color: $primary-muted;
+    background-color: $white;
 }
 
 h1 {
     font-size: $h1-font-size;
     font-family: $font-family;
     line-height: $h1-font-line-height;
-    color: $primary-muted;
+    color: $black;
 }
 
 h2 {
     font-size: $h2-font-size;
     font-family: $font-family;
     line-height: $h2-font-line-height;
-    color: $primary-muted;
-    border-bottom: solid 1px $grey-light;
+    color: $black;
 }
 
 h3 {
@@ -68,11 +68,7 @@ a {
     }
 }
 
-td, th {
+td,
+th {
     font-size: $body-font-size;
-}
-
-// TODO: Move this and replace with better styling rules
-img {
-    width: 100%;
 }

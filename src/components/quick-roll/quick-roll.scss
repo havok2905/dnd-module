@@ -1,0 +1,32 @@
+@import "../../styles/base/colors.scss";
+
+.quick-roll {
+    &__dice-button {
+        margin: 5px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    button {
+        background-color: $primary-medium;
+        color: $white;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: $primary-dark;
+        }
+
+        &:active {
+            background-color: $primary-light;
+        }
+    }
+
+    p {
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+}

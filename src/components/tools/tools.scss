@@ -1,0 +1,49 @@
+@import "../../styles/base/colors.scss";
+
+.tools {
+    .react-tabs {
+        &__tab-list {
+            list-style-type: none;
+            margin-left: -40px;
+            display: flex;
+        }
+
+        &__tab {
+            padding: 20px;
+            cursor: pointer;
+            background-color: $white;
+            border: solid 1px $grey-light;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: $primary-medium;
+                border-color: $primary-medium;
+                color: $white;
+            }
+
+            &:active {
+                background-color: $primary-light;
+                border-color: $primary-light;
+                color: $white;
+            }
+
+            &:first-child {
+                border-top-left-radius: 5px;
+            }
+
+            &:last-child {
+                border-top-right-radius: 5px;
+            }
+
+            * {
+                user-select: none;
+            }
+
+            &--selected {
+                background-color: $primary-medium;
+                border-color: $primary-medium;
+                color: $white;
+            }
+        }
+    }
+}

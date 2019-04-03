@@ -99,7 +99,7 @@ const Spell = ({
 
     return (
         <section className="spell-card">
-            <h1>{name}</h1>
+            <h3>{name}</h3>
             <div className="spell-card__subtext-block">
                 <p data-qa-target="level-school">
                     <strong>

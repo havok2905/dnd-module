@@ -1,11 +1,11 @@
-@import '../../styles/base/colors.scss';
-@import '../../styles/base/typography.scss';
+@import "../../styles/base/colors.scss";
+@import "../../styles/base/typography.scss";
 
 .roll-table {
     &__row {
         &--highlighted {
-            background-color: $accent-medium;
-            color: $black;
+            background-color: $primary-medium;
+            color: $white;
         }
     }
 }

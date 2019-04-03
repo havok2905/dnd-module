@@ -1,5 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
 const itemBlockPropTypes = {
     image: PropTypes.string,
@@ -8,18 +8,14 @@ const itemBlockPropTypes = {
     rarity: PropTypes.string.isRequired
 };
 
-const ItemBlock = ({
-    children,
-    image,
-    name,
-    rarity,
-    type
-})=> {
+const ItemBlock = ({ children, image, name, rarity, type }) => {
     return (
-        <section className='item-block'>
-            <h2>{name}</h2>
-            <p>{type}, {rarity}</p>
-            { image && <img src={image} alt={name}/> }
+        <section className="item-block">
+            <h3>{name}</h3>
+            <p>
+                {type}, {rarity}
+            </p>
+            {image && <img src={image} alt={name} />}
             {children}
         </section>
     );
