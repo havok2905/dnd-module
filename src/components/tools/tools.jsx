@@ -1,8 +1,8 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
-import { QuickRef } from "../quick-ref/quick-ref";
-import { QuickRoll } from "../quick-roll/quick-roll";
+import { QuickRef } from "../quick-ref/quick-ref.jsx";
+import { QuickRoll } from "../quick-roll/quick-roll.jsx";
 
 import "./tools.scss";
 

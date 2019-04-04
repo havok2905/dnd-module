@@ -7,7 +7,7 @@ Enzyme.configure({ adapter: new Adapter() });
 
 describe("Hero", () => {
     test("renders", () => {
-        const hero = shallow(<Hero />);
+        const hero = shallow(<Hero src="" alt="" />);
         expect(hero.exists()).toBe(true);
     });
 });
