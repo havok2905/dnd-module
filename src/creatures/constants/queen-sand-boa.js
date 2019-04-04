@@ -31,7 +31,8 @@ export default {
         },
         {
             title: "Bad Eye Sight",
-            title: "Takes disadvantage on perception checks related to sight."
+            description:
+                "Takes disadvantage on perception checks related to sight."
         }
     ],
     hp: 101,
