@@ -37,9 +37,12 @@ class RollForm extends Component {
                     type="text"
                     placeholder="1d20+0"
                 />
-                <p>
-                    Roll: <span>{this.state.roll}</span>
-                </p>
+                <span>
+                    Roll:
+                    <span data-qa-target="roll-form-result">
+                        {this.state.roll}
+                    </span>
+                </span>
             </form>
         );
     }

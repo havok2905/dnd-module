@@ -7,14 +7,13 @@
         font-size: 24px;
         padding: 0 0 0 20px;
         height: 60px;
-        width: 100%;
         border: none;
         outline: none;
         box-shadow: inset 0px 0px 5px $black;
         border-radius: 5px;
     }
 
-    p {
-        margin-bottom: 0;
+    span {
+        margin-left: 20px;
     }
 }
