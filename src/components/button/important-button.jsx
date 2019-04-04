@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./button.scss";
+import "./important-button.scss";
 
-const Button = ({ onClick, qaTarget, text, type }) => {
+const ImportantButton = ({ onClick, qaTarget, text, type }) => {
     return (
         <button
-            className="button"
+            className="important-button"
             data-qa-target={qaTarget}
             onClick={onClick}
             type={type}
@@ -15,16 +15,16 @@ const Button = ({ onClick, qaTarget, text, type }) => {
     );
 };
 
-Button.propTypes = {
+ImportantButton.propTypes = {
     onClick: PropTypes.func,
     qaTarget: PropTypes.string,
     text: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired
 };
 
-Button.defaultProps = {
+ImportantButton.defaultProps = {
     qaTarget: "",
     onClick: () => {}
 };
 
-export { Button };
+export { ImportantButton };

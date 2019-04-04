@@ -5,6 +5,7 @@ import { Container } from "./components/containers/container.jsx";
 import { EmphasisBlock } from "./components/emphasis-block/emphasis-block.jsx";
 import { Footer } from "./components/footer/footer.jsx";
 import { Hero } from "./components/hero/hero.jsx";
+import { ImportantButton } from "./components/button/important-button.jsx";
 import { ItemBlock } from "./components/item-block/item-block.jsx";
 import { MonsterBlock } from "./components/monster-block/monster-block.jsx";
 import { Page } from "./components/page/page.jsx";
@@ -30,6 +31,7 @@ export {
     EmphasisBlock,
     Footer,
     Hero,
+    ImportantButton,
     ItemBlock,
     MonsterBlock,
     Page,

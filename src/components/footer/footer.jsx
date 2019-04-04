@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { RollForm } from "../roll-form/roll-form.jsx";
-import { Button } from "../button/button.jsx";
+import { ImportantButton } from "../button/important-button.jsx";
 import { Columns } from "../containers/columns.jsx";
 
 import "./footer.scss";
@@ -21,7 +21,7 @@ class Footer extends Component {
     getScrollToTopButton() {
         return (
             <div>
-                <Button
+                <ImportantButton
                     onClick={this.scrollToTop.bind(this)}
                     qaTarget="scroll-to-top-button"
                     text="Back to Top"
