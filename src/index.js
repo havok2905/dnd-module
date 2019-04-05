@@ -20,11 +20,10 @@ import { TableOfContents } from "./components/table-of-contents/table-of-content
 import { Tools } from "./components/tools/tools.jsx";
 
 import * as Creatures from "./creatures/index";
+import * as Items from "./items/index";
 import * as Npcs from "./npcs/index";
 import * as Services from "./services/index";
 import * as Spells from "./spells/index";
-
-import LIGHTNING_ABSORBTION_ROD from "./items/lightning-abosrbtion-rod";
 
 export {
     Button,
@@ -47,8 +46,8 @@ export {
     Spell,
     TableOfContents,
     Tools,
-    LIGHTNING_ABSORBTION_ROD,
     Creatures,
+    Items,
     Npcs,
     Services,
     Spells
