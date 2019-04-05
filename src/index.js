@@ -23,6 +23,8 @@ import * as Creatures from "./creatures/index";
 import * as Services from "./services/index";
 import * as Spells from "./spells/index";
 
+import LIGHTNING_ABSORBTION_ROD from "./items/lightning-abosrbtion-rod";
+
 export {
     Button,
     CollapsableContainer,
@@ -44,6 +46,7 @@ export {
     Spell,
     TableOfContents,
     Tools,
+    LIGHTNING_ABSORBTION_ROD,
     Creatures,
     Services,
     Spells
