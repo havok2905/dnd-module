@@ -20,6 +20,7 @@ import { TableOfContents } from "./components/table-of-contents/table-of-content
 import { Tools } from "./components/tools/tools.jsx";
 
 import * as Creatures from "./creatures/index";
+import * as Npcs from "./npcs/index";
 import * as Services from "./services/index";
 import * as Spells from "./spells/index";
 
@@ -48,6 +49,7 @@ export {
     Tools,
     LIGHTNING_ABSORBTION_ROD,
     Creatures,
+    Npcs,
     Services,
     Spells
 };
