@@ -4,11 +4,11 @@ import { EmphasisBlock } from "../../src/components/emphasis-block/emphasis-bloc
 import { MonsterBlock } from "../../src/components/monster-block/monster-block";
 import { RollTable } from "../../src/components/roll-table/roll-table";
 import { CollapsableContainer } from "../../src/components/containers/collapsable-container";
-import { Container } from "../../src/components/containers/container";
 import { Footer } from "../../src/components/footer/footer";
 import { Hero } from "../../src/components/hero/hero";
 import { Page } from "../../src/components/page/page";
 import { TableOfContents } from "../../src/components/table-of-contents/table-of-contents";
+import { ScrollToMe } from "../../src/components/scroll-to-me/scroll-to-me";
 import { Columns } from "../../src/components/containers/columns";
 import { Tools } from "../../src/components/tools/tools";
 
@@ -23,6 +23,7 @@ storiesOf("Example", module).add("Example", () => {
                 <h1 id="root">Header One: Lorem Ipsum Dolor Set Amet</h1>
                 <Columns>
                     <div>
+                        <ScrollToMe scrollActionString="chapter-1" />
                         <h2>Chapter 1</h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -100,6 +101,7 @@ storiesOf("Example", module).add("Example", () => {
                                 type="Humanoid"
                             />
                         </CollapsableContainer>
+                        <ScrollToMe scrollActionString="chapter-2" />
                         <h2 id="chapter-2">Chapter 2</h2>
                         <EmphasisBlock idSlug="emphasis-block">
                             <p>
@@ -149,33 +151,19 @@ storiesOf("Example", module).add("Example", () => {
                     <div>
                         <h2 id="table-of-contents">Table of Contents</h2>
                         <TableOfContents
+                            hashReferencesSupported={false}
                             contentsList={[
                                 {
                                     title: "Chapter 1",
                                     link: "#chapter-1",
-                                    children: [
-                                        {
-                                            title: "Roll Table",
-                                            link: "#roll-table",
-                                            children: []
-                                        },
-                                        {
-                                            title: "Test Monster",
-                                            link: "#test-monster",
-                                            children: []
-                                        }
-                                    ]
+                                    scrollActionString: "chapter-1",
+                                    children: []
                                 },
                                 {
                                     title: "Chapter 2",
                                     link: "#chapter-2",
-                                    children: [
-                                        {
-                                            title: "Emphasis Block",
-                                            link: "#emphasis-block",
-                                            children: []
-                                        }
-                                    ]
+                                    scrollActionString: "chapter-2",
+                                    children: []
                                 }
                             ]}
                         />
