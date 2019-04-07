@@ -1,0 +1,20 @@
+@import "../../styles/base/colors.scss";
+@import "../../styles/base/typography.scss";
+
+.collection-list {
+    list-style-type: none;
+    margin-left: -40px;
+
+    .collection-list__item {
+        border: solid 1px $grey-light;
+        margin: 5px 0;
+        padding: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+            background-color: $primary-medium;
+            color: $white;
+        }
+    }
+}

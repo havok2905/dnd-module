@@ -32,7 +32,7 @@ export default {
         "This owlbear has rotting, mottled skin, missing feathers, and no fur.",
     features: [
         {
-            features: "Keen Sight and Smell.",
+            title: "Keen Sight and Smell.",
             description:
                 "The owlbear has advantage on Wisdom (Perception) checks that rely on sight or smell."
         }

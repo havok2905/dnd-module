@@ -37,7 +37,7 @@ export default {
         "Half a mile high, these pale grey creatures tower into the clouds above. They have long arms that drag at their sides with thick club like fingers. Through the haze of the clouds above you can see a glowing red orb peering down at you.",
     features: [
         {
-            features: "Telepathic Bond.",
+            title: "Telepathic Bond.",
             description:
                 "While the Titan Cyclops is on the same plane of existence as its master, it can magically convey what it Senses to its master, and the two can communicate telepathically."
         }
