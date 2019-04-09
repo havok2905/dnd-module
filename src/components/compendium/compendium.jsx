@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import { CreatureSearch } from "./creature-search";
-import { ItemList } from "./item-list";
+import { CreatureSearch } from "./creature-search.jsx";
+import { ItemList } from "./item-list.jsx";
 import Creatures from "../../creatures/index";
 import Npcs from "../../npcs/index";
 import Items from "../../items/index";
