@@ -15,7 +15,7 @@ import { QuickRoll } from "./components/quick-roll/quick-roll.jsx";
 import { RollForm } from "./components/roll-form/roll-form.jsx";
 import { RollTable } from "./components/roll-table/roll-table.jsx";
 import { ScrollToMe } from "./components/scroll-to-me/scroll-to-me.jsx";
-import { Spell } from "./components/spell/spell.jsx";
+import { Spell } from "./components/spell/spell.tsx";
 import { TableOfContents } from "./components/table-of-contents/table-of-contents.jsx";
 import { Tools } from "./components/tools/tools.jsx";
 

@@ -1,37 +1,11 @@
 import React, { Fragment } from "react";
-import PropTypes from "prop-types";
+import { ISpell } from "../../types/i-spell";
 
 import "./spell-card.scss";
 
-const spellPropTypes = {
-    name: PropTypes.string.isRequired,
-    rulesText: PropTypes.string.isRequired,
-    higherLevelsText: PropTypes.string,
-    level: PropTypes.number.isRequired,
-    school: PropTypes.oneOf([
-        "Abjuration",
-        "Conjuration",
-        "Divination",
-        "Enchantment",
-        "Evocation",
-        "Illusion",
-        "Necromancy",
-        "Transmutation"
-    ]).isRequired,
-    ritual: PropTypes.bool,
-    castTime: PropTypes.string.isRequired,
-    range: PropTypes.string.isRequired,
-    components: PropTypes.arrayOf(PropTypes.oneOf(["V", "S", "M"])).isRequired,
-    material: PropTypes.arrayOf(PropTypes.string),
-    concentration: PropTypes.bool,
-    duration: PropTypes.string.isRequired,
-    casters: PropTypes.arrayOf(PropTypes.string).isRequired
-};
-
 const spellDefaultProps = {
     ritual: false,
-    concentration: false,
-    material: []
+    concentration: false
 };
 
 const Spell = ({
@@ -48,7 +22,7 @@ const Spell = ({
     ritual,
     rulesText,
     school
-}) => {
+}: ISpell) => {
     const levelText = () => {
         if (level === 0) {
             return "Cantrip";
@@ -142,8 +116,6 @@ const Spell = ({
         </section>
     );
 };
-
-Spell.propTypes = spellPropTypes;
 
 Spell.defaultProps = spellDefaultProps;
 
