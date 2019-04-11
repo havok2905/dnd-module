@@ -1,11 +1,11 @@
-import { Button } from "./components/button/button.jsx";
+import { Button } from "./components/button/button.tsx";
 import { CollapsableContainer } from "./components/containers/collapsable-container.jsx";
 import { Columns } from "./components/containers/columns.jsx";
 import { Container } from "./components/containers/container.jsx";
 import { EmphasisBlock } from "./components/emphasis-block/emphasis-block.jsx";
 import { Footer } from "./components/footer/footer.jsx";
 import { Hero } from "./components/hero/hero.jsx";
-import { ImportantButton } from "./components/button/important-button.jsx";
+import { ImportantButton } from "./components/button/important-button.tsx";
 import { ItemBlock } from "./components/item-block/item-block.jsx";
 import { MonsterBlock } from "./components/monster-block/monster-block.jsx";
 import { Page } from "./components/page/page.jsx";

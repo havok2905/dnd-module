@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { RollForm } from "../roll-form/roll-form.jsx";
-import { ImportantButton } from "../button/important-button.jsx";
+import { ImportantButton } from "../button/important-button.tsx";
 import { Columns } from "../containers/columns.jsx";
 
 import "./footer.scss";

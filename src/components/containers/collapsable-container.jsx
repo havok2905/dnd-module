@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { Button } from "../button/button.jsx";
+import { Button } from "../button/button.tsx";
 
 import "./bordered-container.scss";
 
