@@ -1,13 +1,13 @@
-import React from "react";
-import PropTypes from "prop-types";
+import * as React from "react";
+import { IEmphasisBlock } from "./interfaces/i-emphasis-block";
+
 import "./emphasis-block.scss";
 
-const EmphasisBlock = ({ children, idSlug }) => {
+const EmphasisBlock = ({ children }: IEmphasisBlock) => {
     const divider = () => {
         return (
             <svg
                 xmlns="http://www.w3.org/2000/svg"
-                id="Layer_1"
                 data-name="Layer 1"
                 className="emphasis-block__border"
                 viewBox="0 0 227.59 23.04"
@@ -66,16 +66,12 @@ const EmphasisBlock = ({ children, idSlug }) => {
     };
 
     return (
-        <section id={idSlug} className="emphasis-block">
+        <section className="emphasis-block">
             {divider()}
             <div className="emphasis-block__content">{children}</div>
             {divider()}
         </section>
     );
-};
-
-EmphasisBlock.propTypes = {
-    idSlug: PropTypes.string
 };
 
 export { EmphasisBlock };
