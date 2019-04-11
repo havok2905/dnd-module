@@ -1,8 +1,7 @@
 import React, { Fragment } from "react";
 import PropTypes from "prop-types";
+import { StatBlock } from "../stat-block/stat-block";
 import "./monster-block.scss";
-
-import AbilityScoreCalculator from "../../services/ability-score-calculator";
 
 const MonsterBlockPropTypes = {
     ac: PropTypes.number.isRequired,
@@ -183,36 +182,7 @@ const MonsterBlock = ({
                 </div>
             </dl>
             <hr />
-            <table className="table table--center">
-                <thead>
-                    <tr>
-                        <th scope="col">STR</th>
-                        <th scope="col">DEX</th>
-                        <th scope="col">CON</th>
-                        <th scope="col">INT</th>
-                        <th scope="col">WIS</th>
-                        <th scope="col">CHA</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>{stats.str}</td>
-                        <td>{stats.dex}</td>
-                        <td>{stats.con}</td>
-                        <td>{stats.int}</td>
-                        <td>{stats.wis}</td>
-                        <td>{stats.cha}</td>
-                    </tr>
-                    <tr>
-                        <td>{AbilityScoreCalculator.getModifier(stats.str)}</td>
-                        <td>{AbilityScoreCalculator.getModifier(stats.dex)}</td>
-                        <td>{AbilityScoreCalculator.getModifier(stats.con)}</td>
-                        <td>{AbilityScoreCalculator.getModifier(stats.int)}</td>
-                        <td>{AbilityScoreCalculator.getModifier(stats.wis)}</td>
-                        <td>{AbilityScoreCalculator.getModifier(stats.cha)}</td>
-                    </tr>
-                </tbody>
-            </table>
+            <StatBlock />
             <hr />
             {renderAttributesSubsection(
                 "Saving Throws",

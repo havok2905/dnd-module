@@ -2,6 +2,7 @@ import { configure } from "@storybook/react";
 
 function loadStories() {
     require("./stories/button.story.js");
+    require("./stories/character-sheet.story.js");
     require("./stories/collapsable-container.story.js");
     require("./stories/columns.story.js");
     require("./stories/compendium.story.js");
@@ -17,7 +18,9 @@ function loadStories() {
     require("./stories/quick-ref.story.js");
     require("./stories/roll-form.story.js");
     require("./stories/roll-table.story.js");
+    require("./stories/skills-block.story.js");
     require("./stories/spell.story.js");
+    require("./stories/stat-block.story.js");
     require("./stories/table-of-contents.story.js");
 
     require("./stories/example.story.js");
