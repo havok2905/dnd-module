@@ -1,14 +1,14 @@
 module.exports = {
     verbose: true,
-    testMatch: [
-        '**/tests/enzyme/**/*.test.js'
-    ],
+    testMatch: ["**/tests/enzyme/**/*.test.js"],
     collectCoverageFrom: [
-        './src/services/**/*.js',
-        './src/components/**/*.js',
-        './src/components/**/*.jsx'
+        "./src/services/**/*.js",
+        "./src/components/**/*.js",
+        "./src/components/**/*.jsx",
+        "./src/components/**/*.js",
+        "./src/components/**/*.tsx"
     ],
     moduleNameMapper: {
-        '^.+\\.(css|less|scss)$': 'babel-jest'
+        "^.+\\.(css|less|scss)$": "babel-jest"
     }
 };

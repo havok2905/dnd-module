@@ -11,12 +11,21 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(js|jsx)$/,
+                test: /\.(js|jsx|ts|tsx)$/,
                 exclude: /node_modules/,
                 loader: "babel-loader",
                 options: {
-                    presets: ["@babel/preset-env", "@babel/react"]
+                    presets: [
+                        "@babel/preset-env",
+                        "@babel/react",
+                        "@babel/typescript"
+                    ]
                 }
+            },
+            {
+                test: /\.js$/,
+                use: ["source-map-loader"],
+                enforce: "pre"
             },
             {
                 test: /\.html$/,

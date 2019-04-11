@@ -1,0 +1,22 @@
+{
+    "presets": [
+        [
+            "@babel/react",
+            {
+                "targets": {
+                    "node": "current"
+                }
+            }
+        ],
+        "@babel/typescript",
+        [
+            "@babel/env",
+            {
+                "targets": {
+                    "node": "current"
+                }
+            }
+        ]
+    ],
+    "plugins": ["@babel/plugin-proposal-class-properties"]
+}
