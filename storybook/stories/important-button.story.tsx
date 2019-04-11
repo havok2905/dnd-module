@@ -1,19 +1,19 @@
-import React from "react";
+import * as React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
-import { Button } from "../../src/components/button/button";
+import { ImportantButton } from "../../src/components/button/important-button";
 import { Page } from "../../src/components/page/page";
 
-storiesOf("Button", module)
+storiesOf("ImportantButton", module)
     .addDecorator(withInfo)
-    .add("Button", () => {
+    .add("ImportantButton", () => {
         return (
             <Page>
-                <Button
+                <ImportantButton
                     onClick={() => {}}
                     qaTarget="roll-table-button"
                     text="Roll"
-                    type="button"
+                    typeStr="button"
                 />
             </Page>
         );

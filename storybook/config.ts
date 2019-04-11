@@ -1,7 +1,7 @@
 import { configure } from "@storybook/react";
 
 function loadStories() {
-    require("./stories/button.story.js");
+    require("./stories/button.story.tsx");
     require("./stories/collapsable-container.story.js");
     require("./stories/columns.story.js");
     require("./stories/compendium.story.js");
@@ -9,7 +9,7 @@ function loadStories() {
     require("./stories/emphasis-block.story.js");
     require("./stories/footer.story.js");
     require("./stories/hero.story.js");
-    require("./stories/important-button.story.js");
+    require("./stories/important-button.story.tsx");
     require("./stories/item-block.story.js");
     require("./stories/monster-block.story.js");
     require("./stories/page.story.js");
