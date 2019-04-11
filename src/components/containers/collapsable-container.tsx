@@ -1,21 +1,20 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
-import { Button } from "../button/button.tsx";
+import { Button } from "../button/button";
+import { ICollapsableContainerProps } from "./interfaces/i-collapsable-container-props";
+import { ICollapsableContainerState } from "./interfaces/i-collapsable-container-state";
 
 import "./bordered-container.scss";
 
-class CollapsableContainer extends Component {
-    static propTypes = {
-        title: PropTypes.string.isRequired,
-        idSlug: PropTypes.string
-    };
-
-    constructor(props) {
+class CollapsableContainer extends Component<
+    ICollapsableContainerProps,
+    ICollapsableContainerState
+> {
+    constructor(props: ICollapsableContainerProps) {
         super(props);
         this.state = { display: false };
     }
 
-    toggleDisplay() {
+    private toggleDisplay() {
         this.setState({
             display: !this.state.display
         });
@@ -24,16 +23,13 @@ class CollapsableContainer extends Component {
     render() {
         return (
             <div className="bordered-container">
-                <h3
-                    id={this.props.idSlug}
-                    data-qa-target="collapsable-container-title"
-                >
+                <h3 data-qa-target="collapsable-container-title">
                     {this.props.title}
                 </h3>
                 <Button
                     onClick={this.toggleDisplay.bind(this)}
                     qaTarget="collapsable-container-button"
-                    type="button"
+                    typeStr="button"
                     text="Toggle"
                 />
                 <div data-qa-target="collapsable-container-children">

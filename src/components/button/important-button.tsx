@@ -1,5 +1,5 @@
 import * as React from "react";
-import { IButton } from "./ibutton";
+import { IButton } from "./interfaces/i-button";
 import "./important-button.scss";
 
 const ImportantButton = ({ onClick, qaTarget, text, typeStr }: IButton) => {

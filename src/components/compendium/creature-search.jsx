@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
 import { advancedCreatureSearch } from "../../services/advanced-creature-search";
-import { CollapsableContainer } from "../containers/collapsable-container.jsx";
+import { CollapsableContainer } from "../containers/collapsable-container";
 import { MonsterBlock } from "../monster-block/monster-block.jsx";
 import "./form.scss";
 import "./collection-list.scss";

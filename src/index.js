@@ -1,7 +1,7 @@
 import { Button } from "./components/button/button.tsx";
-import { CollapsableContainer } from "./components/containers/collapsable-container.jsx";
+import { CollapsableContainer } from "./components/containers/collapsable-container.tsx";
 import { Columns } from "./components/containers/columns.jsx";
-import { Container } from "./components/containers/container.jsx";
+import { Container } from "./components/containers/container.tsx";
 import { EmphasisBlock } from "./components/emphasis-block/emphasis-block.jsx";
 import { Footer } from "./components/footer/footer.jsx";
 import { Hero } from "./components/hero/hero.jsx";

@@ -10,10 +10,6 @@ class ContainerPageObject {
         this.wrapper = wrapper;
     }
 
-    getTitle() {
-        return this.wrapper.find("h3");
-    }
-
     getContent() {
         return this.wrapper.find(".bordered-container");
     }
@@ -25,23 +21,14 @@ let pageObject = null;
 describe("Container", () => {
     beforeEach(() => {
         container = mount(
-            <Container title="title">
+            <Container>
                 <p>Foo</p>
             </Container>
         );
         pageObject = new ContainerPageObject(container);
     });
 
-    test("renders title", () => {
-        expect(
-            pageObject
-                .getTitle()
-                .text()
-                .trim()
-        ).toBe("title");
-    });
-
     test("renders children", () => {
-        expect(pageObject.getContent().children()).toHaveLength(2);
+        expect(pageObject.getContent().children()).toHaveLength(1);
     });
 });
