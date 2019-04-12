@@ -4,7 +4,7 @@ import { Columns } from "./components/containers/columns.tsx";
 import { Container } from "./components/containers/container.tsx";
 import { EmphasisBlock } from "./components/emphasis-block/emphasis-block.tsx";
 import { Footer } from "./components/footer/footer.tsx";
-import { Hero } from "./components/hero/hero.jsx";
+import { Hero } from "./components/hero/hero.tsx";
 import { ImportantButton } from "./components/button/important-button.tsx";
 import { ItemBlock } from "./components/item-block/item-block.jsx";
 import { MonsterBlock } from "./components/monster-block/monster-block.jsx";
