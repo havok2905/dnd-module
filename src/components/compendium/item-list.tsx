@@ -1,14 +1,11 @@
 import React, { Component, Fragment } from "react";
-import PropTypes from "prop-types";
 import { advancedItemSearch } from "../../services/advanced-item-search";
 import { CollapsableContainer } from "../containers/collapsable-container";
 import { ItemBlock } from "../item-block/item-block.jsx";
+import { IItemListState } from "./interfaces/i-item-list-state";
+import { IItemListProps } from "./interfaces/i-item-list-props";
 
-class ItemList extends Component {
-    static propTypes = {
-        items: PropTypes.array.isRequired
-    };
-
+class ItemList extends Component<IItemListProps, IItemListState> {
     static defaulProps = {
         items: []
     };

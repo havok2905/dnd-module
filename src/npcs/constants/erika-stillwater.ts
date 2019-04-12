@@ -1,4 +1,6 @@
-export default {
+import { ICreature } from "../../interfaces/i-creature";
+
+export const ERIKA_STILLWATER: ICreature = {
     ac: 18,
     actions: [
         {

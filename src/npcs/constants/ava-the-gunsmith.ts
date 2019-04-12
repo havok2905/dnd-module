@@ -1,4 +1,6 @@
-export default {
+import { ICreature } from "../../interfaces/i-creature";
+
+export const AVA_THE_GUNSMITH: ICreature = {
     ac: 17,
     actions: [
         {

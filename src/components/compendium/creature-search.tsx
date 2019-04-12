@@ -1,16 +1,17 @@
 import React, { Component, Fragment } from "react";
-import PropTypes from "prop-types";
 import { advancedCreatureSearch } from "../../services/advanced-creature-search";
 import { CollapsableContainer } from "../containers/collapsable-container";
 import { MonsterBlock } from "../monster-block/monster-block.jsx";
+import { ICreatureSearchState } from "./interfaces/i-creature-search-state";
+import { ICreatureSearchProps } from "./interfaces/i-creature-search-props";
+
 import "./form.scss";
 import "./collection-list.scss";
 
-class CreatureSearch extends Component {
-    static propTypes = {
-        creatures: PropTypes.array.isRequired
-    };
-
+class CreatureSearch extends Component<
+    ICreatureSearchProps,
+    ICreatureSearchState
+> {
     static defaultProps = {
         creatures: []
     };

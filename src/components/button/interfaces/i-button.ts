@@ -1,7 +1,7 @@
 interface IButton {
     onClick: () => void;
-    qaTarget: String;
-    text: String;
+    qaTarget: string;
+    text: string;
     typeStr: "button" | "submit" | "reset";
 }
 

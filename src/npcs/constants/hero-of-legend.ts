@@ -1,4 +1,6 @@
-export default {
+import { ICreature } from "../../interfaces/i-creature";
+
+export const HERO_OF_LEGEND: ICreature = {
     ac: 19,
     actions: [
         {

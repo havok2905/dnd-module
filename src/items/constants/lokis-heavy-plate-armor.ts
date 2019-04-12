@@ -1,4 +1,6 @@
-const LOKIS_HEAVY_PLATE_ARMOR = {
+import { IItem } from "../../interfaces/i-item";
+
+const LOKIS_HEAVY_PLATE_ARMOR: IItem = {
     image: null,
     name: "Loki's Heavy Plate Armor",
     type: "Armor",

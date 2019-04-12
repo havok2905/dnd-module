@@ -1,4 +1,6 @@
-const MARSHMALLOW_CAPSULE = {
+import { IItem } from "../../interfaces/i-item";
+
+const MARSHMALLOW_CAPSULE: IItem = {
     image: null,
     name: "Marshmallow Capsule",
     type: "Magic  Item",

@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { ISpell } from "../../types/i-spell";
+import { ISpell } from "../../interfaces/i-spell";
 
 import "./spell-card.scss";
 

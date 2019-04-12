@@ -1,7 +1,7 @@
 interface ISpell {
-    name: String;
-    rulesText: String;
-    higherLevelsText: String;
+    name: string;
+    rulesText: string;
+    higherLevelsText: string;
     level: number;
     school:
         | "Abjuration"
@@ -13,13 +13,13 @@ interface ISpell {
         | "Necromancy"
         | "Transmutation";
     ritual: Boolean;
-    castTime: String;
-    range: String;
+    castTime: string;
+    range: string;
     components: ["V" | "S" | "M"];
-    material: String[];
+    material: string[];
     concentration: Boolean;
-    duration: String;
-    casters: String[];
+    duration: string;
+    casters: string[];
 }
 
 export { ISpell };

@@ -1,4 +1,6 @@
-const LIGHTNING_ABSORBTION_ROD = {
+import { IItem } from "../../interfaces/i-item";
+
+const LIGHTNING_ABSORBTION_ROD: IItem = {
     image: null,
     name: "Lightning Absorbtion Rod",
     type: "Magic Item",

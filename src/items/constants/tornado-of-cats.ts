@@ -1,4 +1,6 @@
-const TORNADO_OF_CATS = {
+import { IItem } from "../../interfaces/i-item";
+
+const TORNADO_OF_CATS: IItem = {
     image: null,
     name: "Tornado of Cats",
     type: "Magic Item",

@@ -1,5 +1,5 @@
 interface ICollapsableContainerProps {
-    title: String;
+    title: string;
 }
 
 export { ICollapsableContainerProps };

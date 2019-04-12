@@ -1,15 +1,17 @@
 import React, { Fragment } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import { CreatureSearch } from "./creature-search.jsx";
-import { ItemList } from "./item-list.jsx";
+import { CreatureSearch } from "./creature-search";
+import { ItemList } from "./item-list";
 import Creatures from "../../creatures/index";
 import Npcs from "../../npcs/index";
 import Items from "../../items/index";
+import { IItem } from "../../interfaces/i-item";
+import { ICreature } from "../../interfaces/i-creature";
 
 import "../../styles/components/react-tabs.scss";
 
 const Compendium = () => {
-    const creatures = collection => {
+    const creatures = (collection): ICreature[] => {
         return Object.keys(collection).map(key => {
             const name = key.replace(/_/g, " ").toLowerCase();
             return {
@@ -19,7 +21,7 @@ const Compendium = () => {
         });
     };
 
-    const items = collection => {
+    const items = (collection): IItem[] => {
         return Object.keys(collection).map(key => {
             return collection[key];
         });

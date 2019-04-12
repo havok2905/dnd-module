@@ -1,4 +1,6 @@
-const SAILORS_SPEAR = {
+import { IItem } from "../../interfaces/i-item";
+
+const SAILORS_SPEAR: IItem = {
     image: null,
     name: "Sailor's Spear",
     type: "Magic Melee Weapon",
