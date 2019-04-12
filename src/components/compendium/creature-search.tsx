@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import { advancedCreatureSearch } from "../../services/advanced-creature-search";
 import { CollapsableContainer } from "../containers/collapsable-container";
-import { MonsterBlock } from "../monster-block/monster-block.jsx";
+import { MonsterBlock } from "../monster-block/monster-block";
 import { ICreatureSearchState } from "./interfaces/i-creature-search-state";
 import { ICreatureSearchProps } from "./interfaces/i-creature-search-props";
 

@@ -7,7 +7,7 @@ import { Footer } from "./components/footer/footer.tsx";
 import { Hero } from "./components/hero/hero.tsx";
 import { ImportantButton } from "./components/button/important-button.tsx";
 import { ItemBlock } from "./components/item-block/item-block.tsx";
-import { MonsterBlock } from "./components/monster-block/monster-block.jsx";
+import { MonsterBlock } from "./components/monster-block/monster-block.tsx";
 import { Page } from "./components/page/page.jsx";
 import { PanZoom } from "./components/pan-zoom/pan-zoom.jsx";
 import { QuickRef } from "./components/quick-ref/quick-ref.jsx";

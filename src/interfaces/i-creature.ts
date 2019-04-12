@@ -13,6 +13,7 @@ interface ICreature {
     description: string;
     features: IGenericItem[];
     hp: number;
+    image?: string;
     inventory?: string[];
     languages: string[];
     name?: string;

@@ -1,55 +1,8 @@
 import React, { Fragment } from "react";
-import PropTypes from "prop-types";
-import "./monster-block.scss";
-
 import AbilityScoreCalculator from "../../services/ability-score-calculator";
+import { ICreature } from "../../interfaces/i-creature";
 
-const MonsterBlockPropTypes = {
-    ac: PropTypes.number.isRequired,
-    actions: PropTypes.arrayOf(
-        PropTypes.shape({
-            title: PropTypes.string.isRequired,
-            description: PropTypes.string.isRequired
-        })
-    ),
-    alignment: PropTypes.string.isRequired,
-    challenge: PropTypes.string.isRequired,
-    conditionImmunities: PropTypes.arrayOf(PropTypes.string),
-    damageImmunities: PropTypes.arrayOf(PropTypes.string),
-    damageResistances: PropTypes.arrayOf(PropTypes.string),
-    damageWeaknesses: PropTypes.arrayOf(PropTypes.string),
-    description: PropTypes.string,
-    features: PropTypes.arrayOf(
-        PropTypes.shape({
-            title: PropTypes.string.isRequired,
-            description: PropTypes.string.isRequired
-        })
-    ),
-    hp: PropTypes.number.isRequired,
-    image: PropTypes.string,
-    inventory: PropTypes.arrayOf(PropTypes.string),
-    languages: PropTypes.arrayOf(PropTypes.string),
-    reactions: PropTypes.arrayOf(
-        PropTypes.shape({
-            title: PropTypes.string.isRequired,
-            description: PropTypes.string.isRequired
-        })
-    ),
-    savingThrows: PropTypes.arrayOf(PropTypes.string),
-    senses: PropTypes.arrayOf(PropTypes.string),
-    size: PropTypes.string.isRequired,
-    skills: PropTypes.arrayOf(PropTypes.string),
-    speed: PropTypes.string.isRequired,
-    stats: PropTypes.shape({
-        str: PropTypes.number.isRequired,
-        dex: PropTypes.number.isRequired,
-        con: PropTypes.number.isRequired,
-        int: PropTypes.number.isRequired,
-        wis: PropTypes.number.isRequired,
-        cha: PropTypes.number.isRequired
-    }).isRequired,
-    type: PropTypes.string.isRequired
-};
+import "./monster-block.scss";
 
 const MonsterBlockDefaultProps = {
     actions: [],
@@ -63,8 +16,7 @@ const MonsterBlockDefaultProps = {
     savingThrows: [],
     senses: [],
     skills: [],
-    languages: [],
-    senses: []
+    languages: []
 };
 
 const MonsterBlock = ({
@@ -90,7 +42,7 @@ const MonsterBlock = ({
     speed,
     stats,
     type
-}) => {
+}: ICreature) => {
     const renderAttributesSubsection = (label, qaTarget, items) => {
         if (!items || items.length <= 0) {
             return;
@@ -265,8 +217,6 @@ const MonsterBlock = ({
         </section>
     );
 };
-
-MonsterBlock.propTypes = MonsterBlockPropTypes;
 
 MonsterBlock.defaultProps = MonsterBlockDefaultProps;
 
