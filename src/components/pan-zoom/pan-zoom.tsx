@@ -1,8 +1,10 @@
-import React, { Component} from 'react';
-import panzoom from 'panzoom';
-import './pan-zoom.scss';
+import React, { Component } from "react";
+import panzoom from "panzoom";
+import "./pan-zoom.scss";
 
 class PanZoom extends Component {
+    private panZoomSection;
+
     constructor(props) {
         super(props);
     }
@@ -16,8 +18,12 @@ class PanZoom extends Component {
 
     render() {
         return (
-            <div className='pan-zoom'>
-                <div ref={(section)=> { this.panZoomSection = section }}>
+            <div className="pan-zoom">
+                <div
+                    ref={section => {
+                        this.panZoomSection = section;
+                    }}
+                >
                     {this.props.children}
                 </div>
             </div>
