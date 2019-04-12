@@ -1,9 +1,9 @@
 import { Button } from "./components/button/button.tsx";
 import { CollapsableContainer } from "./components/containers/collapsable-container.tsx";
-import { Columns } from "./components/containers/columns.jsx";
+import { Columns } from "./components/containers/columns.tsx";
 import { Container } from "./components/containers/container.tsx";
 import { EmphasisBlock } from "./components/emphasis-block/emphasis-block.tsx";
-import { Footer } from "./components/footer/footer.jsx";
+import { Footer } from "./components/footer/footer.tsx";
 import { Hero } from "./components/hero/hero.jsx";
 import { ImportantButton } from "./components/button/important-button.tsx";
 import { ItemBlock } from "./components/item-block/item-block.jsx";

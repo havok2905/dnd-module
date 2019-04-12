@@ -1,10 +1,13 @@
 import React, { Component } from "react";
-import DiceRoller from "../../services/dice-roller";
+import { DiceRoller } from "../../services/dice-roller";
+import { IRollFormState } from "./interfaces/i-roll-form-state";
 
 import "./roll-form.scss";
 
-class RollForm extends Component {
-    constructor(props) {
+class RollForm extends Component<any, IRollFormState> {
+    private rollInputRef: React.RefObject<any>;
+
+    constructor(props: any) {
         super(props);
         this.state = {
             roll: 0
@@ -13,19 +16,14 @@ class RollForm extends Component {
         this.rollInputRef = React.createRef();
     }
 
-    roll(e) {
+    private roll(e: any) {
         e.preventDefault();
 
         const str = this.rollInputRef.current.value;
-        const roll = DiceRoller.raw(str);
+        const roll = DiceRoller.roll(str);
 
         this.rollInputRef.current.value = "";
 
-        this.setState({ roll });
-    }
-
-    rollDice(numSides) {
-        const roll = DiceRoller.rollDice(1, numSides);
         this.setState({ roll });
     }
 

@@ -31,6 +31,10 @@ let rollTable = null;
 
 describe("RollTable", () => {
     beforeEach(() => {
+        const mockMath = Object.create(global.Math);
+        mockMath.random = () => 0.99;
+        global.Math = mockMath;
+
         rollTable = mount(
             <RollTable
                 title="Test Roll Table"

@@ -2,7 +2,7 @@ interface ISpell {
     name: String;
     rulesText: String;
     higherLevelsText: String;
-    level: Number;
+    level: number;
     school:
         | "Abjuration"
         | "Conjuration"

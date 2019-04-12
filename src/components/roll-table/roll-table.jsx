@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import DiceRoller from "../../services/dice-roller";
+import { DiceRoller } from "../../services/dice-roller";
 import { Button } from "../button/button.tsx";
 
 import "./roll-table.scss";
@@ -28,7 +28,7 @@ class RollTable extends Component {
 
     roll() {
         const max = this.findMax();
-        const roll = DiceRoller.rollDice(1, max);
+        const roll = DiceRoller.roll(`1d${max}`);
         this.setState({ roll });
     }
 

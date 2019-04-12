@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import DiceRoller from "../../services/dice-roller";
+import { DiceRoller } from "../../services/dice-roller";
 
 import "./quick-roll.scss";
 
@@ -11,8 +11,8 @@ class QuickRoll extends Component {
         };
     }
 
-    rollDice(numSides) {
-        const roll = DiceRoller.rollDice(1, numSides);
+    roll(str) {
+        const roll = DiceRoller.roll(str);
         this.setState({ roll });
     }
 
@@ -22,49 +22,49 @@ class QuickRoll extends Component {
                 <button
                     className="quick-roll__dice-button"
                     type="button"
-                    onClick={this.rollDice.bind(this, 4)}
+                    onClick={this.roll.bind(this, "1d4")}
                 >
                     4
                 </button>
                 <button
                     className="quick-roll__dice-button"
                     type="button"
-                    onClick={this.rollDice.bind(this, 6)}
+                    onClick={this.roll.bind(this, "1d6")}
                 >
                     6
                 </button>
                 <button
                     className="quick-roll__dice-button"
                     type="button"
-                    onClick={this.rollDice.bind(this, 8)}
+                    onClick={this.roll.bind(this, "1d8")}
                 >
                     8
                 </button>
                 <button
                     className="quick-roll__dice-button"
                     type="button"
-                    onClick={this.rollDice.bind(this, 10)}
+                    onClick={this.roll.bind(this, "1d10")}
                 >
                     10
                 </button>
                 <button
                     className="quick-roll__dice-button"
                     type="button"
-                    onClick={this.rollDice.bind(this, 12)}
+                    onClick={this.roll.bind(this, "1d12")}
                 >
                     12
                 </button>
                 <button
                     className="quick-roll__dice-button"
                     type="button"
-                    onClick={this.rollDice.bind(this, 20)}
+                    onClick={this.roll.bind(this, "1d20")}
                 >
                     20
                 </button>
                 <button
                     className="quick-roll__dice-button"
                     type="button"
-                    onClick={this.rollDice.bind(this, 100)}
+                    onClick={this.roll.bind(this, "1d100")}
                 >
                     100
                 </button>
