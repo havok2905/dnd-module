@@ -6,7 +6,7 @@ import { EmphasisBlock } from "./components/emphasis-block/emphasis-block.tsx";
 import { Footer } from "./components/footer/footer.tsx";
 import { Hero } from "./components/hero/hero.tsx";
 import { ImportantButton } from "./components/button/important-button.tsx";
-import { ItemBlock } from "./components/item-block/item-block.jsx";
+import { ItemBlock } from "./components/item-block/item-block.tsx";
 import { MonsterBlock } from "./components/monster-block/monster-block.jsx";
 import { Page } from "./components/page/page.jsx";
 import { PanZoom } from "./components/pan-zoom/pan-zoom.jsx";

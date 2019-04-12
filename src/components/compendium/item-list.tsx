@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import { advancedItemSearch } from "../../services/advanced-item-search";
 import { CollapsableContainer } from "../containers/collapsable-container";
-import { ItemBlock } from "../item-block/item-block.jsx";
+import { ItemBlock } from "../item-block/item-block";
 import { IItemListState } from "./interfaces/i-item-list-state";
 import { IItemListProps } from "./interfaces/i-item-list-props";
 
