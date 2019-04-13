@@ -6,6 +6,8 @@ import { CollapsableContainer } from "../../../src/components/containers/collaps
 Enzyme.configure({ adapter: new Adapter() });
 
 class CollapsableContainerPageObject {
+    private component;
+
     constructor(component) {
         this.component = component;
     }

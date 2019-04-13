@@ -6,6 +6,8 @@ import { MonsterBlock } from "../../../src/components/monster-block/monster-bloc
 Enzyme.configure({ adapter: new Adapter() });
 
 class MonsterBlockPageObject {
+    private component;
+
     constructor(component) {
         this.component = component;
     }

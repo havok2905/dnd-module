@@ -6,6 +6,8 @@ import { CreatureSearch } from "../../../src/components/compendium/creature-sear
 Enzyme.configure({ adapter: new Adapter() });
 
 class CreatureSearchPageObject {
+    private component;
+
     constructor(component) {
         this.component = component;
     }

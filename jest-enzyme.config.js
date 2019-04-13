@@ -1,6 +1,6 @@
 module.exports = {
     verbose: true,
-    testMatch: ["**/tests/enzyme/**/*.test.js"],
+    testMatch: ["**/tests/enzyme/**/*.test.tsx"],
     collectCoverageFrom: [
         "./src/services/**/*.js",
         "./src/components/**/*.js",

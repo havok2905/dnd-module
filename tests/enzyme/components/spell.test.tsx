@@ -6,6 +6,8 @@ import { Spell } from "../../../src/components/spell/spell";
 Enzyme.configure({ adapter: new Adapter() });
 
 class SpellPageObject {
+    private component;
+
     constructor(component) {
         this.component = component;
     }

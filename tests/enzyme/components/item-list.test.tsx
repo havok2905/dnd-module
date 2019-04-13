@@ -6,6 +6,8 @@ import { ItemList } from "../../../src/components/compendium/item-list";
 Enzyme.configure({ adapter: new Adapter() });
 
 class ItemListPageObject {
+    private component;
+
     constructor(component) {
         this.component = component;
     }

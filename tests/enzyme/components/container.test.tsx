@@ -6,12 +6,14 @@ import { Container } from "../../../src/components/containers/container";
 Enzyme.configure({ adapter: new Adapter() });
 
 class ContainerPageObject {
-    constructor(wrapper) {
-        this.wrapper = wrapper;
+    private component;
+
+    constructor(component) {
+        this.component = component;
     }
 
     getContent() {
-        return this.wrapper.find(".bordered-container");
+        return this.component.find(".bordered-container");
     }
 }
 

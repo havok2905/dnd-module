@@ -6,6 +6,8 @@ import { RollForm } from "../../../src/components/roll-form/roll-form";
 Enzyme.configure({ adapter: new Adapter() });
 
 class RollFormPageObject {
+    private component;
+
     constructor(component) {
         this.component = component;
     }

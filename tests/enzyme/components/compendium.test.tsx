@@ -6,6 +6,8 @@ import { Compendium } from "../../../src/components/compendium/compendium";
 Enzyme.configure({ adapter: new Adapter() });
 
 class CompendiumPageObject {
+    private component;
+
     constructor(component) {
         this.component = component;
     }

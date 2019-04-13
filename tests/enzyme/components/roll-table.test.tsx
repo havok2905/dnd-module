@@ -6,6 +6,8 @@ import { RollTable } from "../../../src/components/roll-table/roll-table";
 Enzyme.configure({ adapter: new Adapter() });
 
 class RollTablePageObject {
+    private component;
+
     constructor(component) {
         this.component = component;
     }
