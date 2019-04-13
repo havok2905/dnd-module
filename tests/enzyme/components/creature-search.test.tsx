@@ -2,6 +2,7 @@ import React from "react";
 import Enzyme, { shallow } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import { CreatureSearch } from "../../../src/components/compendium/creature-search";
+import { CreatureFactory } from "../../factories/creature-factory";
 
 Enzyme.configure({ adapter: new Adapter() });
 
@@ -50,15 +51,15 @@ class CreatureSearchPageObject {
 describe("CreatureSearch", () => {
     describe("name", () => {
         const creatures = [
-            {
+            CreatureFactory.build({
                 name: "Foo"
-            },
-            {
+            }),
+            CreatureFactory.build({
                 name: "Bar"
-            },
-            {
+            }),
+            CreatureFactory.build({
                 name: "Baz"
-            }
+            })
         ];
 
         test("renders", () => {
@@ -87,18 +88,18 @@ describe("CreatureSearch", () => {
 
     describe("type", () => {
         const creatures = [
-            {
-                name: "TEST A",
-                type: "Foo"
-            },
-            {
-                name: "TEST B",
-                type: "Bar"
-            },
-            {
-                name: "TEST C",
-                type: "Baz"
-            }
+            CreatureFactory.build({
+                type: "Foo",
+                name: "Test A"
+            }),
+            CreatureFactory.build({
+                type: "Bar",
+                name: "Test B"
+            }),
+            CreatureFactory.build({
+                type: "Baz",
+                name: "Test C"
+            })
         ];
 
         test("renders", () => {
@@ -127,18 +128,18 @@ describe("CreatureSearch", () => {
 
     describe("cr", () => {
         const creatures = [
-            {
-                name: "TEST A",
-                challenge: "5"
-            },
-            {
-                name: "TEST B",
-                challenge: "5"
-            },
-            {
-                name: "TEST C",
-                challenge: "10"
-            }
+            CreatureFactory.build({
+                challenge: "5",
+                name: "Test A"
+            }),
+            CreatureFactory.build({
+                challenge: "5",
+                name: "Test B"
+            }),
+            CreatureFactory.build({
+                challenge: "10",
+                name: "Test C"
+            })
         ];
 
         test("renders", () => {
@@ -156,18 +157,18 @@ describe("CreatureSearch", () => {
 
     describe("min cr", () => {
         const creatures = [
-            {
-                name: "TEST A",
-                challenge: "5"
-            },
-            {
-                name: "TEST B",
-                challenge: "5"
-            },
-            {
-                name: "TEST C",
-                challenge: "10"
-            }
+            CreatureFactory.build({
+                challenge: "5",
+                name: "Test A"
+            }),
+            CreatureFactory.build({
+                challenge: "5",
+                name: "Test B"
+            }),
+            CreatureFactory.build({
+                challenge: "10",
+                name: "Test C"
+            })
         ];
 
         test("searches creatures", () => {
@@ -184,18 +185,18 @@ describe("CreatureSearch", () => {
 
     describe("max cr", () => {
         const creatures = [
-            {
-                name: "TEST A",
-                challenge: "5"
-            },
-            {
-                name: "TEST B",
-                challenge: "10"
-            },
-            {
-                name: "TEST C",
-                challenge: "10"
-            }
+            CreatureFactory.build({
+                challenge: "5",
+                name: "Test B"
+            }),
+            CreatureFactory.build({
+                challenge: "10",
+                name: "Test C"
+            }),
+            CreatureFactory.build({
+                challenge: "10",
+                name: "Test D"
+            })
         ];
 
         test("searches creatures", () => {
@@ -212,26 +213,26 @@ describe("CreatureSearch", () => {
 
     describe("min and max cr", () => {
         const creatures = [
-            {
-                name: "TEST A",
-                challenge: "3"
-            },
-            {
-                name: "TEST B",
-                challenge: "5"
-            },
-            {
-                name: "TEST C",
-                challenge: "7"
-            },
-            {
-                name: "TEST D",
-                challenge: "10"
-            },
-            {
-                name: "TEST E",
-                challenge: "12"
-            }
+            CreatureFactory.build({
+                challenge: "3",
+                name: "Test A"
+            }),
+            CreatureFactory.build({
+                challenge: "5",
+                name: "Test B"
+            }),
+            CreatureFactory.build({
+                challenge: "7",
+                name: "Test C"
+            }),
+            CreatureFactory.build({
+                challenge: "10",
+                name: "Test D"
+            }),
+            CreatureFactory.build({
+                challenge: "12",
+                name: "Test E"
+            })
         ];
 
         test("searches creatures", () => {
@@ -252,18 +253,18 @@ describe("CreatureSearch", () => {
 
     describe("alignment", () => {
         const creatures = [
-            {
-                name: "TEST A",
-                alignment: "Chaotic Good"
-            },
-            {
-                name: "TEST B",
-                challenge: "Lawful Evil"
-            },
-            {
-                name: "TEST C",
-                challenge: "Lawful Evil"
-            }
+            CreatureFactory.build({
+                alignment: "Chaotic Good",
+                name: "Test A"
+            }),
+            CreatureFactory.build({
+                alignment: "Lawful Evile",
+                name: "Test B"
+            }),
+            CreatureFactory.build({
+                alignment: "Lawful Evil",
+                name: "Test C"
+            })
         ];
 
         test("renders", () => {

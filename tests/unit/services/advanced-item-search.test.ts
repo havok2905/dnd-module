@@ -1,15 +1,16 @@
 import { AdvancedItemSearch } from "../../../src/services/advanced-item-search";
+import { ItemFactory } from "../../factories/item-factory";
 
 const collection = [
-    {
+    ItemFactory.build({
         name: "Foo"
-    },
-    {
+    }),
+    ItemFactory.build({
         name: "Bar"
-    },
-    {
+    }),
+    ItemFactory.build({
         name: "Baz"
-    }
+    })
 ];
 
 describe("AdvancedItemSearch", () => {
@@ -29,13 +30,6 @@ describe("AdvancedItemSearch", () => {
         const result = AdvancedItemSearch.search(collection, {
             name: "ba"
         });
-        expect(result).toEqual([
-            {
-                name: "Bar"
-            },
-            {
-                name: "Baz"
-            }
-        ]);
+        expect(result).toEqual([collection[1], collection[2]]);
     });
 });

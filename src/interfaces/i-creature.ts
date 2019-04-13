@@ -10,7 +10,7 @@ interface ICreature {
     damageImmunities: string[];
     damageResistances: string[];
     damageWeaknesses: string[];
-    description: string;
+    description?: string;
     features: IGenericItem[];
     hp: number;
     image?: string;

@@ -2,6 +2,7 @@ import React from "react";
 import Enzyme, { shallow } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import { Spell } from "../../../src/components/spell/spell";
+import { SpellFactory } from "../../factories/spell-factory";
 
 Enzyme.configure({ adapter: new Adapter() });
 
@@ -37,7 +38,7 @@ class SpellPageObject {
     }
 }
 
-const defaultData = {
+const defaultData = SpellFactory.build({
     name: "Firebolt",
     rulesText:
         "You hurl a small flame at a creature or object, making a ranged spell attack. The target takes 1d10 fire damage on hit. The fire ignites any flammable object hit by it that isn't being worn or carried.",
@@ -48,7 +49,7 @@ const defaultData = {
     components: ["V", "S"],
     duration: "Instantaneous",
     casters: ["Sorcerers", "Wizards"]
-};
+});
 
 describe("Spell", () => {
     test("renders default", () => {
