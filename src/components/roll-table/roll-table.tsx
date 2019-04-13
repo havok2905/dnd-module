@@ -1,18 +1,19 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 import { DiceRoller } from "../../services/dice-roller";
-import { Button } from "../button/button.tsx";
+import { Button } from "../button/button";
+import { IRollTableState } from "./interfaces/i-roll-table-state";
+import { IRollTableProps } from "./interfaces/i-roll-table-props";
 
 import "./roll-table.scss";
 import "../../styles/base/table.scss";
 
-class RollTable extends Component {
+class RollTable extends Component<IRollTableProps, IRollTableState> {
     constructor(props) {
         super(props);
         this.state = { roll: null };
     }
 
-    findMax() {
+    findMax(): number {
         let max = 1;
 
         this.props.items.forEach(item => {
@@ -56,7 +57,7 @@ class RollTable extends Component {
                     onClick={this.roll.bind(this)}
                     qaTarget="roll-table-button"
                     text="Roll"
-                    type="button"
+                    typeStr="button"
                 />
                 <p>Roll: {this.state.roll}</p>
                 <table className="table">
@@ -72,14 +73,5 @@ class RollTable extends Component {
         );
     }
 }
-
-RollTable.propTypes = {
-    items: PropTypes.arrayOf(
-        PropTypes.shape({
-            rollRange: PropTypes.arrayOf(PropTypes.number).isRequired,
-            description: PropTypes.string.isRequired
-        })
-    ).isRequired
-};
 
 export { RollTable };
