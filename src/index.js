@@ -14,7 +14,7 @@ import { QuickRef } from "./components/quick-ref/quick-ref.tsx";
 import { QuickRoll } from "./components/quick-roll/quick-roll.tsx";
 import { RollForm } from "./components/roll-form/roll-form.tsx";
 import { RollTable } from "./components/roll-table/roll-table.tsx";
-import { ScrollToMe } from "./components/scroll-to-me/scroll-to-me.jsx";
+import { ScrollToMe } from "./components/scroll-to-me/scroll-to-me.tsx";
 import { Spell } from "./components/spell/spell.tsx";
 import { TableOfContents } from "./components/table-of-contents/table-of-contents.jsx";
 import { Tools } from "./components/tools/tools.jsx";
