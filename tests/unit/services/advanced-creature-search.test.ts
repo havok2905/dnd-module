@@ -1,6 +1,6 @@
-import { advancedCreatureSearch } from "../../../src/services/advanced-creature-search";
+import { AdvancedCreatureSearch } from "../../../src/services/advanced-creature-search";
 
-describe("advancedCreatureSearch", () => {
+describe("AdvancedCreatureSearch", () => {
     describe("no options", () => {
         const collection = [
             {
@@ -15,7 +15,7 @@ describe("advancedCreatureSearch", () => {
         ];
 
         test("should return everything if options are not provided", () => {
-            const result = advancedCreatureSearch(collection, {});
+            const result = AdvancedCreatureSearch.search(collection, {});
             expect(result).toEqual(collection);
         });
     });
@@ -34,14 +34,14 @@ describe("advancedCreatureSearch", () => {
         ];
 
         test("should return everything if name is an empty string", () => {
-            const result = advancedCreatureSearch(collection, {
+            const result = AdvancedCreatureSearch.search(collection, {
                 name: ""
             });
             expect(result).toEqual(collection);
         });
 
         test("should return names that contain the search term", () => {
-            const result = advancedCreatureSearch(collection, {
+            const result = AdvancedCreatureSearch.search(collection, {
                 name: "ba"
             });
             expect(result).toEqual([
@@ -69,14 +69,14 @@ describe("advancedCreatureSearch", () => {
         ];
 
         test("should return everything if type is an empty string", () => {
-            const result = advancedCreatureSearch(collection, {
+            const result = AdvancedCreatureSearch.search(collection, {
                 type: ""
             });
             expect(result).toEqual(collection);
         });
 
         test("should return names that contain the search term", () => {
-            const result = advancedCreatureSearch(collection, {
+            const result = AdvancedCreatureSearch.search(collection, {
                 type: "ba"
             });
             expect(result).toEqual([
@@ -110,14 +110,14 @@ describe("advancedCreatureSearch", () => {
         ];
 
         test("should return everything if minCR is an empty string", () => {
-            const result = advancedCreatureSearch(collection, {
+            const result = AdvancedCreatureSearch.search(collection, {
                 minCr: ""
             });
             expect(result).toEqual(collection);
         });
 
         test("should return everything with a cr greater than or equal to the minCr", () => {
-            const result = advancedCreatureSearch(collection, {
+            const result = AdvancedCreatureSearch.search(collection, {
                 minCr: "5"
             });
             expect(result).toEqual([
@@ -151,14 +151,14 @@ describe("advancedCreatureSearch", () => {
         ];
 
         test("should return everything if maxCR is an empty string", () => {
-            const result = advancedCreatureSearch(collection, {
+            const result = AdvancedCreatureSearch.search(collection, {
                 maxCR: ""
             });
             expect(result).toEqual(collection);
         });
 
         test("should return everything with a cr less than or equal to the maxCR", () => {
-            const result = advancedCreatureSearch(collection, {
+            const result = AdvancedCreatureSearch.search(collection, {
                 maxCr: "5"
             });
             expect(result).toEqual([
@@ -192,7 +192,7 @@ describe("advancedCreatureSearch", () => {
         ];
 
         test("should return everything if min and max cr are empty strings", () => {
-            const result = advancedCreatureSearch(collection, {
+            const result = AdvancedCreatureSearch.search(collection, {
                 minCr: "",
                 maxCr: ""
             });
@@ -201,7 +201,7 @@ describe("advancedCreatureSearch", () => {
         });
 
         test("should return everything between the crs", () => {
-            const result = advancedCreatureSearch(collection, {
+            const result = AdvancedCreatureSearch.search(collection, {
                 minCr: "1",
                 maxCr: "6"
             });
@@ -228,14 +228,14 @@ describe("advancedCreatureSearch", () => {
         ];
 
         test("should return everything if alignment is an empty string", () => {
-            const result = advancedCreatureSearch(collection, {
+            const result = AdvancedCreatureSearch.search(collection, {
                 alignment: ""
             });
             expect(result).toEqual(collection);
         });
 
         test("Should filter with alignment", () => {
-            const result = advancedCreatureSearch(collection, {
+            const result = AdvancedCreatureSearch.search(collection, {
                 alignment: "Unaligned"
             });
 
@@ -264,7 +264,7 @@ describe("advancedCreatureSearch", () => {
         ];
 
         test("Should filter with multiple options", () => {
-            const result = advancedCreatureSearch(collection, {
+            const result = AdvancedCreatureSearch.search(collection, {
                 type: "Ta",
                 name: "Ba"
             });

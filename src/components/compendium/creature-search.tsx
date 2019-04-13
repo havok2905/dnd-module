@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import { advancedCreatureSearch } from "../../services/advanced-creature-search";
+import { AdvancedCreatureSearch } from "../../services/advanced-creature-search";
 import { CollapsableContainer } from "../containers/collapsable-container";
 import { MonsterBlock } from "../monster-block/monster-block";
 import { ICreatureSearchState } from "./interfaces/i-creature-search-state";
@@ -31,7 +31,7 @@ class CreatureSearch extends Component<
 
     search() {
         this.setState({
-            creatures: advancedCreatureSearch(this.props.creatures, {
+            creatures: AdvancedCreatureSearch.search(this.props.creatures, {
                 name: this.state.name,
                 type: this.state.type,
                 minCr: this.state.minCr,

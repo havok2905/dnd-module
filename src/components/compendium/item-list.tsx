@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import { advancedItemSearch } from "../../services/advanced-item-search";
+import { AdvancedItemSearch } from "../../services/advanced-item-search";
 import { CollapsableContainer } from "../containers/collapsable-container";
 import { ItemBlock } from "../item-block/item-block";
 import { IItemListState } from "./interfaces/i-item-list-state";
@@ -20,7 +20,7 @@ class ItemList extends Component<IItemListProps, IItemListState> {
 
     search() {
         this.setState({
-            items: advancedItemSearch(this.props.items, {
+            items: AdvancedItemSearch.search(this.props.items, {
                 name: this.state.name
             })
         });

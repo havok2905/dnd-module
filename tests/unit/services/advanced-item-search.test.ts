@@ -1,4 +1,4 @@
-import { advancedItemSearch } from "../../../src/services/advanced-item-search";
+import { AdvancedItemSearch } from "../../../src/services/advanced-item-search";
 
 const collection = [
     {
@@ -12,21 +12,21 @@ const collection = [
     }
 ];
 
-describe("advancedItemSearch", () => {
+describe("AdvancedItemSearch", () => {
     test("should return everything if name is not provided", () => {
-        const result = advancedItemSearch(collection, {});
+        const result = AdvancedItemSearch.search(collection, {});
         expect(result).toEqual(collection);
     });
 
     test("should return everything if name is an empty string", () => {
-        const result = advancedItemSearch(collection, {
+        const result = AdvancedItemSearch.search(collection, {
             name: ""
         });
         expect(result).toEqual(collection);
     });
 
     test("should return names that contain the search term", () => {
-        const result = advancedItemSearch(collection, {
+        const result = AdvancedItemSearch.search(collection, {
             name: "ba"
         });
         expect(result).toEqual([

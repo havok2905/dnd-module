@@ -1,4 +1,4 @@
-class DiceRoller {
+export class DiceRoller {
     static roll(str: string): number {
         if (!this.isValid(str)) {
             return;
@@ -39,5 +39,3 @@ class DiceRoller {
         return Math.ceil(Math.random() * sides) * quantity;
     }
 }
-
-export { DiceRoller };

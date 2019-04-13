@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import AbilityScoreCalculator from "../../services/ability-score-calculator";
+import { AbilityScoreCalculator } from "../../services/ability-score-calculator";
 import { ICreature } from "../../interfaces/i-creature";
 
 import "./monster-block.scss";

@@ -1,4 +1,11 @@
-import AbilityScoreCalculator from "./ability-score-calculator";
-import DiceRoller from "./dice-roller";
+import { AbilityScoreCalculator } from "./ability-score-calculator";
+import { AdvancedCreatureSearch } from "./advanced-creature-search";
+import { AdvancedItemSearch } from "./advanced-item-search";
+import { DiceRoller } from "./dice-roller";
 
-export { AbilityScoreCalculator, DiceRoller };
+export {
+    AbilityScoreCalculator,
+    AdvancedCreatureSearch,
+    AdvancedItemSearch,
+    DiceRoller
+};
