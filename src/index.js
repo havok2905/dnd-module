@@ -11,7 +11,7 @@ import { MonsterBlock } from "./components/monster-block/monster-block.tsx";
 import { Page } from "./components/page/page.tsx";
 import { PanZoom } from "./components/pan-zoom/pan-zoom.tsx";
 import { QuickRef } from "./components/quick-ref/quick-ref.tsx";
-import { QuickRoll } from "./components/quick-roll/quick-roll.jsx";
+import { QuickRoll } from "./components/quick-roll/quick-roll.tsx";
 import { RollForm } from "./components/roll-form/roll-form.jsx";
 import { RollTable } from "./components/roll-table/roll-table.jsx";
 import { ScrollToMe } from "./components/scroll-to-me/scroll-to-me.jsx";

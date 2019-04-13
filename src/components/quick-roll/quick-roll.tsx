@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import { DiceRoller } from "../../services/dice-roller";
+import { IQuickRollState } from "./interfaces/i-quick-roll-state";
 
 import "./quick-roll.scss";
 
-class QuickRoll extends Component {
+class QuickRoll extends Component<any, IQuickRollState> {
     constructor(props) {
         super(props);
         this.state = {
