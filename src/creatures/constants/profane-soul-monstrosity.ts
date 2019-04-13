@@ -1,4 +1,6 @@
-export default {
+import { ICreature } from "../../interfaces/i-creature";
+
+export const PROFANE_SOUL_MONSTROSITY: ICreature = {
     ac: 18,
     actions: [
         {

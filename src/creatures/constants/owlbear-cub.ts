@@ -1,4 +1,6 @@
-export default {
+import { ICreature } from "../../interfaces/i-creature";
+
+export const OWLBEAR_CUB: ICreature = {
     ac: 10,
     actions: [
         {

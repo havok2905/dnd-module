@@ -1,4 +1,6 @@
-export default {
+import { ICreature } from "../../interfaces/i-creature";
+
+export const GIANT_GHOSTLY_ARCTIC_CROCODILE: ICreature = {
     ac: 16,
     actions: [
         {

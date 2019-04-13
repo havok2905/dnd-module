@@ -1,4 +1,6 @@
-export default {
+import { ICreature } from "../../interfaces/i-creature";
+
+export const ARCTIC_ELF_GUARD: ICreature = {
     ac: 16,
     actions: [
         {

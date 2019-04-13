@@ -1,4 +1,6 @@
-export default {
+import { ICreature } from "../../interfaces/i-creature";
+
+export const PRIEST_OF_THOR: ICreature = {
     ac: 13,
     actions: [
         {

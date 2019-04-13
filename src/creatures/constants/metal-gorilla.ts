@@ -1,4 +1,6 @@
-export default {
+import { ICreature } from "../../interfaces/i-creature";
+
+export const METAL_GORILLA: ICreature = {
     ac: 15,
     actions: [
         {

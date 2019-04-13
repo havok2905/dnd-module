@@ -1,4 +1,6 @@
-export default {
+import { ICreature } from "../../interfaces/i-creature";
+
+export const MYCONID_MASTER: ICreature = {
     ac: 18,
     actions: [
         {

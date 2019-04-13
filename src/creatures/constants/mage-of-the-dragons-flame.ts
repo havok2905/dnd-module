@@ -1,4 +1,6 @@
-export default {
+import { ICreature } from "../../interfaces/i-creature";
+
+export const MAGE_OF_THE_DRAGONS_FLAME: ICreature = {
     ac: 14,
     actions: [
         {

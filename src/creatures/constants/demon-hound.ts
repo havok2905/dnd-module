@@ -1,4 +1,6 @@
-export default {
+import { ICreature } from "../../interfaces/i-creature";
+
+export const DEMON_HOUND: ICreature = {
     ac: 12,
     actions: [
         {

@@ -1,4 +1,6 @@
-export default {
+import { ICreature } from "../../interfaces/i-creature";
+
+export const TITAN_CYCLOPS: ICreature = {
     ac: 13,
     actions: [
         {

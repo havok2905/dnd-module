@@ -1,4 +1,6 @@
-export default {
+import { ICreature } from "../../interfaces/i-creature";
+
+export const HIGH_PRIEST_OF_ENKIEM: ICreature = {
     ac: 13,
     actions: [
         {

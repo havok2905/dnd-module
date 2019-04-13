@@ -1,4 +1,6 @@
-export default {
+import { ICreature } from "../../interfaces/i-creature";
+
+export const SAND_BOA_MONSTROSITY: ICreature = {
     ac: 18,
     actions: [
         {

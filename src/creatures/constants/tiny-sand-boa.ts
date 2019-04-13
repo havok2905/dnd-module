@@ -1,4 +1,6 @@
-export default {
+import { ICreature } from "../../interfaces/i-creature";
+
+export const TINY_SAND_BOA: ICreature = {
     ac: 13,
     actions: [
         {

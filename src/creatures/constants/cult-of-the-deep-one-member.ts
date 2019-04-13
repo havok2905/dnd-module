@@ -1,4 +1,6 @@
-export default {
+import { ICreature } from "../../interfaces/i-creature";
+
+export const CULT_OF_THE_DEEP_ONE_MEMBER: ICreature = {
     ac: 13,
     actions: [
         {

@@ -1,4 +1,6 @@
-export default {
+import { ICreature } from "../../interfaces/i-creature";
+
+export const PIRATE_OF_THE_DRAGONS_FLAME: ICreature = {
     ac: 15,
     actions: [
         {

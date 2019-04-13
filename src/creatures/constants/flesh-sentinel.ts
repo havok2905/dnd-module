@@ -1,4 +1,6 @@
-export default {
+import { ICreature } from "../../interfaces/i-creature";
+
+export const FLESH_SENTINEL: ICreature = {
     ac: 10,
     actions: [
         {
