@@ -17,7 +17,7 @@ import { RollTable } from "./components/roll-table/roll-table.tsx";
 import { ScrollToMe } from "./components/scroll-to-me/scroll-to-me.tsx";
 import { Spell } from "./components/spell/spell.tsx";
 import { TableOfContents } from "./components/table-of-contents/table-of-contents.tsx";
-import { Tools } from "./components/tools/tools.jsx";
+import { Tools } from "./components/tools/tools.tsx";
 
 import * as Creatures from "./creatures/index";
 import * as Items from "./items/index";

@@ -1,9 +1,9 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
-import { Compendium } from "../compendium/compendium.jsx";
-import { QuickRef } from "../quick-ref/quick-ref.jsx";
-import { QuickRoll } from "../quick-roll/quick-roll.jsx";
+import { Compendium } from "../compendium/compendium";
+import { QuickRef } from "../quick-ref/quick-ref";
+import { QuickRoll } from "../quick-roll/quick-roll";
 
 import "../../styles/components/react-tabs.scss";
 
