@@ -1,26 +1,26 @@
 import { configure } from "@storybook/react";
 
 function loadStories() {
-    require("./stories/button.story.tsx");
-    require("./stories/collapsable-container.story.js");
-    require("./stories/columns.story.js");
-    require("./stories/compendium.story.js");
-    require("./stories/container.story.js");
-    require("./stories/emphasis-block.story.js");
-    require("./stories/footer.story.js");
-    require("./stories/hero.story.js");
+    require("./stories/button.story");
+    require("./stories/collapsable-container.story");
+    require("./stories/columns.story");
+    require("./stories/compendium.story");
+    require("./stories/container.story");
+    require("./stories/emphasis-block.story");
+    require("./stories/footer.story");
+    require("./stories/hero.story");
     require("./stories/important-button.story.tsx");
-    require("./stories/item-block.story.js");
-    require("./stories/monster-block.story.js");
-    require("./stories/page.story.js");
-    require("./stories/pan-zoom.story.js");
-    require("./stories/quick-ref.story.js");
-    require("./stories/roll-form.story.js");
-    require("./stories/roll-table.story.js");
-    require("./stories/spell.story.js");
-    require("./stories/table-of-contents.story.js");
+    require("./stories/item-block.story");
+    require("./stories/monster-block.story");
+    require("./stories/page.story");
+    require("./stories/pan-zoom.story");
+    require("./stories/quick-ref.story");
+    require("./stories/roll-form.story");
+    require("./stories/roll-table.story");
+    require("./stories/spell.story");
+    require("./stories/table-of-contents.story");
 
-    require("./stories/example.story.js");
+    require("./stories/example.story");
 }
 
 configure(loadStories, module);

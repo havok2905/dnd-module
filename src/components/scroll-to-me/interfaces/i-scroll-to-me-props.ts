@@ -1,5 +1,5 @@
 interface IScrollToMeProps {
-    children: any;
+    children?: any;
     scrollActionString: string;
 }
 

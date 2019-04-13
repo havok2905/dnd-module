@@ -9,7 +9,7 @@ storiesOf("Container", module)
     .add("Container", () => {
         return (
             <Page>
-                <Container title="Lorem Ipsum">
+                <Container>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Sed varius nisl sed accumsan tincidunt. Pellentesque

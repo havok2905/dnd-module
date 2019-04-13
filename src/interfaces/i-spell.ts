@@ -3,19 +3,11 @@ interface ISpell {
     rulesText: string;
     higherLevelsText: string;
     level: number;
-    school:
-        | "Abjuration"
-        | "Conjuration"
-        | "Divination"
-        | "Enchantment"
-        | "Evocation"
-        | "Illusion"
-        | "Necromancy"
-        | "Transmutation";
+    school: string;
     ritual: Boolean;
     castTime: string;
     range: string;
-    components: ["V" | "S" | "M"];
+    components: string[];
     material: string[];
     concentration: Boolean;
     duration: string;

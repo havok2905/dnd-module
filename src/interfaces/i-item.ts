@@ -1,5 +1,5 @@
 interface IItem {
-    image: string;
+    image?: string;
     name: string;
     type: string;
     rarity: string;

@@ -2,7 +2,7 @@ interface ITableOfContentsItem {
     title: string;
     link: string;
     children: ITableOfContentsItem[];
-    scrollActionString: string;
+    scrollActionString?: string;
 }
 
 export { ITableOfContentsItem };

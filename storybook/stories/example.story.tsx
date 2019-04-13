@@ -62,10 +62,7 @@ storiesOf("Example", module).add("Example", () => {
                                 }
                             ]}
                         />
-                        <CollapsableContainer
-                            title="Test Monster"
-                            idSlug="test-monster"
-                        >
+                        <CollapsableContainer title="Test Monster">
                             <MonsterBlock
                                 ac={10}
                                 actions={[
@@ -103,7 +100,7 @@ storiesOf("Example", module).add("Example", () => {
                         </CollapsableContainer>
                         <ScrollToMe scrollActionString="chapter-2" />
                         <h2 id="chapter-2">Chapter 2</h2>
-                        <EmphasisBlock idSlug="emphasis-block">
+                        <EmphasisBlock>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit. Sed varius nisl sed accumsan

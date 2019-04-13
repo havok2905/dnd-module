@@ -42,7 +42,6 @@ storiesOf("Monster Block", module)
                         wis: 10,
                         cha: 10
                     }}
-                    title="Test Monster"
                     type="Humanoid"
                 />
             </Page>
