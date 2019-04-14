@@ -8,8 +8,6 @@ import {
     environmentalEffects
 } from "./rules";
 
-import "./quick-ref.scss";
-
 const QuickRef = () => {
     const generateList = items => {
         return (

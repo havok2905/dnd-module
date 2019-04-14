@@ -1,9 +1,6 @@
-@import '../../styles/base/colors.scss';
-@import '../../styles/base/typography.scss';
-@import '../../styles/base/table.scss';
-
 .monster-block {
-    ul, ol {
+    ul,
+    ol {
         margin-left: -40px;
         list-style-type: none;
     }

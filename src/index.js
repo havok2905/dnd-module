@@ -25,6 +25,8 @@ import * as Npcs from "./npcs/index";
 import * as Services from "./services/index";
 import * as Spells from "./spells/index";
 
+import * as Styles from "./styles/index.scss";
+
 export {
     Button,
     CollapsableContainer,
@@ -44,6 +46,7 @@ export {
     RollTable,
     ScrollToMe,
     Spell,
+    Styles,
     TableOfContents,
     Tools,
     Creatures,

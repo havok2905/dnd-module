@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import { DiceRoller } from "../../services/dice-roller";
 import { IRollFormState } from "./interfaces/i-roll-form-state";
 
-import "./roll-form.scss";
-
 class RollForm extends Component<any, IRollFormState> {
     private rollInputRef: React.RefObject<any>;
 

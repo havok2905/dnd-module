@@ -8,8 +8,6 @@ import Items from "../../items/index";
 import { IItem } from "../../interfaces/i-item";
 import { ICreature } from "../../interfaces/i-creature";
 
-import "../../styles/components/react-tabs.scss";
-
 const Compendium = () => {
     const creatures = (collection): ICreature[] => {
         return Object.keys(collection).map(key => {

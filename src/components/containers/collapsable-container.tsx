@@ -3,8 +3,6 @@ import { Button } from "../button/button";
 import { ICollapsableContainerProps } from "./interfaces/i-collapsable-container-props";
 import { ICollapsableContainerState } from "./interfaces/i-collapsable-container-state";
 
-import "./bordered-container.scss";
-
 class CollapsableContainer extends Component<
     ICollapsableContainerProps,
     ICollapsableContainerState

@@ -1,7 +1,0 @@
-@import '../../styles/base/colors.scss';
-@import '../../styles/base/typography.scss';
-@import '../../styles/utils/bordered-container.scss';
-
-.bordered-container {
-    @include bordered-container();
-}

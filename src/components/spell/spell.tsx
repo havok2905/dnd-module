@@ -1,8 +1,6 @@
 import React, { Fragment } from "react";
 import { ISpell } from "../../interfaces/i-spell";
 
-import "./spell-card.scss";
-
 const spellDefaultProps = {
     ritual: false,
     concentration: false

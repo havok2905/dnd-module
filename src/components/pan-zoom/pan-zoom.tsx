@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import panzoom from "panzoom";
-import "./pan-zoom.scss";
 
 class PanZoom extends Component {
     private panZoomSection;

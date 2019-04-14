@@ -4,9 +4,6 @@ import { Button } from "../button/button";
 import { IRollTableState } from "./interfaces/i-roll-table-state";
 import { IRollTableProps } from "./interfaces/i-roll-table-props";
 
-import "./roll-table.scss";
-import "../../styles/base/table.scss";
-
 class RollTable extends Component<IRollTableProps, IRollTableState> {
     constructor(props) {
         super(props);

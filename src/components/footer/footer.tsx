@@ -3,8 +3,6 @@ import { RollForm } from "../roll-form/roll-form";
 import { ImportantButton } from "../button/important-button";
 import { Columns } from "../containers/columns";
 
-import "./footer.scss";
-
 class Footer extends Component {
     scrollToTop() {
         window.scrollTo(0, 0);

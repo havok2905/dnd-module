@@ -5,9 +5,6 @@ import { MonsterBlock } from "../monster-block/monster-block";
 import { ICreatureSearchState } from "./interfaces/i-creature-search-state";
 import { ICreatureSearchProps } from "./interfaces/i-creature-search-props";
 
-import "./form.scss";
-import "./collection-list.scss";
-
 class CreatureSearch extends Component<
     ICreatureSearchProps,
     ICreatureSearchState

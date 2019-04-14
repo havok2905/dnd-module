@@ -1,8 +1,6 @@
 import * as React from "react";
 import { IEmphasisBlock } from "./interfaces/i-emphasis-block";
 
-import "./emphasis-block.scss";
-
 const EmphasisBlock = ({ children }: IEmphasisBlock) => {
     const divider = () => {
         return (

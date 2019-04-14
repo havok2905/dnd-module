@@ -5,8 +5,6 @@ import { Compendium } from "../compendium/compendium";
 import { QuickRef } from "../quick-ref/quick-ref";
 import { QuickRoll } from "../quick-roll/quick-roll";
 
-import "../../styles/components/react-tabs.scss";
-
 const Tools = () => {
     return (
         <Tabs>
