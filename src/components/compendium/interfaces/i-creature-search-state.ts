@@ -1,6 +1,6 @@
 import { ICreature } from "../../../interfaces/i-creature";
 
-interface ICreatureSearchState {
+export interface ICreatureSearchState {
     creatures: ICreature[];
     name: string;
     type: string;
@@ -8,5 +8,3 @@ interface ICreatureSearchState {
     maxCr: string;
     alignment: string;
 }
-
-export { ICreatureSearchState };

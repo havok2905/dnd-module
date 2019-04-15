@@ -1,4 +1,5 @@
 import { ICreature } from "../interfaces/i-creature";
+import { StringCompare } from "./string-compare";
 
 interface AdvancedCreatureSearchOptions {
     name?: string;
@@ -9,12 +10,6 @@ interface AdvancedCreatureSearchOptions {
 }
 
 export class AdvancedCreatureSearch {
-    private static stringCompare(a: string, b: string): boolean {
-        a = a.trim().toLowerCase();
-        b = b.trim().toLowerCase();
-        return a.includes(b);
-    }
-
     private static parseCrToNum(str: string): number {
         switch (str) {
             case "1/8":
@@ -68,13 +63,23 @@ export class AdvancedCreatureSearch {
             let isValid = true;
 
             if (options.name && options.name.length > 0) {
-                if (!this.stringCompare(item.name, options.name)) {
+                if (
+                    !StringCompare.doesContainRegardlessOfCase(
+                        item.name,
+                        options.name
+                    )
+                ) {
                     isValid = false;
                 }
             }
 
             if (options.type && options.type.length > 0) {
-                if (!this.stringCompare(item.type, options.type)) {
+                if (
+                    !StringCompare.doesContainRegardlessOfCase(
+                        item.type,
+                        options.type
+                    )
+                ) {
                     isValid = false;
                 }
             }

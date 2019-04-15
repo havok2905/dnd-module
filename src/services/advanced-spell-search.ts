@@ -1,26 +1,26 @@
-import { IItem } from "../interfaces/i-item";
+import { ISpell } from "../interfaces/i-spell";
 import { StringCompare } from "./string-compare";
 
-interface IAdvancedItemSearchOptions {
+interface IAdvancedSpellSearchOptions {
     name?: string;
 }
 
-export class AdvancedItemSearch {
+export class AdvancedSpellSearch {
     static search(
-        items: IItem[],
-        options: IAdvancedItemSearchOptions
-    ): IItem[] {
+        spells: ISpell[],
+        options: IAdvancedSpellSearchOptions
+    ): ISpell[] {
         if (!options.name) {
-            return items;
+            return spells;
         }
 
-        return items.filter(item => {
+        return spells.filter(spell => {
             let isValid = true;
 
             if (options.name && options.name.length > 0) {
                 if (
                     !StringCompare.doesContainRegardlessOfCase(
-                        item.name,
+                        spell.name,
                         options.name
                     )
                 ) {

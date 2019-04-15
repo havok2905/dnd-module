@@ -1,4 +1,4 @@
-interface ISpell {
+export interface ISpell {
     name: string;
     rulesText: string;
     higherLevelsText: string;
@@ -13,5 +13,3 @@ interface ISpell {
     duration: string;
     casters: string[];
 }
-
-export { ISpell };

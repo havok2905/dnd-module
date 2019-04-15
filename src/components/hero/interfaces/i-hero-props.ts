@@ -1,6 +1,4 @@
-interface IHeroProps {
+export interface IHeroProps {
     alt: string;
     src: string;
 }
-
-export { IHeroProps };

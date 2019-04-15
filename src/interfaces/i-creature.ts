@@ -1,7 +1,7 @@
 import { IGenericItem } from "./i-generic-item";
 import { IStatBlock } from "./i-stat-block";
 
-interface ICreature {
+export interface ICreature {
     ac: number;
     actions: IGenericItem[];
     alignment: string;
@@ -26,5 +26,3 @@ interface ICreature {
     stats: IStatBlock;
     type: string;
 }
-
-export { ICreature };

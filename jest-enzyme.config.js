@@ -5,7 +5,7 @@ module.exports = {
         "./src/services/**/*.js",
         "./src/components/**/*.js",
         "./src/components/**/*.jsx",
-        "./src/components/**/*.js",
+        "./src/components/**/*.ts",
         "./src/components/**/*.tsx"
     ],
     moduleNameMapper: {

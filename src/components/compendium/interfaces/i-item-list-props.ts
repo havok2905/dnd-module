@@ -1,7 +1,5 @@
 import { IItem } from "../../../interfaces/i-item";
 
-interface IItemListProps {
+export interface IItemListProps {
     items: IItem[];
 }
-
-export { IItemListProps };

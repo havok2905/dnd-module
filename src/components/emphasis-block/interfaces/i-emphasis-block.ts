@@ -1,5 +1,3 @@
-interface IEmphasisBlock {
+export interface IEmphasisBlock {
     children?: any;
 }
-
-export { IEmphasisBlock };

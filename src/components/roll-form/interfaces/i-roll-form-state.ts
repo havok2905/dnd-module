@@ -1,5 +1,3 @@
-interface IRollFormState {
+export interface IRollFormState {
     roll: number;
 }
-
-export { IRollFormState };

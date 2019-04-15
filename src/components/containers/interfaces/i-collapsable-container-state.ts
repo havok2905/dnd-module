@@ -1,5 +1,3 @@
-interface ICollapsableContainerState {
+export interface ICollapsableContainerState {
     display: Boolean;
 }
-
-export { ICollapsableContainerState };

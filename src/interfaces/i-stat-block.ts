@@ -1,4 +1,4 @@
-interface IStatBlock {
+export interface IStatBlock {
     str: number;
     dex: number;
     con: number;
@@ -6,5 +6,3 @@ interface IStatBlock {
     wis: number;
     cha: number;
 }
-
-export { IStatBlock };

@@ -3,9 +3,10 @@ module.exports = {
     testMatch: ["**/tests/**/*.test.ts", "**/tests/**/*.test.tsx"],
     collectCoverageFrom: [
         "./src/services/**/*.js",
+        "./src/services/**/*.ts",
         "./src/components/**/*.js",
         "./src/components/**/*.jsx",
-        "./src/components/**/*.js",
+        "./src/components/**/*.ts",
         "./src/components/**/*.tsx"
     ],
     moduleNameMapper: {

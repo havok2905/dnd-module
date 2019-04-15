@@ -1,5 +1,3 @@
-interface IContainerProps {
+export interface IContainerProps {
     children?: any;
 }
-
-export { IContainerProps };

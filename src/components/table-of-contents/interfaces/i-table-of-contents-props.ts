@@ -1,8 +1,6 @@
 import { ITableOfContentsItem } from "./i-table-of-contents-item";
 
-interface ITableOfContentsProps {
+export interface ITableOfContentsProps {
     contentsList: ITableOfContentsItem[];
     hashReferencesSupported: boolean;
 }
-
-export { ITableOfContentsProps };

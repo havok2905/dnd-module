@@ -1,8 +1,6 @@
 import { IRollItem } from "./i-roll-item";
 
-interface IRollTableProps {
+export interface IRollTableProps {
     items: IRollItem[];
     title?: string;
 }
-
-export { IRollTableProps };

@@ -1,5 +1,3 @@
-interface IQuickRollState {
+export interface IQuickRollState {
     roll: number;
 }
-
-export { IQuickRollState };

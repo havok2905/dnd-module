@@ -2,13 +2,16 @@ import React, { Fragment } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { CreatureSearch } from "./creature-search";
 import { ItemList } from "./item-list";
+import { SpellSearch } from "./spell-search";
 import Creatures from "../../creatures/index";
 import Npcs from "../../npcs/index";
 import Items from "../../items/index";
+import Spells from "../../spells/index";
 import { IItem } from "../../interfaces/i-item";
 import { ICreature } from "../../interfaces/i-creature";
+import { ISpell } from "../../interfaces/i-spell";
 
-const Compendium = () => {
+export const Compendium = () => {
     const creatures = (collection): ICreature[] => {
         return Object.keys(collection).map(key => {
             const name = key.replace(/_/g, " ").toLowerCase();
@@ -16,6 +19,12 @@ const Compendium = () => {
                 name,
                 ...collection[key]
             };
+        });
+    };
+
+    const spells = (collection): ISpell[] => {
+        return Object.keys(collection).map(key => {
+            return collection[key];
         });
     };
 
@@ -28,6 +37,7 @@ const Compendium = () => {
     const creatureItems = creatures(Creatures);
     const npcItems = creatures(Npcs);
     const itemItems = items(Items);
+    const spellItems = spells(Spells);
 
     return (
         <Fragment>
@@ -53,10 +63,9 @@ const Compendium = () => {
                 </TabPanel>
                 <TabPanel data-qa-target="spells-panel">
                     <h4>Spells</h4>
+                    <SpellSearch spells={spellItems} />
                 </TabPanel>
             </Tabs>
         </Fragment>
     );
 };
-
-export { Compendium };

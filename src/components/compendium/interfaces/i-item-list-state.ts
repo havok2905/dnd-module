@@ -1,8 +1,6 @@
 import { IItem } from "../../../interfaces/i-item";
 
-interface IItemListState {
+export interface IItemListState {
     items: IItem[];
     name: string;
 }
-
-export { IItemListState };

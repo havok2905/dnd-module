@@ -1,5 +1,3 @@
-interface IColumnsProps {
+export interface IColumnsProps {
     children?: any;
 }
-
-export { IColumnsProps };

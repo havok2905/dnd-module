@@ -1,7 +1,5 @@
 import { ICreature } from "../../../interfaces/i-creature";
 
-interface ICreatureSearchProps {
+export interface ICreatureSearchProps {
     creatures: ICreature[];
 }
-
-export { ICreatureSearchProps };
