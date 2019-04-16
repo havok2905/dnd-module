@@ -5,6 +5,7 @@ import { CharacterSheet } from "../../src/components/character-sheet/character-s
 import { Page } from "../../src/components/page/page";
 
 const data = {
+    ac: 10,
     armorProficiencies: ["Medium"],
     abilities: {
         acrobatics: {
@@ -238,6 +239,8 @@ const data = {
         tempHp: 5,
         currentHp: 10
     },
+    image: "https://placekitten.com/200/300",
+    initiative: 10,
     languages: ["Common"],
     passiveInsight: {
         name: "Passive Insight",

@@ -7,6 +7,7 @@ import { IProficiencyInfo } from "../../interfaces/i-proficiency-info";
 import { ISpellCollection } from "../../interfaces/i-spell-collection";
 
 export const CharacterSheet = ({
+    ac,
     armorProficiencies,
     abilities,
     actions,
@@ -15,6 +16,8 @@ export const CharacterSheet = ({
     classes,
     description,
     hp,
+    image,
+    initiative,
     features,
     languages,
     passiveInsight,
@@ -158,85 +161,110 @@ export const CharacterSheet = ({
 
     return (
         <article className="character-sheet">
-            <h1>Character Name</h1>
-            {getCharacterLevel()}
-            <p>
-                <strong>Race: </strong>
-                {race}
-            </p>
-            <p>
-                <strong>Background: </strong>
-                {background}
-            </p>
-            <p>
-                <strong>Alignment: </strong>
-                {description.alignment}
-            </p>
-            <p>
-                <strong>Faith: </strong>
-                {description.faith}
-            </p>
-            <p>
-                <strong>Gender: </strong>
-                {description.gender}
-            </p>
-            <p>
-                <strong>Age: </strong>
-                {description.age}
-            </p>
-            <p>
-                <strong>Size: </strong>
-                {description.size}
-            </p>
-            <p>
-                <strong>Height: </strong>
-                {description.height}
-            </p>
-            <p>
-                <strong>Weight: </strong>
-                {description.weight}
-            </p>
-            <p>
-                <strong>Skin: </strong>
-                {description.eyes}
-            </p>
-            <p>
-                <strong>Eyes: </strong>
-                {description.eyes}
-            </p>
-            <p>
-                <strong>Hair: </strong>
-                {description.hair}
-            </p>
-            <h2>Stats</h2>
-            <p>
-                <strong>Current Hp: </strong>
-                <span>{hp.currentHp}</span>
-            </p>
-            <p>
-                <strong>Temp Hp: </strong>
-                <span>{hp.tempHp}</span>
-            </p>
-            <p>
-                <strong>Max: </strong>
-                <span>{hp.maxHp}</span>
-            </p>
-            <p>
-                <strong>Proficiency Bonus: </strong>
-                <span>{proficiencyBonus}</span>
-            </p>
-            <h2>Proficiencies and Languages</h2>
-            <h3>Armor</h3>
-            {getCharacterTraitList(armorProficiencies)}
-            <h3>Weapons</h3>
-            {getCharacterTraitList(weaponProficiencies)}
-            <h3>Tools</h3>
-            {getCharacterTraitList(toolProficiencies)}
-            <h3>Languages</h3>
-            {getCharacterTraitList(languages)}
-            <h2>Speed</h2>
+            <div className="character-sheet__header">
+                <div className="character-sheet__header-image">
+                    <img src={image} />
+                </div>
+                <div className="character-sheet__header-content">
+                    <h2>Character Name</h2>
+                    {getCharacterLevel()}
+                    <div>
+                        <p className="character-sheet__chip">
+                            <strong>Race: </strong>
+                            {race}
+                        </p>
+                        <p className="character-sheet__chip">
+                            <strong>Background: </strong>
+                            {background}
+                        </p>
+                        <p className="character-sheet__chip">
+                            <strong>Alignment: </strong>
+                            {description.alignment}
+                        </p>
+                        <p className="character-sheet__chip">
+                            <strong>Faith: </strong>
+                            {description.faith}
+                        </p>
+                        <p className="character-sheet__chip">
+                            <strong>Gender: </strong>
+                            {description.gender}
+                        </p>
+                        <p className="character-sheet__chip">
+                            <strong>Age: </strong>
+                            {description.age}
+                        </p>
+                        <p className="character-sheet__chip">
+                            <strong>Size: </strong>
+                            {description.size}
+                        </p>
+                        <p className="character-sheet__chip">
+                            <strong>Height: </strong>
+                            {description.height}
+                        </p>
+                        <p className="character-sheet__chip">
+                            <strong>Weight: </strong>
+                            {description.weight}
+                        </p>
+                        <p className="character-sheet__chip">
+                            <strong>Skin: </strong>
+                            {description.eyes}
+                        </p>
+                        <p className="character-sheet__chip">
+                            <strong>Eyes: </strong>
+                            {description.eyes}
+                        </p>
+                        <p className="character-sheet__chip">
+                            <strong>Hair: </strong>
+                            {description.hair}
+                        </p>
+                    </div>
+                    <h3>Stats</h3>
+                    <table className="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Current Hp</th>
+                                <th scope="col">Temp Hp</th>
+                                <th scope="col">Max Hp</th>
+                                <th scope="col">Prof</th>
+                                <th scope="col">Init</th>
+                                <th scope="col">AC</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{hp.currentHp}</td>
+                                <td>{hp.tempHp}</td>
+                                <td>{hp.maxHp}</td>
+                                <td>{proficiencyBonus}</td>
+                                <td>{initiative}</td>
+                                <td>{ac}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <h3>Proficiencies and Languages</h3>
+            <div className="character-sheet__proficiencies">
+                <div>
+                    <h4>Armor</h4>
+                    {getCharacterTraitList(armorProficiencies)}
+                </div>
+                <div>
+                    <h4>Weapons</h4>
+                    {getCharacterTraitList(weaponProficiencies)}
+                </div>
+                <div>
+                    <h4>Tools</h4>
+                    {getCharacterTraitList(toolProficiencies)}
+                </div>
+                <div>
+                    <h4>Languages</h4>
+                    {getCharacterTraitList(languages)}
+                </div>
+            </div>
+            <h3>Speed</h3>
             {getGenericItemsMarkup(speed)}
-            <h2>Senses</h2>
+            <h3>Senses</h3>
             <p>
                 <strong>
                     {passivePerception.name} ({passivePerception.type}):{" "}
@@ -256,7 +284,7 @@ export const CharacterSheet = ({
                 {passiveInvestigation.value}
             </p>
             {getGenericItemsMarkup(senses)}
-            <h2>Stats</h2>
+            <h3>Stats</h3>
             <table className="table table--center">
                 <thead>
                     <tr>
@@ -287,7 +315,7 @@ export const CharacterSheet = ({
                     </tr>
                 </tbody>
             </table>
-            <h2>Saving Throws</h2>
+            <h3>Saving Throws</h3>
             <table className="table table--center">
                 <thead>
                     <tr>
@@ -310,7 +338,7 @@ export const CharacterSheet = ({
                     </tr>
                 </tbody>
             </table>
-            <h2>Abilities</h2>
+            <h3>Abilities</h3>
             <table className="table table--center">
                 <thead>
                     <tr>
@@ -341,33 +369,33 @@ export const CharacterSheet = ({
                     {getSkillRow("survival")}
                 </tbody>
             </table>
-            <h2>Actions</h2>
+            <h3>Actions</h3>
             {getGenericItemsMarkup(actions)}
-            <h2>Bonus Actions</h2>
+            <h3>Bonus Actions</h3>
             {getGenericItemsMarkup(bonusActions)}
-            <h2>Reactions</h2>
+            <h3>Reactions</h3>
             {getGenericItemsMarkup(reactions)}
-            <h2>Features</h2>
+            <h3>Features</h3>
             {getGenericItemsMarkup(features)}
-            <h2>Spells</h2>
-            <h3>Spell Slots</h3>
+            <h3>Spells</h3>
+            <h4>Spell Slots</h4>
             {getSpellSlots()}
-            <h3>List</h3>
+            <h4>List</h4>
             {getSpells()}
-            <h2>Description</h2>
-            <h3>Personality Traits</h3>
+            <h3>Description</h3>
+            <h4>Personality Traits</h4>
             {getCharacterTraitList(description.personalityTraits)}
-            <h3>Ideals</h3>
+            <h4>Ideals</h4>
             {getCharacterTraitList(description.ideals)}
-            <h3>Bonds</h3>
+            <h4>Bonds</h4>
             {getCharacterTraitList(description.bonds)}
-            <h3>Flaws</h3>
+            <h4>Flaws</h4>
             {getCharacterTraitList(description.flaws)}
-            <h3>Alies and Organizations</h3>
+            <h4>Alies and Organizations</h4>
             <p>{description.notes}</p>
-            <h3>Appearance</h3>
+            <h4>Appearance</h4>
             <p>{description.appearance}</p>
-            <h3>Notes</h3>
+            <h4>Notes</h4>
             <p>{description.notes}</p>
         </article>
     );

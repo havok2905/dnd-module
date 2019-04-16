@@ -9,6 +9,7 @@ import { IStats } from "./i-stats";
 import { ISpellCollection } from "./i-spell-collection";
 
 export interface ICharacter {
+    ac: number;
     armorProficiencies: string[];
     abilities: IAbilities;
     actions: IGenericItem[];
@@ -17,6 +18,8 @@ export interface ICharacter {
     classes: IClass[];
     description: ICharacterDescription;
     hp: IHpBlock;
+    image?: string;
+    initiative: number;
     features: IGenericItem[];
     languages: string[];
     passivePerception: IPassiveSkill;

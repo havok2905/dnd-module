@@ -3,6 +3,7 @@ import * as Factory from "factory.ts";
 import { ICharacter } from "../../src/interfaces/i-character";
 
 export const CharacterFactory = Factory.Sync.makeFactory<ICharacter>({
+    ac: 10,
     armorProficiencies: ["Medium"],
     abilities: {
         acrobatics: {
@@ -236,6 +237,8 @@ export const CharacterFactory = Factory.Sync.makeFactory<ICharacter>({
         tempHp: 5,
         currentHp: 10
     },
+    image: "https://placekitten.com/200/300",
+    initiative: 10,
     languages: ["Common"],
     passiveInsight: {
         name: "Passive Insight",
