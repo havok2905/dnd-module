@@ -4,6 +4,7 @@ import "../src/styles/index.scss";
 
 function loadStories() {
     require("./stories/button.story");
+    require("./stories/character-sheet.story");
     require("./stories/collapsable-container.story");
     require("./stories/columns.story");
     require("./stories/compendium.story");
