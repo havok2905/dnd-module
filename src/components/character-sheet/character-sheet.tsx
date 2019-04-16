@@ -86,22 +86,24 @@ export const CharacterSheet = ({
     };
 
     const getSpells = () => {
-        return spells.map((spellCollection: ISpellCollection) => {
-            return (
-                <React.Fragment>
-                    <p>
-                        <strong>Level: {spellCollection.level}</strong>
-                    </p>
-                    <ul>
-                        {spellCollection.list.map(
-                            (item: string, index: number) => {
-                                return <li key={index}>{item}</li>;
-                            }
-                        )}
-                    </ul>
-                </React.Fragment>
-            );
-        });
+        return spells.map(
+            (spellCollection: ISpellCollection, index: number) => {
+                return (
+                    <div key={index}>
+                        <p>
+                            <strong>Level: {spellCollection.level}</strong>
+                        </p>
+                        <ul>
+                            {spellCollection.list.map(
+                                (item: string, index: number) => {
+                                    return <li key={index}>{item}</li>;
+                                }
+                            )}
+                        </ul>
+                    </div>
+                );
+            }
+        );
     };
 
     const hasSpellSlots = () => {
