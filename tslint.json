@@ -2,6 +2,10 @@
     "extends": "tslint:recommended",
     "rules": {
         "arrow-parens": false,
+        "class-name": true,
+        "cyclomatic-complexity": [true, 7],
+        "max-classes-per-file": [true, 1],
+        "max-file-line-count": [true, 350],
         "max-line-length": false,
         "object-literal-sort-keys": false,
         "trailing-comma": false
