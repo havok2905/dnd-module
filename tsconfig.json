@@ -1,6 +1,5 @@
 {
     "compilerOptions": {
-        "allowSyntheticDefaultImports": true,
         "outDir": "./dist/",
         "sourceMap": true,
         "noImplicitAny": false,
