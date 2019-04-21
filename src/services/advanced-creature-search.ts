@@ -1,7 +1,7 @@
 import { ICreature } from "../interfaces/i-creature";
 import { StringCompare } from "./string-compare";
 
-interface AdvancedCreatureSearchOptions {
+interface IAdvancedCreatureSearchOptions {
     name?: string;
     type?: string;
     alignment?: string;
@@ -10,44 +10,9 @@ interface AdvancedCreatureSearchOptions {
 }
 
 export class AdvancedCreatureSearch {
-    private static parseCrToNum(str: string): number {
-        switch (str) {
-            case "1/8":
-                return 0.125;
-            case "1/4":
-                return 0.25;
-            case "1/2":
-                return 0.5;
-            default:
-                return parseInt(str);
-        }
-    }
-
-    private static isBetween(a: string, b: string, c: string): boolean {
-        const numA = this.parseCrToNum(a);
-        const numB = this.parseCrToNum(b);
-        const numC = this.parseCrToNum(c);
-
-        return numA >= numB && numA <= numC;
-    }
-
-    private static isBelowOrEqual(a: string, b: string): boolean {
-        const numA = this.parseCrToNum(a);
-        const numB = this.parseCrToNum(b);
-
-        return numA <= numB;
-    }
-
-    private static isMoreOrEqual(a: string, b: string): boolean {
-        const numA = this.parseCrToNum(a);
-        const numB = this.parseCrToNum(b);
-
-        return numA >= numB;
-    }
-
-    static search(
+    public static search(
         creatures: ICreature[],
-        options: AdvancedCreatureSearchOptions
+        options: IAdvancedCreatureSearchOptions
     ) {
         if (
             !options.name &&
@@ -109,12 +74,47 @@ export class AdvancedCreatureSearch {
             }
 
             if (options.alignment && options.alignment.length > 0) {
-                if (item.alignment != options.alignment) {
+                if (item.alignment !== options.alignment) {
                     isValid = false;
                 }
             }
 
             return isValid;
         });
+    }
+
+    private static parseCrToNum(str: string): number {
+        switch (str) {
+            case "1/8":
+                return 0.125;
+            case "1/4":
+                return 0.25;
+            case "1/2":
+                return 0.5;
+            default:
+                return parseInt(str, 10);
+        }
+    }
+
+    private static isBetween(a: string, b: string, c: string): boolean {
+        const numA = this.parseCrToNum(a);
+        const numB = this.parseCrToNum(b);
+        const numC = this.parseCrToNum(c);
+
+        return numA >= numB && numA <= numC;
+    }
+
+    private static isBelowOrEqual(a: string, b: string): boolean {
+        const numA = this.parseCrToNum(a);
+        const numB = this.parseCrToNum(b);
+
+        return numA <= numB;
+    }
+
+    private static isMoreOrEqual(a: string, b: string): boolean {
+        const numA = this.parseCrToNum(a);
+        const numB = this.parseCrToNum(b);
+
+        return numA >= numB;
     }
 }

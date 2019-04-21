@@ -6,7 +6,7 @@ interface IAdvancedSpellSearchOptions {
 }
 
 export class AdvancedSpellSearch {
-    static search(
+    public static search(
         spells: ISpell[],
         options: IAdvancedSpellSearchOptions
     ): ISpell[] {

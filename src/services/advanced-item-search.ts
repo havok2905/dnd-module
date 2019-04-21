@@ -6,7 +6,7 @@ interface IAdvancedItemSearchOptions {
 }
 
 export class AdvancedItemSearch {
-    static search(
+    public static search(
         items: IItem[],
         options: IAdvancedItemSearchOptions
     ): IItem[] {

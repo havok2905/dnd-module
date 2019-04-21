@@ -4,12 +4,12 @@ export interface ISpell {
     higherLevelsText: string;
     level: number;
     school: string;
-    ritual: Boolean;
+    ritual: boolean;
     castTime: string;
     range: string;
     components: string[];
     material: string[];
-    concentration: Boolean;
+    concentration: boolean;
     duration: string;
     casters: string[];
 }

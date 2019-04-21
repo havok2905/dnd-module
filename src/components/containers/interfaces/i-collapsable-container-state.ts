@@ -1,3 +1,3 @@
 export interface ICollapsableContainerState {
-    display: Boolean;
+    display: boolean;
 }

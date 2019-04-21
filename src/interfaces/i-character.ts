@@ -3,10 +3,10 @@ import { ICharacterDescription } from "./i-character-description";
 import { IClass } from "./i-class";
 import { IGenericItem } from "./i-generic-item";
 import { IHpBlock } from "./i-hp-block";
-import { ISpellSlot } from "./i-spell-slot";
 import { IPassiveSkill } from "./i-passive-skill";
-import { IStats } from "./i-stats";
 import { ISpellCollection } from "./i-spell-collection";
+import { ISpellSlot } from "./i-spell-slot";
+import { IStats } from "./i-stats";
 
 export interface ICharacter {
     ac: number;
