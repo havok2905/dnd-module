@@ -2,7 +2,7 @@ import React from "react";
 import Enzyme, { shallow } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import { CreatureSearch } from "../../../src/components/compendium/creature-search";
-import { CreatureFactory } from "../../factories/creature-factory";
+import { CreatureFactory } from "../../../factories/creature-factory";
 
 Enzyme.configure({ adapter: new Adapter() });
 

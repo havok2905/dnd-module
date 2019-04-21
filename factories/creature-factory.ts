@@ -1,6 +1,6 @@
 import * as Factory from "factory.ts";
 
-import { ICreature } from "../../src/interfaces/i-creature";
+import { ICreature } from "../src/interfaces/i-creature";
 
 export const CreatureFactory = Factory.Sync.makeFactory<ICreature>({
     ac: 10,

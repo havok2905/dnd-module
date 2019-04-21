@@ -1,6 +1,6 @@
 import * as Factory from "factory.ts";
 
-import { ICharacter } from "../../src/interfaces/i-character";
+import { ICharacter } from "../src/interfaces/i-character";
 
 export const CharacterFactory = Factory.Sync.makeFactory<ICharacter>({
     ac: 10,

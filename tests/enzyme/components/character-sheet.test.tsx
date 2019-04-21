@@ -2,7 +2,7 @@ import React from "react";
 import Enzyme, { shallow } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import { CharacterSheet } from "../../../src/components/character-sheet/character-sheet";
-import { CharacterFactory } from "../../factories/character-factory";
+import { CharacterFactory } from "../../../factories/character-factory";
 
 Enzyme.configure({ adapter: new Adapter() });
 

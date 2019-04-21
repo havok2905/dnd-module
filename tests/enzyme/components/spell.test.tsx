@@ -2,7 +2,7 @@ import React from "react";
 import Enzyme, { shallow } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import { Spell } from "../../../src/components/spell/spell";
-import { SpellFactory } from "../../factories/spell-factory";
+import { SpellFactory } from "../../../factories/spell-factory";
 
 Enzyme.configure({ adapter: new Adapter() });
 

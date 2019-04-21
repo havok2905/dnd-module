@@ -2,7 +2,7 @@ import React from "react";
 import Enzyme, { shallow } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import { ItemList } from "../../../src/components/compendium/item-list";
-import { ItemFactory } from "../../factories/item-factory";
+import { ItemFactory } from "../../../factories/item-factory";
 
 Enzyme.configure({ adapter: new Adapter() });
 

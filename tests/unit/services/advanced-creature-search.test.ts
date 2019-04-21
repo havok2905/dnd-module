@@ -1,5 +1,5 @@
 import { AdvancedCreatureSearch } from "../../../src/services/advanced-creature-search";
-import { CreatureFactory } from "../../factories/creature-factory";
+import { CreatureFactory } from "../../../factories/creature-factory";
 
 describe("AdvancedCreatureSearch", () => {
     describe("no options", () => {

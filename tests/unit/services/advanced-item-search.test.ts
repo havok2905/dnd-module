@@ -1,5 +1,5 @@
 import { AdvancedItemSearch } from "../../../src/services/advanced-item-search";
-import { ItemFactory } from "../../factories/item-factory";
+import { ItemFactory } from "../../../factories/item-factory";
 
 const collection = [
     ItemFactory.build({

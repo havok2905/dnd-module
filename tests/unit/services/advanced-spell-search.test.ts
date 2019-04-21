@@ -1,5 +1,5 @@
 import { AdvancedSpellSearch } from "../../../src/services/advanced-spell-search";
-import { SpellFactory } from "../../factories/spell-factory";
+import { SpellFactory } from "../../../factories/spell-factory";
 
 const collection = [
     SpellFactory.build({
