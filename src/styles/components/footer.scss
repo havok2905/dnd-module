@@ -9,13 +9,15 @@
     border-top: solid 1px $primary-medium;
     color: $white;
     margin: 0;
-    padding: 31px;
+    padding: 15px;
+
+    .to-top-button {
+        margin-right: 10px;
+    }
 
     .roll-form,
-    [data-qa-target="scroll-to-top-button"] {
+    .to-top-button {
         display: inline-block;
-        margin-right: 20px;
-        margin-bottom: 0;
         vertical-align: -webkit-baseline-middle;
     }
 }

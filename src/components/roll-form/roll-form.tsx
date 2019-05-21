@@ -34,7 +34,6 @@ class RollForm extends Component<any, IRollFormState> {
                     placeholder="1d20+0"
                 />
                 <span>
-                    Roll:
                     <span data-qa-target="roll-form-result">
                         {this.state.roll}
                     </span>

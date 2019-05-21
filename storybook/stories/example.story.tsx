@@ -7,7 +7,6 @@ import { CollapsableContainer } from "../../src/components/containers/collapsabl
 import { Footer } from "../../src/components/footer/footer";
 import { Hero } from "../../src/components/hero/hero";
 import { Page } from "../../src/components/page/page";
-import { TableOfContents } from "../../src/components/table-of-contents/table-of-contents";
 import { ScrollToMe } from "../../src/components/scroll-to-me/scroll-to-me";
 import { Columns } from "../../src/components/containers/columns";
 import { Tools } from "../../src/components/tools/tools";
@@ -145,25 +144,7 @@ storiesOf("Example", module).add("Example", () => {
                             </p>
                         </EmphasisBlock>
                     </div>
-                    <div>
-                        <h2 id="table-of-contents">Table of Contents</h2>
-                        <TableOfContents
-                            hashReferencesSupported={false}
-                            contentsList={[
-                                {
-                                    title: "Chapter 1",
-                                    link: "#chapter-1",
-                                    scrollActionString: "chapter-1",
-                                    children: []
-                                },
-                                {
-                                    title: "Chapter 2",
-                                    link: "#chapter-2",
-                                    scrollActionString: "chapter-2",
-                                    children: []
-                                }
-                            ]}
-                        />
+                    <div className="columns--hidden">
                         <h2>Tools</h2>
                         <Tools />
                     </div>

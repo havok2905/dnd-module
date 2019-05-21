@@ -18,6 +18,7 @@ import { RollTable } from "./components/roll-table/roll-table";
 import { ScrollToMe } from "./components/scroll-to-me/scroll-to-me";
 import { Spell } from "./components/spell/spell";
 import { TableOfContents } from "./components/table-of-contents/table-of-contents";
+import { ToTopButton } from "./components/button/to-top-button";
 import { Tools } from "./components/tools/tools";
 
 import * as Creatures from "./creatures/index";
@@ -50,6 +51,7 @@ export {
     Spell,
     Styles,
     TableOfContents,
+    ToTopButton,
     Tools,
     Creatures,
     Items,

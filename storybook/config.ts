@@ -21,6 +21,7 @@ function loadStories() {
     require("./stories/roll-form.story");
     require("./stories/roll-table.story");
     require("./stories/spell.story");
+    require("./stories/to-top-button.story");
     require("./stories/table-of-contents.story");
 
     require("./stories/example.story");
