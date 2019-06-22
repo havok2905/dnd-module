@@ -14,6 +14,7 @@ import { FLESH_SENTINEL } from "./constants/flesh-sentinel";
 import { GIANT_GHOSTLY_ARCTIC_CROCODILE } from "./constants/giant-ghostly-arctic-crocodile";
 import { HELICOPTER } from "./constants/helicopter";
 import { HIGH_PRIEST_OF_ENKIEM } from "./constants/high-priest-of-enkiem";
+import { ICE_ELEMENTAL } from "./constants/ice-elemental";
 import { KIPINE } from "./constants/kipine";
 import { KRAKEN_TENTACLE } from "./constants/kraken-tentacle";
 import { MAGE_OF_THE_DRAGONS_FLAME } from "./constants/mage-of-the-dragons-flame";
@@ -56,6 +57,7 @@ export {
     FALLEN_PLANETAR,
     FLESH_SENTINEL,
     HIGH_PRIEST_OF_ENKIEM,
+    ICE_ELEMENTAL,
     KIPINE,
     KRAKEN_TENTACLE,
     MAGE_OF_THE_DRAGONS_FLAME,
@@ -99,6 +101,7 @@ export default {
     FALLEN_PLANETAR,
     FLESH_SENTINEL,
     HIGH_PRIEST_OF_ENKIEM,
+    ICE_ELEMENTAL,
     KIPINE,
     KRAKEN_TENTACLE,
     MAGE_OF_THE_DRAGONS_FLAME,

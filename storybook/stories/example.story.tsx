@@ -10,6 +10,7 @@ import { Page } from "../../src/components/page/page";
 import { ScrollToMe } from "../../src/components/scroll-to-me/scroll-to-me";
 import { Columns } from "../../src/components/containers/columns";
 import { Tools } from "../../src/components/tools/tools";
+import { DmScreen } from "../../src/components/dm-screen/dm-screen";
 
 storiesOf("Example", module).add("Example", () => {
     return (
@@ -150,6 +151,23 @@ storiesOf("Example", module).add("Example", () => {
                     </div>
                 </Columns>
             </Page>
+            <DmScreen
+                hashReferencesSupported={false}
+                contentsList={[
+                    {
+                        title: "Chapter 1",
+                        link: "#chapter-1",
+                        scrollActionString: "chapter-1",
+                        children: []
+                    },
+                    {
+                        title: "Chapter 2",
+                        link: "#chapter-2",
+                        scrollActionString: "chapter-2",
+                        children: []
+                    }
+                ]}
+            />
             <Footer />
         </React.Fragment>
     );

@@ -13,6 +13,7 @@ const TableOfContents = ({
                     <li key={index}>
                         <a
                             onClick={e => {
+                                PubSub.publish("dm-screen:close");
                                 if (!hashReferencesSupported) {
                                     e.preventDefault();
                                     PubSub.publish(content.scrollActionString);

@@ -3,6 +3,8 @@ import { CharacterSheet } from "./components/character-sheet/character-sheet";
 import { CollapsableContainer } from "./components/containers/collapsable-container";
 import { Columns } from "./components/containers/columns";
 import { Container } from "./components/containers/container";
+import { DmScreen } from "./components/dm-screen/dm-screen";
+import { DmScreenButton } from "./components/button/dm-screen-button";
 import { EmphasisBlock } from "./components/emphasis-block/emphasis-block";
 import { Footer } from "./components/footer/footer";
 import { Hero } from "./components/hero/hero";
@@ -35,6 +37,8 @@ export {
     CollapsableContainer,
     Columns,
     Container,
+    DmScreen,
+    DmScreenButton,
     EmphasisBlock,
     Footer,
     Hero,

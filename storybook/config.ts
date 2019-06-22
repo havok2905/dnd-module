@@ -10,6 +10,7 @@ function loadStories() {
     require("./stories/compendium.story");
     require("./stories/container.story");
     require("./stories/creatures.story");
+    require("./stories/dm-screen.story");
     require("./stories/emphasis-block.story");
     require("./stories/footer.story");
     require("./stories/hero.story");
