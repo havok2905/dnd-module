@@ -2,6 +2,7 @@ import { Button } from "./components/button/button";
 import { CharacterSheet } from "./components/character-sheet/character-sheet";
 import { CollapsableContainer } from "./components/containers/collapsable-container";
 import { Columns } from "./components/containers/columns";
+import { Compendium } from "./components/compendium/compendium";
 import { Container } from "./components/containers/container";
 import { DmScreen } from "./components/dm-screen/dm-screen";
 import { DmScreenButton } from "./components/button/dm-screen-button";
@@ -36,6 +37,7 @@ export {
     CharacterSheet,
     CollapsableContainer,
     Columns,
+    Compendium,
     Container,
     DmScreen,
     DmScreenButton,
